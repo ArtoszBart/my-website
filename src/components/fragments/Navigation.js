@@ -18,22 +18,22 @@ function Navigation() {
 			<nav className={'nav' + open}>
 				<ul className={'menu-nav' + open}>
 					<li className={'menu-nav-item' + open}>
-						<Link to="/" className="menu-nav-link">
+						<Link to="/" className="menu-nav-link" onClick={() => setOpen('')}>
 							Home
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + open}>
-						<Link to="!#" className="menu-nav-link">
+						<Link to="!#" className="menu-nav-link" onClick={() => setOpen('')}>
 							About Me
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + open}>
-						<Link to="!#" className="menu-nav-link">
+						<Link to="!#" className="menu-nav-link" onClick={() => setOpen('')}>
 							My Projects
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + open}>
-						<Link to="/contact" className="menu-nav-link">
+						<Link to="/contact" className="menu-nav-link" onClick={() => setOpen('')}>
 							Contact Me
 						</Link>
 					</li>
