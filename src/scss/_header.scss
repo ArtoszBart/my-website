@@ -91,6 +91,12 @@
 
 // MOBILE MENU
 @include media-md {
+	header {
+		.header-container {
+			padding: 1rem 1.5rem !important;
+		}
+	}
+
 	.menu-btn {
 		visibility: visible;
 	}
