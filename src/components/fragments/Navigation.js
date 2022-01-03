@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 function Navigation() {
 	const [open, setOpen] = useState('');
@@ -17,24 +18,24 @@ function Navigation() {
 			<nav className={'nav' + open}>
 				<ul className={'menu-nav' + open}>
 					<li className={'menu-nav-item' + open}>
-						<a href="!#" className="menu-nav-link">
+						<Link to="/" className="menu-nav-link">
 							Home
-						</a>
+						</Link>
 					</li>
 					<li className={'menu-nav-item' + open}>
-						<a href="!#" className="menu-nav-link">
+						<Link to="!#" className="menu-nav-link">
 							About Me
-						</a>
+						</Link>
 					</li>
 					<li className={'menu-nav-item' + open}>
-						<a href="!#" className="menu-nav-link">
+						<Link to="!#" className="menu-nav-link">
 							My Projects
-						</a>
+						</Link>
 					</li>
 					<li className={'menu-nav-item' + open}>
-						<a href="!#" className="menu-nav-link">
+						<Link to="/contact" className="menu-nav-link">
 							Contact Me
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</nav>

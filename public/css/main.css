@@ -261,8 +261,45 @@ code {
           transition-delay: 0.55s;
 }
 
+.social-icons {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.social-icons a {
+  color: #fff;
+  padding: 0.4rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #61dafb;
+}
+
+@media screen and (max-width: 840px) {
+  .social-icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+    bottom: 5rem;
+  }
+}
+
 header {
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -301,6 +338,13 @@ header .menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main {
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 footer {

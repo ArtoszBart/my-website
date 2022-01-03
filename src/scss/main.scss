@@ -1,7 +1,8 @@
-@import 'default', '_header', 'config';
+@import 'default', 'header', 'config', 'socialMenu';
 
 header {
 	position: fixed;
+	top: 0;
 	width: 100%;
 
 	.header-container {
@@ -24,6 +25,13 @@ header {
 		justify-content: center;
 		align-items: center;
 	}
+}
+
+main {
+	background-color: #282c34;
+	min-height: 100vh;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 // FOOTER

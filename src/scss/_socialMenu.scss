@@ -1,0 +1,29 @@
+@import 'config';
+
+.social-icons {
+	position: fixed;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 1rem;
+	bottom: 1rem;
+	left: 1rem;
+	z-index: 10;
+	
+	a {
+		color: $text-color;
+		padding: 0.4rem;
+		@include transition-ease;
+
+		&:hover {
+			color: $accent-color;
+		}
+	}
+}
+
+@include media-md {
+	.social-icons {
+		flex-direction: column;
+		gap: 0;
+		bottom: 5rem;
+	}
+}
