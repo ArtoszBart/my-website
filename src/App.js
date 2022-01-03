@@ -1,3 +1,4 @@
+import Footer from './components/fragments/Footer';
 import Header from './components/fragments/Header';
 import MainContent from './components/other/MainContent';
 
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Header />
       <MainContent />
+      <Footer />
     </div>
   );
 }
