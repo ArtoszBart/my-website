@@ -1,0 +1,158 @@
+@import 'config';
+
+// BURGER MENU BUTTON
+.menu-btn {
+	position: absolute;
+	z-index: 1;
+	right: 3rem;
+	top: 3rem;
+	height: 20px;
+	width: 28px;
+	cursor: pointer;
+	visibility: hidden;
+	@include transition-ease;
+
+	&-burger {
+		position: absolute;
+		right: 0;
+		top: 0.5rem;
+		width: 28px;
+		height: 3px;
+		background: white;
+		@include transition-ease;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -8px;
+			width: 28px;
+			height: 3px;
+			background: white;
+			@include transition-ease;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 8px;
+			width: 20px;
+			height: 3px;
+			background: white;
+			@include transition-ease;
+		}
+
+		&.open {
+			transform: rotate(720deg);
+			background: transparent;
+
+			&::before {
+				transform: rotate(45deg) translate(5px, 8px);
+			}
+
+			&::after {
+				width: 28px;
+				transform: rotate(-45deg) translate(3px, -7px);
+			}
+		}
+	}
+}
+
+// DESKTOP MENU
+.menu-nav {
+		
+	&-item {
+		display: inline;
+			
+		@for $ii from 2 through 4 {
+			&:nth-child(#{$ii}) {
+				padding-left: 1.5rem;
+			}
+		}
+
+		&.active > a {
+			color: $accent-color;
+		}
+	}
+	
+
+	&-link {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: 300;
+		color: $text-color;
+		@include transition-ease;
+
+		&:hover {
+			color: $accent-color;
+		}
+	}
+}
+
+// MOBILE MENU
+@include media-md {
+	.menu-btn {
+		visibility: visible;
+	}
+
+	.nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		opacity: 0.98;
+		visibility: hidden;
+
+		&.open {
+			visibility: visible;
+		}
+
+		.menu-nav {
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			overflow: hidden;
+			background: $primary-color;
+			list-style-type: none;
+			padding-right: 1rem;
+			transform: translateY(-100%);
+			@include transition-ease;
+
+			&.open {
+				transform: translateY(0);
+			}
+
+			&-item {
+				transform: translateX(100vw);
+				@include transition-ease;
+
+				&.open {
+					transform: translateX(0);
+				}
+			}
+
+			&-link {
+				display: inline-block;
+				font-size: 2rem;
+				text-transform: uppercase;
+				text-decoration: none;
+				padding: 2rem 0;
+				font-weight: 300;
+				@include transition-ease;
+
+				&:hover {
+					color: $accent-color;
+				}
+			}
+		}
+	}
+}
+
+// MENU ITEMS ANIMATION
+@for $ii from 1 through 4 {
+	.menu-nav-item:nth-child(#{$ii}) {
+		transition-delay: ($ii * 0.1s) + 0.15s;
+	}
+}

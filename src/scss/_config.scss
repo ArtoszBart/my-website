@@ -1,0 +1,14 @@
+$primary-color: #181c24;
+$secondary-color: #282c34;
+$accent-color: #61dafb;
+$text-color: #fff;
+
+@mixin transition-ease {
+	transition: all 0.5s ease-in-out;
+}
+
+@mixin media-md {
+	@media screen and (max-width: 840px) {
+		@content;
+	}
+}
