@@ -201,7 +201,7 @@ code {
     overflow: hidden;
     background: #181c24;
     list-style-type: none;
-    padding-right: 1rem;
+    padding: 0;
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
     -webkit-transition: all 0.5s ease-in-out;
@@ -216,6 +216,7 @@ code {
             transform: translateX(100vw);
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    padding-left: 0;
   }
   .nav .menu-nav-item.open {
     -webkit-transform: translateX(0);

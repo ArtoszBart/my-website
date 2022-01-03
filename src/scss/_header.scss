@@ -116,7 +116,7 @@
 			overflow: hidden;
 			background: $primary-color;
 			list-style-type: none;
-			padding-right: 1rem;
+			padding: 0;
 			transform: translateY(-100%);
 			@include transition-ease;
 
@@ -127,6 +127,7 @@
 			&-item {
 				transform: translateX(100vw);
 				@include transition-ease;
+				padding-left: 0;
 
 				&.open {
 					transform: translateX(0);
