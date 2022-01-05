@@ -28,14 +28,13 @@ code {
   
 .App-header {
 	background-color: #282c34;
-	min-height: 100vh;
+	min-height: calc(100vh - 70px - 118px - 1rem);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
 	color: white;
-	margin-top: -118px;
 }
   
 .App-link {

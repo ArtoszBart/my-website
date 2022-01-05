@@ -3,6 +3,8 @@ $secondary-color: #282c34;
 $accent-color: #61dafb;
 $text-color: #fff;
 
+$footer-height: 70px;
+
 @mixin transition-ease {
 	transition: all 0.5s ease-in-out;
 }

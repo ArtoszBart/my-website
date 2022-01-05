@@ -27,7 +27,7 @@ code {
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: calc(100vh - 70px - 118px - 1rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +43,6 @@ code {
           justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin-top: -118px;
 }
 
 .App-link {
@@ -362,9 +361,10 @@ header .menu {
 
 main {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: calc(100vh - 70px - 118px - 1rem);
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 1rem;
   padding-top: 118px;
   text-align: center;
 }
@@ -385,6 +385,13 @@ main {
 .skills-box-text {
   margin: 0;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 840px) {
+  .skills {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 i {

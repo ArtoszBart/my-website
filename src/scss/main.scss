@@ -30,9 +30,10 @@ header {
 
 main {
 	background-color: #282c34;
-	min-height: 100vh;
+	min-height: calc(100vh - 70px - 118px - 1rem);
 	font-size: calc(10px + 2vmin);
 	color: white;
+	padding: 1rem;
 	padding-top: 118px;
 	text-align: center;
 }
@@ -52,7 +53,13 @@ main {
 			font-size: 1.2rem;
 		}
 	}
-};
+}
+
+@include media-md {
+	.skills {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
 
 i {
 	font-size: 40px;
