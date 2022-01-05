@@ -9,6 +9,7 @@ import Header from './components/fragments/Header';
 import MainContent from './components/other/MainContent';
 import Contact from './components/other/Contact'
 import SocialMenu from './components/fragments/SocialMenu';
+import AboutMe from './components/other/AboutMe';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<MainContent />} />
         <Route exact path='/contact' element={<Contact />} />
+        <Route exact path='/about-me' element={<AboutMe />} />
       </Routes>
       <SocialMenu />
       <Footer />
