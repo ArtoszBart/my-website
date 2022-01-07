@@ -5,7 +5,17 @@ function AboutMe() {
 		<main>
 			<section>
 				<h1>About me</h1>
-				<p>Hi, my name is Bartosz Art, and I'm 4th semester student of IT on PJAIT in Warsaw. </p>
+				<p>
+					Hi, my name is Bartosz Art, and I'm 4th semester student of Computer Science on PJAIT in Warsaw.
+				</p>
+				<p>
+					On my free time i'm developing my programming skills as well as playing golf and sailing.
+				</p>
+				<p>
+					I am interested in database applications, and I
+					also had 100% of all points I could get from this subject. I would like to gain experience and
+					develop in this direction.
+				</p>
 			</section>
 			<hr />
 			<section>
