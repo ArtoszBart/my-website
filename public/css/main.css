@@ -369,6 +369,16 @@ main {
   text-align: center;
 }
 
+main section p {
+  font-size: 1.5rem;
+}
+
+main hr {
+  margin: 5rem auto;
+  width: 70%;
+  border-color: #fff;
+}
+
 .skills {
   display: -ms-grid;
   display: grid;
@@ -382,6 +392,10 @@ main {
   margin: 1rem;
 }
 
+.skills-box-logo {
+  font-size: 40px;
+}
+
 .skills-box-text {
   margin: 0;
   font-size: 1.2rem;
@@ -392,19 +406,5 @@ main {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
-}
-
-i {
-  font-size: 40px;
-}
-
-hr {
-  margin: 5rem auto;
-  width: 70%;
-  border-color: #fff;
-}
-
-section p {
-  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
