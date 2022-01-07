@@ -23,7 +23,7 @@ function Navigation() {
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + open}>
-						<Link to="/about-me" className="menu-nav-link" onClick={() => setOpen('')}>
+						<Link to="/about" className="menu-nav-link" onClick={() => setOpen('')}>
 							About Me
 						</Link>
 					</li>

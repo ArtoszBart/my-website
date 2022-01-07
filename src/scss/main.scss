@@ -64,3 +64,15 @@ main {
 i {
 	font-size: 40px;
 }
+
+hr {
+	margin: 5rem auto;
+	width: 70%;
+	border-color: $text-color;
+}
+
+section {
+	p {
+		font-size: 1.5rem;
+	}
+}

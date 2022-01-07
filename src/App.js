@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<MainContent />} />
         <Route exact path='/contact' element={<Contact />} />
-        <Route exact path='/about-me' element={<AboutMe />} />
+        <Route exact path='/about' element={<AboutMe />} />
       </Routes>
       <SocialMenu />
       <Footer />
