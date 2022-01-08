@@ -1,6 +1,15 @@
+import { getAllByPlaceholderText } from '@testing-library/react'
 import React from 'react'
 
 function AboutMe() {
+
+	const getDate = () => {
+		const today = new Date(Date.now());
+		const month = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(today);
+		const year = today.getFullYear();
+		return `${month} ${year}`;
+	};
+
 	return (
 		<main>
 			<section>
@@ -16,8 +25,8 @@ function AboutMe() {
 					also had 100% of all points I could get from this subject. I would like to gain experience and
 					develop in this direction.
 				</p>
+				<hr />
 			</section>
-			<hr />
 			<section>
 				<h2>Skills</h2>
 				<div className="skills">
@@ -136,6 +145,42 @@ function AboutMe() {
 					<div className="skills-box">
 						<i className="skills-box-logo devicon-windows8-original"></i>
 						<p className="skills-box-text">Windows 10</p>
+					</div>
+				</div>
+				<hr />
+			</section>
+			<section>
+				<h2>My Experience</h2>
+				<div className="timeline">
+					<div className="timeline-item">
+						<div className="timeline-marker"></div>
+						<div className="timeline-item-content">
+							<p className="timeline-item-content-date">June 2021 - {getDate()}</p>
+							<p className="timeline-item-content-desc">Full-stack Web Developer at <a href="https://www.pja.edu.pl/en/" target="_blank">ModernCar</a></p>
+						</div>
+					</div>
+					<div className="timeline-item">
+						<div className="timeline-marker"></div>
+						<div className="timeline-item-content">
+							<p className="timeline-item-content-date">June 2020 - October 2020</p>
+							<p className="timeline-item-content-desc">Full-stack Web Developer at DK Parkiet</p>
+						</div>
+					</div>
+					<div className="timeline-item">
+						<div className="timeline-marker"></div>
+						<div className="timeline-item-content">
+							<p className="timeline-item-content-date">July 2018 - December 2018</p>
+							<p className="timeline-item-content-desc">Full-stack Web Developer at SKKS</p>
+						</div>
+					</div>
+					<div className="timeline-item">
+						<div className="timeline-marker with-icon">
+							<i className="fas fa-flag"></i>
+						</div>
+						<div className="timeline-item-content">
+							<p className="timeline-item-content-date">October 2017</p>
+							<p className="timeline-item-content-desc">Started studying Computer Science at <a href="https://www.pja.edu.pl/en/" target="_blank">PJAIT</a></p>
+						</div>
 					</div>
 				</div>
 			</section>

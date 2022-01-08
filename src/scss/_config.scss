@@ -10,7 +10,7 @@ $footer-height: 70px;
 }
 
 @mixin media-md {
-	@media screen and (max-width: 840px) {
+	@media screen and (max-width: 860px) {
 		@content;
 	}
 }
