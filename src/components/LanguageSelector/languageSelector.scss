@@ -1,0 +1,68 @@
+@use '@/styles/abstracts/' as *;
+
+.language-select {
+  position: relative;
+
+  .select {
+    border: 1px solid $transparent;
+    border-radius: 8px;
+    width: 55px;
+    font-size: 14px;
+    font-weight: 500;
+    user-select: none;
+
+    &:not(.mock) {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      border-color: rgba($font-color, 0.8);
+      color: rgba($font-color, 0.8);
+      overflow: hidden;
+      transition: height $animation-fast;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid $font-color;
+        color: $font-color;
+      }
+
+      &.opened {
+        height: 70px;
+      }
+    }
+
+    &__placeholder {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 4px 10px;
+
+      &__icon {
+        font-size: 10px;
+        transition: transform $animation-fast;
+
+        &.opened {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &__divider {
+      background-color: $font-color;
+      border: none;
+      height: 1px;
+      margin-inline: 8px;
+    }
+
+    &__options {
+      &:hover {
+        background-color: $color-dark-2;
+      }
+
+      &__entry {
+        text-align: center;
+        padding-block: 4px;
+      }
+    }
+  }
+}

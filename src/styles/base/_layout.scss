@@ -1,0 +1,21 @@
+@use '../abstracts/' as *;
+
+body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-primary;
+  @include font-base;
+  @include font-m;
+
+  main {
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 2rem;
+  }
+}

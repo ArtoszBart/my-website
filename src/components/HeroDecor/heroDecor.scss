@@ -1,0 +1,63 @@
+@use '@/styles/abstracts/' as *;
+
+$line-sizes: (
+  xs: 10px,
+  s: 40px,
+  m: 56px,
+  l: 60px,
+  xl: 94px,
+  xxl: 152px,
+);
+
+$line-colors: (
+  'purple': linear-gradient(to right, $color-pink, $color-blue-2),
+  'orange': linear-gradient(to right, $color-yellow, $color-red),
+  'green': linear-gradient(to right, $color-blue-1, $color-green),
+  'gray': $color-dark-2,
+);
+
+$decor-amination-duration: 0.9s;
+$line-amination-duration: 1s;
+$line-animation-delay-start: 0.7s;
+$line-animation-delay-step: 0.3s;
+
+.hero-decor {
+  animation: fadeInAnimation $decor-amination-duration $easing-standard forwards;
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-block: 12px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 8px;
+    height: clamp(5px, 1.3vh, 10px);
+  }
+
+  &__tab {
+    margin-left: 2rem;
+  }
+
+  &__line {
+    border-radius: 2px;
+
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: scaleUpRightAnimation $line-amination-duration $easing-standard
+      forwards;
+
+    @for $i from 1 through 30 {
+      &:nth-child(#{$i}) {
+        animation-delay: $line-animation-delay-start +
+          ($i * $line-animation-delay-step);
+      }
+    }
+
+    @include data-variants(size, $line-sizes, width);
+    @include data-variants(color, $line-colors, background);
+  }
+}

@@ -1,0 +1,73 @@
+@use '../styles/abstracts/' as *;
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  max-width: 1600px;
+  width: 100%;
+  @include media-xl {
+    width: 70vw;
+  }
+
+  &__title {
+    font-size: clamp(32px, min(5vw, 5vh), 48px);
+    line-height: initial;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    @include font-mono;
+  }
+
+  &__right {
+    align-self: flex-end;
+    flex-shrink: 0;
+  }
+
+  &__image {
+    display: none;
+    pointer-events: none;
+    user-select: none;
+    @include media-md {
+      width: auto;
+      height: min(85vw, 85vh);
+      display: flex;
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      transition: all 1.2s $easing-hero;
+      filter: blur(0);
+      transition-delay: 0.4s;
+    }
+
+    @include media-lg {
+      width: auto;
+      height: 85vh;
+    }
+  }
+}
+
+.socials {
+  position: absolute;
+  top: 70vh;
+  right: 10vw;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 24px;
+
+  &__button {
+    display: flex;
+    padding: 8px;
+    background: linear-gradient(to bottom, $color-purple-1, $color-purple-2);
+    border-radius: 8px;
+    transition: transform $animation-fast;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

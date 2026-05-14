@@ -1,0 +1,7 @@
+@mixin data-variants($attribute, $map, $property) {
+  @each $key, $value in $map {
+    &[data-#{$attribute}='#{$key}'] {
+      #{$property}: $value;
+    }
+  }
+}

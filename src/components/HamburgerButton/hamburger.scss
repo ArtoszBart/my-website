@@ -1,0 +1,57 @@
+@use '../../styles/abstracts/' as *;
+
+$button-size: 32px;
+$bars-gap: 7px;
+$bar-width: 22px;
+$bar-height: 2px;
+
+@mixin bar-style {
+  position: absolute;
+  width: $bar-width;
+  height: $bar-height;
+  background: $font-color;
+  border-radius: 2px;
+  transition: transform $animation;
+}
+
+.menu-btn {
+  position: relative;
+  cursor: pointer;
+  width: $button-size;
+  aspect-ratio: 1 / 1;
+
+  @include media-md {
+    display: none;
+  }
+
+  &__icon {
+    @include bar-style;
+    left: calc($button-size / 2 - $bar-width / 2);
+    top: calc($button-size / 2 - $bar-height / 2);
+
+    &::before {
+      @include bar-style;
+      content: '';
+      top: -$bars-gap;
+    }
+
+    &::after {
+      @include bar-style;
+      content: '';
+      top: $bars-gap;
+    }
+
+    &--opened {
+      transform: rotate(-180deg);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &::after {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+    }
+  }
+}

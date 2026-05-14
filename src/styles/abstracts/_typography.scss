@@ -1,0 +1,93 @@
+@use './colors' as *;
+
+@mixin font-base {
+  color: $font-color;
+  font-family: var(--font-plus-jakarta-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin font-mono {
+  font-family: var(--font-fira-code);
+}
+
+@mixin font-header-1 {
+  font-weight: 700;
+  font-size: clamp(42px, 6vw, 64px);
+  line-height: 120%;
+}
+
+@mixin font-header-1-seconday {
+  font-weight: 500;
+  font-size: clamp(18px, 3vw, 28px);
+  line-height: 130%;
+}
+
+@mixin font-header-2 {
+  font-weight: 600;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 120%;
+}
+
+@mixin font-header-3 {
+  font-weight: 500;
+  font-size: clamp(18px, 3vw, 28px);
+  line-height: 130%;
+}
+
+@mixin font-header-3-large {
+  font-weight: 500;
+  font-size: clamp(28px, 3vw, 32px);
+  line-height: 130%;
+}
+
+@mixin font-secondary {
+  font-weight: 400;
+  font-size: clamp(18px, 3vw, 22px);
+  line-height: 130%;
+}
+
+@mixin font-accent {
+  font-weight: 500;
+  font-size: clamp(18px, 3vw, 24px);
+  line-height: 130%;
+}
+
+@mixin font-l {
+  font-weight: 300;
+  font-size: clamp(16px, 2.5vw, 18px);
+  line-height: 150%;
+}
+
+@mixin font-m {
+  font-weight: 300;
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 150%;
+}
+
+@mixin font-s {
+  font-weight: 300;
+  font-size: clamp(12px, 1.8vw, 14px);
+  line-height: 150%;
+}
+
+@mixin font-xs {
+  font-weight: 400;
+  font-size: clamp(10px, 1.5vw, 12px);
+  line-height: 150%;
+}
+
+@mixin font-xxs {
+  font-weight: 500;
+  font-size: clamp(10px, 1.5vw, 12px);
+  line-height: 140%;
+}
+
+@mixin font-button {
+  font-weight: 500;
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 140%;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
