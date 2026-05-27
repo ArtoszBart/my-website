@@ -13,6 +13,7 @@ export default function Home() {
             key={social.url}
             href={social.url}
             className='socials__button'
+            aria-label={social.label}
             target='_blank'
             rel='noopener noreferrer'
           >

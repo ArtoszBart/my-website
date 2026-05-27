@@ -48,7 +48,12 @@ export default function Header() {
         <ul className='socials-nav'>
           {SOCIALS.map((social) => (
             <li key={social.url}>
-              <Link href={social.url} target='_blank' rel='noopener noreferrer'>
+              <Link
+                href={social.url}
+                aria-label={social.label}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 {social.icon}
               </Link>
             </li>
