@@ -16,6 +16,8 @@ const firaCode = Fira_Code({
 
 export const metadata: Metadata = {
   title: 'Bartosz Art',
+  description:
+    'Bartosz Art — Full-Stack Developer and Software Engineer focused on building modern, high-performance, user-centered applications and systems.',
 };
 
 export default function RootLayout({
