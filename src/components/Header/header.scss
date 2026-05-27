@@ -53,20 +53,26 @@ header {
       border-bottom: 1px solid rgba($color-gray, 0.4);
     }
 
+    .main-nav {
+      padding-bottom: 1rem;
+    }
+
     .socials-nav {
       font-size: 1.2rem;
       display: flex;
+      margin-bottom: 1rem;
     }
 
     .main-nav a,
     .socials-nav a,
-    .aside-nav a {
+    .actions-nav a {
       position: relative;
       color: $font-color;
       padding-inline: 1rem;
       margin-bottom: 1rem;
       display: inline-flex;
       color: rgba($font-color, 0.8);
+      transition: color $animation;
 
       &::after {
         content: '';
@@ -76,7 +82,7 @@ header {
         width: 0%;
         height: 1px;
         background-color: rgba($font-color, 0.8);
-        transition: all $animation;
+        transition: width $animation;
         transform: translateX(-50%);
       }
 
@@ -125,9 +131,13 @@ header {
         border-bottom: none;
       }
 
+      .main-nav {
+        padding-bottom: 0;
+      }
+
       .main-nav a,
       .socials-nav a,
-      .aside-nav a {
+      .actions-nav a {
         position: relative;
         margin-bottom: 0;
       }
