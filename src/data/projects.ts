@@ -9,7 +9,7 @@ export const PROJECTS: Project[] = [
     link: 'https://bujnicka-dent.pl/',
     repositoryLink: 'https://github.com/ArtoszBart/bujnicka-dent',
     snippet:
-      'System zarządzania gabinetem stomatologicznym składający się z aplikacji webowej, mobilnej, REST API i bazy danych. Obsługuje rezerwację wizyt, harmonogramy pracy, powiadomienia oraz procesy administracyjne. Projekt został wdrożony na Azure z naciskiem na bezpieczeństwo i ochronę danych.',
+      'Kompleksowy system zarządzania gabinetem stomatologicznym ze szczególnym naciskiem na bezpieczeństwo i ochronę danych. Umożliwia rezerwację wizyt online, zarządzanie harmonogramami pracy, obsługę powiadomień oraz procesów administracyjnych. Rozwiązanie zostało wdrożone i wspiera codzienną pracę gabinetu.',
     scope: [SCOPE.WEB, SCOPE.MOBILE, SCOPE.SERVER, SCOPE.DB],
     techstack: [
       TECH.REACT,
