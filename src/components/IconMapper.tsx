@@ -1,6 +1,13 @@
 import { SCOPE, TECH } from '@/types/project';
 import { DiMsqlServer } from 'react-icons/di';
-import { FaHtml5, FaJs, FaNodeJs, FaReact, FaSass } from 'react-icons/fa6';
+import {
+  FaCss3,
+  FaHtml5,
+  FaJs,
+  FaNodeJs,
+  FaReact,
+  FaSass,
+} from 'react-icons/fa6';
 import {
   HiOutlineCircleStack,
   HiOutlineDevicePhoneMobile,
@@ -73,6 +80,11 @@ export const TECH_ICONS: Record<TECH, TechIconMeta> = {
     icon: <FaHtml5 aria-label='HTML' />,
     label: 'HTML',
     url: 'https://azure.microsoft.com',
+  },
+  [TECH.CSS]: {
+    icon: <FaCss3 aria-label='CSS' />,
+    label: 'CSS',
+    url: 'https://developer.mozilla.org/docs/Web/CSS',
   },
   [TECH.SCSS]: {
     icon: <FaSass aria-label='SCSS' />,

@@ -15,6 +15,7 @@ export enum TECH {
   JAVA_SCRIPT = 'js',
   AZURE = 'azure',
   HTML = 'html',
+  CSS = 'css',
   SCSS = 'scss',
 }
 

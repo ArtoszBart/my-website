@@ -25,4 +25,18 @@ export const PROJECTS: Project[] = [
     date: new Date(Date.UTC(2023, 8, 1)),
     rating: 10,
   },
+  {
+    title: 'ModernCar',
+    thumbnail: `${process.env.NEXT_PUBLIC_CDN_URL}/modern-car.webp`,
+    blurThumbnail:
+      'data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQBACdASogABIAPzmGuVOvKSWisAgB4CcJYwC90CKT+SMmEtNAUTxj7NKAAP6ig1XgQo/hN/UllTP7SNc0sTw+dw/LGTyJ39UY5y7BX42bBlg1XcDzQrp0biVw11Qugechyk6h4GXlzFluQFQoAA==',
+    link: 'https://modern-car.bartart.dev/',
+    repositoryLink: 'https://github.com/ArtoszBart/modern-car',
+    snippet:
+      'Komercyjna strona internetowa dla studia detailingu samochodowego specjalizującego się w pielęgnacji, zabezpieczaniu i personalizacji pojazdów. Projekt został zrealizowany w czystym HTML, CSS i JavaScript, z naciskiem na atrakcyjną prezentację usług, płynne animacje oraz pełną responsywność na urządzeniach mobilnych i desktopowych.',
+    scope: [SCOPE.WEB],
+    techstack: [TECH.HTML, TECH.CSS, TECH.JAVA_SCRIPT],
+    date: new Date(Date.UTC(2021, 1, 1)),
+    rating: 7,
+  },
 ];
