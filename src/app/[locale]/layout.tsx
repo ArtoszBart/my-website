@@ -1,5 +1,6 @@
 import '@/styles/main.scss';
 
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Toaster from '@/components/Toaster';
 import { routing } from '@/i18n/routing';
@@ -59,6 +60,7 @@ export default async function RootLayout({ children, params }: Props) {
         <Providers>
           <Header />
           {children}
+          <Footer />
         </Providers>
         <Toaster />
       </body>

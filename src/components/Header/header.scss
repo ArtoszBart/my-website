@@ -1,13 +1,13 @@
 @use '../../styles/abstracts/' as *;
 
-header {
+.header {
   position: fixed;
   width: 100%;
   z-index: 10;
   border-bottom: 1px solid rgba($color-gray, 0.25);
   backdrop-filter: blur(6px);
 
-  .header-wrapper {
+  &-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,23 +17,15 @@ header {
     height: $header-height;
   }
 
-  .header__logo {
+  &__logo {
     display: none;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 20px;
-    transition: transform $animation;
 
     &--mobile {
       display: initial;
     }
-
-    &:hover {
-      transform: scale(1.05);
-    }
   }
 
-  nav {
+  &__navigation {
     position: fixed;
     top: 0;
     right: 0;
@@ -59,45 +51,18 @@ header {
     }
 
     .main-nav {
-      padding-bottom: 1rem;
-    }
-
-    .socials-nav {
-      font-size: 1.2rem;
-      display: flex;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     .main-nav a,
-    .socials-nav a,
-    .actions-nav a {
-      position: relative;
-      color: $font-color;
+    .socials-nav a {
       padding-inline: 1rem;
       margin-bottom: 1rem;
-      display: inline-flex;
-      color: rgba($font-color, 0.8);
-      transition: color $animation;
+    }
 
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -8px;
-        left: 50%;
-        width: 0%;
-        height: 1px;
-        background-color: rgba($font-color, 0.8);
-        transition: width $animation;
-        transform: translateX(-50%);
-      }
-
-      &:hover {
-        color: $font-color;
-
-        &::after {
-          width: 100%;
-        }
-      }
+    .socials-nav ul {
+      font-size: 1.2rem;
+      display: flex;
     }
   }
 
@@ -111,8 +76,8 @@ header {
 }
 
 @include media-md {
-  header {
-    .header__logo {
+  .header {
+    &__logo {
       display: initial;
 
       &--mobile {
@@ -125,7 +90,7 @@ header {
       min-width: fit-content;
     }
 
-    nav {
+    &__navigation {
       position: static;
       height: auto;
       transform: none;
@@ -142,19 +107,14 @@ header {
         border-bottom: none;
       }
 
-      .main-nav {
-        padding-bottom: 0;
-      }
-
-      .main-nav a,
-      .socials-nav a,
-      .actions-nav a {
-        position: relative;
-        margin-bottom: 0;
-      }
-
-      .main-nav {
+      .main-nav,
+      .actions-nav {
         display: flex;
+        margin-bottom: 0;
+
+        a {
+          margin-bottom: 0;
+        }
       }
 
       .socials-nav {

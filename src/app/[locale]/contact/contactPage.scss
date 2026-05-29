@@ -5,7 +5,7 @@
   margin-top: 4rem;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  height: 250px;
 
   @include media-sm {
     justify-content: space-between;

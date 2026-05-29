@@ -1,0 +1,36 @@
+@use '../../styles/abstracts/' as *;
+
+nav {
+  a {
+    position: relative;
+    color: $font-color;
+    display: inline-flex;
+    color: rgba($font-color, 0.8);
+    transition: color $animation;
+    text-transform: uppercase;
+
+    @include media-md {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      width: 0%;
+      height: 1px;
+      background-color: rgba($font-color, 0.8);
+      transition: width $animation;
+      transform: translateX(-50%);
+    }
+
+    &:hover {
+      color: $font-color;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}

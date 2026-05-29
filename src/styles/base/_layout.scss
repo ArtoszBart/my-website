@@ -8,9 +8,9 @@ body {
   background-color: $color-primary;
   @include font-base;
   @include font-m;
+  min-height: 100dvh;
 
   main {
-    height: 100dvh;
     max-width: max(60%, 1200px);
     width: 100%;
     display: flex;

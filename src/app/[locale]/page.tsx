@@ -16,9 +16,9 @@ export default function HomePage({ params }: Props) {
 
   return (
     <main id='home'>
-      <Socials />
-
       <div className='hero'>
+        <Socials />
+
         <div className='hero__left'>
           <HeroDecor>
             <h1 className='hero__title'>Bartosz Art</h1>
