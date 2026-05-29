@@ -106,17 +106,17 @@
       flex-direction: column;
       gap: 0.2rem;
 
+      &__title {
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+      }
+
       & > div {
         display: flex;
         align-items: center;
         gap: 0.5rem;
         flex-wrap: wrap;
-
-        span {
-          font-size: 12px;
-          letter-spacing: 0.4px;
-          text-transform: uppercase;
-        }
 
         svg {
           display: flex;

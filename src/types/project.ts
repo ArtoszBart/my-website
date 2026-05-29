@@ -23,7 +23,7 @@ export type Project = {
   thumbnail: string;
   blurThumbnail: string;
   title: string;
-  snippet: string;
+  translationKey: string;
   scope: SCOPE[];
   techstack: TECH[];
   link: string;

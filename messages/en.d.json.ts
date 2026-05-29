@@ -31,6 +31,15 @@ declare const messages: {
     "cms": "Content Management System",
     "server": "Server",
     "db": "Database"
+  },
+
+  "Projects": {
+    "bujnickaDent": {
+      "snippet": "A comprehensive dental practice management system with a strong focus on security and data protection. It enables online appointment booking, schedule management, notifications, and administrative workflows. The solution has been deployed and supports the clinic's daily operations."
+    },
+    "modernCar": {
+      "snippet": "A commercial website for an automotive detailing studio specializing in vehicle care, protection, and customization. Built using plain HTML, CSS, and JavaScript, with a strong emphasis on effective service presentation, smooth animations, and full responsiveness across mobile and desktop devices."
+    }
   }
 };
 export default messages;

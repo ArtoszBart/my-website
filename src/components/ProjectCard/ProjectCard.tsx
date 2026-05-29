@@ -1,3 +1,4 @@
+import { TranslationKey } from '@/data/projects';
 import { Project } from '@/types/project';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
@@ -16,6 +17,9 @@ type Props = {
 
 export default function ProjectCard({ project, isListLayout, index }: Props) {
   const t = useTranslations('ProjectsPage');
+  const tProjects = useTranslations(
+    `Projects.${project.translationKey as TranslationKey}`,
+  );
   const [loaded, setLoaded] = useState(false);
 
   return (
@@ -83,11 +87,13 @@ export default function ProjectCard({ project, isListLayout, index }: Props) {
             </a>
           </div>
         </div>
-        <p className='project-card__body__snippet'>{project.snippet}</p>
+        <p className='project-card__body__snippet'>{tProjects(`snippet`)}</p>
 
         <div className='project-card__body__tags'>
           <div>
-            <span>{t('scope')}:</span>
+            <span className='project-card__body__tags__title'>
+              {t('scope')}:
+            </span>
             {project.scope.map((scope, idx) => (
               <span
                 key={idx}
@@ -98,7 +104,9 @@ export default function ProjectCard({ project, isListLayout, index }: Props) {
             ))}
           </div>
           <div>
-            <span>{t('techstack')}:</span>
+            <span className='project-card__body__tags__title'>
+              {t('techstack')}:
+            </span>
             {project.techstack.map((tech, idx) => (
               <a
                 key={idx}

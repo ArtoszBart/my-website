@@ -22,11 +22,19 @@
     "techstack": "Technologie",
     "liveDemo": "Zobacz projekt",
     "repository": "Kod źródłowy",
-
     "web": "Strona internetowa",
     "mobile": "Aplikacja mobilna",
     "cms": "System zarządzania treścią",
     "server": "Serwer",
     "db": "Baza danych"
+  },
+
+  "Projects": {
+    "bujnickaDent": {
+      "snippet": "Kompleksowy system zarządzania gabinetem stomatologicznym ze szczególnym naciskiem na bezpieczeństwo i ochronę danych. Umożliwia rezerwację wizyt online, zarządzanie harmonogramami pracy, obsługę powiadomień oraz procesów administracyjnych. Rozwiązanie zostało wdrożone i wspiera codzienną pracę gabinetu."
+    },
+    "modernCar": {
+      "snippet": "Komercyjna strona internetowa dla studia detailingu samochodowego specjalizującego się w pielęgnacji, zabezpieczaniu i personalizacji pojazdów. Projekt został zrealizowany w czystym HTML, CSS i JavaScript, z naciskiem na atrakcyjną prezentację usług, płynne animacje oraz pełną responsywność na urządzeniach mobilnych i desktopowych."
+    }
   }
 }
