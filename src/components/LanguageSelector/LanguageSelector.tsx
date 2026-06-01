@@ -1,6 +1,6 @@
 'use client';
 
-import { LANGS } from '@/consts/langs';
+import { routing } from '@/i18n/routing';
 import clsx from 'clsx';
 import { FaChevronDown } from 'react-icons/fa6';
 import './languageSelector.scss';
@@ -31,8 +31,9 @@ export default function LanguageSelector() {
 
         <hr className='select__divider' />
         <div className='select__options'>
-          {LANGS.filter((opt) => opt !== hook.selectedValue).map(
-            (option, idx) => (
+          {routing.locales
+            .filter((opt) => opt !== hook.selectedValue)
+            .map((option, idx) => (
               <p
                 key={idx}
                 className='select__options__entry'
@@ -40,8 +41,7 @@ export default function LanguageSelector() {
               >
                 {option}
               </p>
-            ),
-          )}
+            ))}
         </div>
       </div>
     </div>

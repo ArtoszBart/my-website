@@ -1,13 +1,21 @@
+import { Locale, usePathname, useRouter } from '@/i18n/routing';
+import { useLocale } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
 
 const useLanguageSelector = () => {
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+
   const [isOpened, setIsOpened] = useState(false);
-  const [selectedValue, setSelectedValue] = useState('PL');
+  const [selectedValue, setSelectedValue] = useState(locale);
 
   const selectRef = useRef<HTMLDivElement>(null);
 
-  const handleSelection = (newValue: string) => {
-    setSelectedValue(newValue);
+  const handleSelection = (newLocale: Locale) => {
+    setSelectedValue(newLocale);
+
+    router.replace({ pathname }, { locale: newLocale });
   };
 
   useEffect(() => {
