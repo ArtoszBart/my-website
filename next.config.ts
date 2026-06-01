@@ -1,11 +1,17 @@
 import type { NextConfig } from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
   images: {
     remotePatterns: [new URL(`${process.env.CDN_URL}/**`)],
   },
 };
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin({
+  experimental: {
+    createMessagesDeclaration: './messages/en.json',
+  },
+});
+
+export default withNextIntl(nextConfig);
