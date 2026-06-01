@@ -1,10 +1,20 @@
 import HeroDecor from '@/components/HeroDecor';
 import ImageLoader from '@/components/ImageLoader';
 import { SOCIALS } from '@/consts/socials';
+import { useTranslations } from '@/i18n/translations';
+import { Locale } from '@/i18n/types';
 import Link from 'next/link';
+import { Fragment, use } from 'react';
 import './mainPage.scss';
 
-export default function Home() {
+type Props = {
+  params: Promise<{ locale: Locale }>;
+};
+
+export default function Home({ params }: Props) {
+  const { locale } = use(params);
+  const t = useTranslations(locale, 'HomePage');
+
   return (
     <main>
       <nav className='socials'>
@@ -27,9 +37,12 @@ export default function Home() {
           <HeroDecor>
             <h1 className='hero__title'>Bartosz Art</h1>
             <p className='hero__subtitle'>
-              <span className='nowrap'>Full-Stack Developer</span> |{' '}
-              <span className='nowrap'>Software Engineer</span> |{' '}
-              <span className='nowrap'>Maritime Yacht Skipper</span>
+              {t.raw('roles').map((role: string, idx: number) => (
+                <Fragment key={idx}>
+                  {idx > 0 && ' | '}
+                  <span className='nowrap'>{role}</span>
+                </Fragment>
+              ))}
             </p>
           </HeroDecor>
         </div>

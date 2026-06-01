@@ -1,4 +1,5 @@
-import { Locale, usePathname, useRouter } from '@/i18n/routing';
+import { usePathname, useRouter } from '@/i18n/routing';
+import { Locale } from '@/i18n/types';
 import { useLocale } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
 

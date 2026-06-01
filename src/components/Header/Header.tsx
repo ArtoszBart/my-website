@@ -1,8 +1,9 @@
 'use client';
 
 import { SOCIALS } from '@/consts/socials';
+import { Link } from '@/i18n/routing';
 import clsx from 'clsx';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import HamburgerButton from '../HamburgerButton';
 import LanguageSelector from '../LanguageSelector';
 import './header.scss';
@@ -10,6 +11,7 @@ import useHeader from './useHeader';
 
 export default function Header() {
   const hook = useHeader();
+  const t = useTranslations('Nav');
 
   return (
     <header className={clsx({ scrolled: hook.isScrolled })}>
@@ -25,22 +27,22 @@ export default function Header() {
         <ul className='main-nav'>
           <li>
             <Link href='/' onClick={hook.handleMenuItemClick}>
-              O mnie
+              {t('about')}
             </Link>
           </li>
           <li>
             <Link href='/' onClick={hook.handleMenuItemClick}>
-              Portfolio
+              {t('projects')}
             </Link>
           </li>
           <li>
             <Link href='/' onClick={hook.handleMenuItemClick}>
-              Oferta
+              {t('offer')}
             </Link>
           </li>
           <li>
             <Link href='/' onClick={hook.handleMenuItemClick}>
-              Kontakt
+              {t('contact')}
             </Link>
           </li>
         </ul>
@@ -48,14 +50,14 @@ export default function Header() {
         <ul className='socials-nav'>
           {SOCIALS.map((social) => (
             <li key={social.url}>
-              <Link
+              <a
                 href={social.url}
                 aria-label={social.label}
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 {social.icon}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

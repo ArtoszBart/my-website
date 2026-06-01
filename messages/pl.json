@@ -1,0 +1,19 @@
+{
+  "Metadata": {
+    "title": "Bartosz Art",
+    "description": "Bartosz Art — Full-Stack Developer i Software Engineer tworzący nowoczesne, wydajne aplikacje i systemy zorientowane na użytkownika."
+  },
+  "Nav": {
+    "about": "O mnie",
+    "projects": "Projekty",
+    "offer": "Oferta",
+    "contact": "Kontakt"
+  },
+  "HomePage": {
+    "roles": [
+      "Full-Stack Developer",
+      "Inżynier Oprogramowania",
+      "Jachtowy Sternik Morski"
+    ]
+  }
+}

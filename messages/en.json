@@ -1,0 +1,19 @@
+{
+  "Metadata": {
+    "title": "Bartosz Art",
+    "description": "Bartosz Art — Full-Stack Developer and Software Engineer focused on building modern, high-performance, user-centered applications and systems."
+  },
+  "Nav": {
+    "about": "About",
+    "projects": "Projects",
+    "offer": "Services",
+    "contact": "Contact"
+  },
+  "HomePage": {
+    "roles": [
+      "Full-Stack Developer",
+      "Software Engineer",
+      "Maritime Yacht Skipper"
+    ]
+  }
+}
