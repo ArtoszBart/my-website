@@ -83,7 +83,7 @@ export default function ProjectCard({ project, isListLayout, index }: Props) {
             </a>
           </div>
         </div>
-        <p className='project-card__body__snippet'>{project.content}</p>
+        <p className='project-card__body__snippet'>{project.snippet}</p>
 
         <div className='project-card__body__tags'>
           <div>

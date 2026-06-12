@@ -1,6 +1,6 @@
 import { SCOPE, TECH } from '@/types/project';
 import { DiMsqlServer } from 'react-icons/di';
-import { FaJs, FaNodeJs, FaReact } from 'react-icons/fa6';
+import { FaHtml5, FaJs, FaNodeJs, FaReact, FaSass } from 'react-icons/fa6';
 import {
   HiOutlineCircleStack,
   HiOutlineDevicePhoneMobile,
@@ -9,6 +9,7 @@ import {
   HiOutlineServerStack,
 } from 'react-icons/hi2';
 import { SiExpo, SiExpress } from 'react-icons/si';
+import { VscAzure } from 'react-icons/vsc';
 
 type ScopeIconMeta = {
   icon: React.ReactNode;
@@ -62,5 +63,20 @@ export const TECH_ICONS: Record<TECH, TechIconMeta> = {
     icon: <FaJs aria-label='JavaScript' />,
     label: 'JavaScript',
     url: 'https://developer.mozilla.org/docs/Web/JavaScript',
+  },
+  [TECH.AZURE]: {
+    icon: <VscAzure aria-label='Azure' />,
+    label: 'Azure',
+    url: 'https://azure.microsoft.com',
+  },
+  [TECH.HTML]: {
+    icon: <FaHtml5 aria-label='HTML' />,
+    label: 'HTML',
+    url: 'https://azure.microsoft.com',
+  },
+  [TECH.SCSS]: {
+    icon: <FaSass aria-label='SCSS' />,
+    label: 'SCSS',
+    url: 'https://azure.microsoft.com',
   },
 };

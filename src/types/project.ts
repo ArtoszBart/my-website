@@ -13,13 +13,16 @@ export enum TECH {
   MSSQL = 'mssql',
   EXPO = 'expo',
   JAVA_SCRIPT = 'js',
+  AZURE = 'azure',
+  HTML = 'html',
+  SCSS = 'scss',
 }
 
 export type Project = {
   thumbnail: string;
   blurThumbnail: string;
   title: string;
-  content: string;
+  snippet: string;
   scope: SCOPE[];
   techstack: TECH[];
   link: string;
