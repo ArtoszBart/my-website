@@ -1,0 +1,51 @@
+@use '../../styles/abstracts/' as *;
+
+.layout-toggle {
+  display: flex;
+  visibility: hidden;
+
+  @include media-xl {
+    visibility: visible;
+
+    &__button {
+      position: relative;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgba($font-color, 0.6);
+      transition: color $animation;
+
+      &--active {
+        color: rgba($font-color, 1);
+      }
+
+      svg {
+        font-size: 1.2rem;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 0%;
+        height: 1px;
+        background-color: rgba($font-color, 0.8);
+        transition: width $animation;
+        transform: translateX(-50%);
+      }
+
+      &:not(&--active) {
+        &:hover {
+          color: $font-color;
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

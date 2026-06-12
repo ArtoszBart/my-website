@@ -4,7 +4,8 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const nextConfig: NextConfig = {
   reactCompiler: true,
   images: {
-    remotePatterns: [new URL(`${process.env.CDN_URL}/**`)],
+    qualities: [25, 50, 75, 100],
+    remotePatterns: [new URL(`${process.env.NEXT_PUBLIC_CDN_URL}/**`)],
   },
 };
 

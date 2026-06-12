@@ -1,0 +1,34 @@
+@use '../../styles/abstracts/' as *;
+
+[data-tooltip] {
+  @media (pointer: fine) {
+    &::before {
+      content: attr(data-tooltip);
+      position: fixed;
+      left: var(--mouse-x);
+      top: var(--mouse-y);
+      transform: translate(12px, 70%);
+      background-color: $color-purple-2;
+      color: $color-light;
+      font-size: 12px;
+      white-space: nowrap;
+      padding: 4px 8px;
+      border-radius: 4px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity $animation;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+}
+
+.tooltip-flip [data-tooltip] {
+  @media (pointer: fine) {
+    &::before {
+      transform: translate(calc(-100% - 4px), 70%);
+    }
+  }
+}

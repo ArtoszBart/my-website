@@ -16,7 +16,7 @@ export default function Home({ params }: Props) {
   const t = useTranslations(locale, 'HomePage');
 
   return (
-    <main>
+    <main id='home'>
       <nav className='socials'>
         {SOCIALS.map((social) => (
           <Link
@@ -50,7 +50,7 @@ export default function Home({ params }: Props) {
         <div className='hero__right'>
           <ImageLoader
             className='hero__image'
-            src={`${process.env.CDN_URL}/bartosz-art-hero.webp`}
+            src={`${process.env.NEXT_PUBLIC_CDN_URL}/bartosz-art-hero.webp`}
             alt='Bartosz Art'
             width={890}
             height={1414}

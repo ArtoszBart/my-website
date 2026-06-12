@@ -18,6 +18,19 @@ declare const messages: {
       "Software Engineer",
       "Maritime Yacht Skipper"
     ]
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "scope": "Scope",
+    "techstack": "Tech Stack",
+    "liveDemo": "Live Demo",
+    "repository": "Source Code",
+
+    "web": "Website",
+    "mobile": "Mobile Application",
+    "cms": "Content Management System",
+    "server": "Server",
+    "db": "Database"
   }
 };
 export default messages;

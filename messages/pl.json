@@ -15,5 +15,18 @@
       "Inżynier Oprogramowania",
       "Jachtowy Sternik Morski"
     ]
+  },
+  "ProjectsPage": {
+    "title": "Projekty",
+    "scope": "Zakres",
+    "techstack": "Technologie",
+    "liveDemo": "Zobacz projekt",
+    "repository": "Kod źródłowy",
+
+    "web": "Strona internetowa",
+    "mobile": "Aplikacja mobilna",
+    "cms": "System zarządzania treścią",
+    "server": "Serwer",
+    "db": "Baza danych"
   }
 }

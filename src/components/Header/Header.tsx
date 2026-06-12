@@ -31,7 +31,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href='/' onClick={hook.handleMenuItemClick}>
+            <Link href='/projects' onClick={hook.handleMenuItemClick}>
               {t('projects')}
             </Link>
           </li>

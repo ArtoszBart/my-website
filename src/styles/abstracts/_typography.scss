@@ -53,19 +53,19 @@
 }
 
 @mixin font-l {
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(16px, 2.5vw, 18px);
   line-height: 150%;
 }
 
 @mixin font-m {
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(14px, 2vw, 16px);
   line-height: 150%;
 }
 
 @mixin font-s {
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(12px, 1.8vw, 14px);
   line-height: 150%;
 }

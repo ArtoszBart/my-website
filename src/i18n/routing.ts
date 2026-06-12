@@ -7,9 +7,9 @@ export const routing = defineRouting({
   localePrefix: 'as-needed',
   pathnames: {
     '/': '/',
-    '/about': {
-      en: '/about',
-      pl: '/o-nas',
+    '/projects': {
+      en: '/projects',
+      pl: '/projekty',
     },
   },
   localeCookie: {

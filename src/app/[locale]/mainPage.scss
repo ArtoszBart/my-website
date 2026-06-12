@@ -1,5 +1,9 @@
 @use '../../styles/abstracts/' as *;
 
+main#home {
+  padding-top: 0;
+}
+
 .hero {
   position: relative;
   display: flex;
@@ -15,6 +19,9 @@
   &__title {
     font-size: clamp(32px, min(5vw, 5vh), 48px);
     line-height: initial;
+    font-weight: 700;
+    text-transform: none;
+    margin-bottom: 0;
   }
 
   &__subtitle {

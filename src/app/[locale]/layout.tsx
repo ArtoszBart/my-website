@@ -4,10 +4,11 @@ import { Locale } from '@/i18n/types';
 import '@/styles/main.scss';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
-import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Fira_Code, Plus_Jakarta_Sans } from 'next/font/google';
 import { notFound } from 'next/navigation';
+import Providers from './providers';
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin-ext'],
@@ -43,9 +44,7 @@ type Props = {
 
 export default async function RootLayout({ children, params }: Props) {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
+  if (!hasLocale(routing.locales, locale)) notFound();
 
   setRequestLocale(locale);
 
@@ -55,10 +54,10 @@ export default async function RootLayout({ children, params }: Props) {
       className={clsx(plusJakartaSans.variable, firaCode.variable)}
     >
       <body>
-        <NextIntlClientProvider>
+        <Providers>
           <Header />
           {children}
-        </NextIntlClientProvider>
+        </Providers>
       </body>
     </html>
   );

@@ -1,0 +1,27 @@
+@use '../../../styles/abstracts/' as *;
+
+.projects-toolbar {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1rem, 2vw, 2rem);
+
+  @include media-md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-xl {
+    grid-template-columns: repeat(3, 1fr);
+
+    &--list {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
+}
