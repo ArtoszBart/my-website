@@ -38,7 +38,7 @@ export default function ProjectCard({ project, isListLayout, index }: Props) {
       <a
         className='project-card__thumbnail'
         aria-label={t('liveDemo')}
-        href={project.link}
+        href={project.link || project.repositoryLink}
         target='_blank'
         rel='noreferrer'
       >
@@ -67,24 +67,28 @@ export default function ProjectCard({ project, isListLayout, index }: Props) {
         <div className='project-card__body__header'>
           <h2 className='project-card__body__header__title'>{project.title}</h2>
           <div className='project-card__body__header__actions'>
-            <a
-              aria-label={t('liveDemo')}
-              data-tooltip={t('liveDemo')}
-              href={project.link}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <FaUpRightFromSquare />
-            </a>
-            <a
-              aria-label={t('repository')}
-              data-tooltip={t('repository')}
-              href={project.repositoryLink}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <FaGithub />
-            </a>
+            {project.link && (
+              <a
+                aria-label={t('liveDemo')}
+                data-tooltip={t('liveDemo')}
+                href={project.link}
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FaUpRightFromSquare />
+              </a>
+            )}
+            {project.repositoryLink && (
+              <a
+                aria-label={t('repository')}
+                data-tooltip={t('repository')}
+                href={project.repositoryLink}
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FaGithub />
+              </a>
+            )}
           </div>
         </div>
         <p className='project-card__body__snippet'>{tProjects(`snippet`)}</p>

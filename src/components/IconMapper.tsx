@@ -1,3 +1,6 @@
+import FramerMotionIcon from '@/assets/icons/framer-motion.svg';
+import TypeScriptIcon from '@/assets/icons/typescript.svg';
+import ZustandIcon from '@/assets/icons/zustand.svg';
 import { SCOPE, TECH } from '@/types/project';
 import { DiMsqlServer } from 'react-icons/di';
 import {
@@ -15,7 +18,14 @@ import {
   HiOutlineNewspaper,
   HiOutlineServerStack,
 } from 'react-icons/hi2';
-import { SiExpo, SiExpress } from 'react-icons/si';
+import { RiNextjsFill } from 'react-icons/ri';
+import {
+  SiExpo,
+  SiExpress,
+  SiLottiefiles,
+  SiStrapi,
+  SiZod,
+} from 'react-icons/si';
 import { VscAzure } from 'react-icons/vsc';
 
 type ScopeIconMeta = {
@@ -71,6 +81,11 @@ export const TECH_ICONS: Record<TECH, TechIconMeta> = {
     label: 'JavaScript',
     url: 'https://developer.mozilla.org/docs/Web/JavaScript',
   },
+  [TECH.TYPE_SCRIPT]: {
+    icon: <TypeScriptIcon aria-label='TypeScript' />,
+    label: 'TypeScript',
+    url: 'https://www.typescriptlang.org/',
+  },
   [TECH.AZURE]: {
     icon: <VscAzure aria-label='Azure' />,
     label: 'Azure',
@@ -89,6 +104,36 @@ export const TECH_ICONS: Record<TECH, TechIconMeta> = {
   [TECH.SCSS]: {
     icon: <FaSass aria-label='SCSS' />,
     label: 'SCSS',
-    url: 'https://azure.microsoft.com',
+    url: 'https://sass-lang.com/',
+  },
+  [TECH.NEXTJS]: {
+    icon: <RiNextjsFill aria-label='Next.js' />,
+    label: 'Next.js',
+    url: 'https://nextjs.org/',
+  },
+  [TECH.STRAPI]: {
+    icon: <SiStrapi aria-label='Strapi' style={{ padding: '1px' }} />,
+    label: 'Strapi',
+    url: 'https://strapi.io/',
+  },
+  [TECH.ZUSTAND]: {
+    icon: <ZustandIcon aria-label='Zustand' />,
+    label: 'Zustand',
+    url: 'https://zustand-demo.pmnd.rs/',
+  },
+  [TECH.ZOD]: {
+    icon: <SiZod aria-label='Zod' />,
+    label: 'Zod',
+    url: 'https://zod.dev/',
+  },
+  [TECH.FRAMER_MOTION]: {
+    icon: <FramerMotionIcon aria-label='Framer Motion' />,
+    label: 'Framer Motion',
+    url: 'https://motion.dev/',
+  },
+  [TECH.LOTTIE_FILES]: {
+    icon: <SiLottiefiles aria-label='LottieFiles' style={{ padding: '1px' }} />,
+    label: 'LottieFiles',
+    url: 'https://lottiefiles.com/',
   },
 };

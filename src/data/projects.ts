@@ -37,6 +37,28 @@ export const PROJECTS = [
     date: new Date(Date.UTC(2021, 1, 1)),
     rating: 7,
   },
+  {
+    title: 'KAM',
+    thumbnail: `${process.env.NEXT_PUBLIC_CDN_URL}/kamonline.webp`,
+    blurThumbnail:
+      'data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwBACdASogABIAPzWKuVOvKiWisBgMAeAmiWIAtOgR/Oa14L+UGmcFAlHWmvbjXUAA/hwd2DHTXa8AAlJB9D+etefuQaVaq56UfsGe3cAiZQcPcKgWtBf8o+nD3+ojTHtECA0gAAA=',
+    link: 'https://kamonline.pl/',
+    translationKey: 'kam',
+    scope: [SCOPE.WEB, SCOPE.CMS],
+    techstack: [
+      TECH.NEXTJS,
+      TECH.REACT,
+      TECH.STRAPI,
+      TECH.TYPE_SCRIPT,
+      TECH.SCSS,
+      TECH.ZUSTAND,
+      TECH.ZOD,
+      TECH.LOTTIE_FILES,
+      TECH.FRAMER_MOTION,
+    ],
+    date: new Date(Date.UTC(2025, 10, 1)),
+    rating: 9,
+  },
 ] as const satisfies readonly Project[];
 
 export type TranslationKey = (typeof PROJECTS)[number]['translationKey'];

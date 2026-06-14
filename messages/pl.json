@@ -35,6 +35,9 @@
     },
     "modernCar": {
       "snippet": "Komercyjna strona internetowa dla studia detailingu samochodowego specjalizującego się w pielęgnacji, zabezpieczaniu i personalizacji pojazdów. Projekt został zrealizowany w czystym HTML, CSS i JavaScript, z naciskiem na atrakcyjną prezentację usług, płynne animacje oraz pełną responsywność na urządzeniach mobilnych i desktopowych."
+    },
+    "kam": {
+      "snippet": "Nowoczesna strona internetowa dla biura rachunkowego wyposażona w system zarządzania treścią umożliwiający samodzielną edycję zawartości. Zaprojektowana z myślą o budowaniu zaufania, profesjonalnego wizerunku firmy, przejrzystej prezentacji usług oraz skutecznym pozyskiwaniu nowych klientów."
     }
   }
 }
