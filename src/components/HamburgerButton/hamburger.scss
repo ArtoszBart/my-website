@@ -11,7 +11,7 @@ $bar-height: 2px;
   height: $bar-height;
   background: $font-color;
   border-radius: 2px;
-  transition: transform $animation;
+  transition: $animation;
 }
 
 .menu-btn {
