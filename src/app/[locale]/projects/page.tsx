@@ -1,6 +1,6 @@
 'use client';
 
-import LayoutToggle, { useLayoutToogleStore } from '@/components/LayoutToggle';
+import LayoutToggle, { useLayoutToggleStore } from '@/components/LayoutToggle';
 import ProjectCard from '@/components/ProjectCard';
 import { PROJECTS } from '@/data/projects';
 import clsx from 'clsx';
@@ -8,7 +8,7 @@ import { useTranslations } from 'next-intl';
 import './projectsPage.scss';
 
 export default function ProjectsPage() {
-  const { isListView } = useLayoutToogleStore();
+  const { isListView } = useLayoutToggleStore();
   const t = useTranslations('ProjectsPage');
 
   return (

@@ -2,10 +2,10 @@ import clsx from 'clsx';
 import { BsGridFill } from 'react-icons/bs';
 import { FaListUl } from 'react-icons/fa6';
 import './layoutToggle.scss';
-import { useLayoutToogleStore } from './useLayoutToogleStore';
+import { useLayoutToggleStore } from './useLayoutToggleStore';
 
 export default function LayoutToggle() {
-  const { isListView, setIsListView } = useLayoutToogleStore();
+  const { isListView, setIsListView } = useLayoutToggleStore();
 
   return (
     <div className='layout-toggle'>
