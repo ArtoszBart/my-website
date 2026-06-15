@@ -1,11 +1,8 @@
 @use '../../styles/abstracts/' as *;
 
-.layout-toggle {
-  display: flex;
-  visibility: hidden;
-
-  @include media-xl {
-    visibility: visible;
+@include media-xl {
+  .layout-toggle {
+    display: flex;
 
     &__button {
       position: relative;

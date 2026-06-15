@@ -2,7 +2,6 @@
 
 body {
   position: relative;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,12 +10,19 @@ body {
   @include font-m;
 
   main {
+    height: 100dvh;
     max-width: max(60%, 1200px);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 2rem;
-    padding-top: 10rem;
+    padding-inline: 1rem;
+
+    &::before {
+      content: '';
+      position: relative;
+      min-height: $header-min-height;
+      height: $header-height;
+    }
   }
 }

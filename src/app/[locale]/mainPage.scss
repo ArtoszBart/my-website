@@ -5,14 +5,15 @@ main#home {
 }
 
 .hero {
+  flex-grow: 1;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
   max-width: 1600px;
   width: 100%;
-  @include media-xl {
+
+  @include media-xxl {
     width: 70vw;
   }
 
@@ -22,6 +23,7 @@ main#home {
     font-weight: 700;
     text-transform: none;
     margin-bottom: 0;
+    margin-top: 0;
   }
 
   &__subtitle {
@@ -38,9 +40,10 @@ main#home {
     display: none;
     pointer-events: none;
     user-select: none;
+
     @include media-md {
       width: auto;
-      height: min(85vw, 85vh);
+      height: min(80dvw, 80dvh);
       display: flex;
       opacity: 1;
       transform: translateX(0) scale(1);
@@ -58,8 +61,8 @@ main#home {
 
 .socials {
   position: absolute;
-  top: 70vh;
-  right: 10vw;
+  bottom: 10vh;
+  right: 5vw;
   z-index: 1;
   display: flex;
   flex-direction: column;
