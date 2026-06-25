@@ -1,0 +1,17 @@
+@use '../../styles/abstracts/' as *;
+
+.toaster {
+  top: 20dvh !important;
+
+  &__container {
+    max-width: max-content !important;
+    padding: 0.5rem 2rem !important;
+    background: linear-gradient(
+      45deg,
+      $color-purple-3,
+      $color-blue-1
+    ) !important;
+    color: $font-color !important;
+    font-weight: 300;
+  }
+}

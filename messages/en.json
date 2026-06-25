@@ -40,5 +40,54 @@
     "kam": {
       "snippet": "Modern website for an accounting firm featuring a content management system that enables independent content editing. Designed to build trust, strengthen the company's professional image, showcase services in a clear and accessible way, and support effective client acquisition."
     }
+  },
+
+  "Forms": {
+    "contactDetails": "Contact Details",
+    "ideaTitle": "Have an interesting idea?",
+    "ideaDescription": "Describe it below or simply ask a question.",
+    "message": "Describe your idea, project, or question",
+    "submit": "Send Form",
+    "removeFile": "Remove file",
+
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number (optional)",
+    "attachments": "Add attachments",
+    "dataProcessingConsent": "I consent to the processing of my personal data"
+  },
+
+  "FormStatuses": {
+    "loadingToast": "Training carrier pigeon...",
+    "successToast": "The pigeon made it! I'll get back to you soon.",
+    "validationErrorToast": "The pigeon refused takeoff due to invalid cargo.",
+    "generalErrorToast": "The pigeon went on strike. Please try again."
+  },
+
+  "ValidationErrors": {
+    "fullName": {
+      "required": "Please enter your full name.",
+      "min": "Full name must be at least {count, plural, one {# character} other {# characters}} long.",
+      "max": "Full name cannot exceed {count, plural, one {# character} other {# characters}}."
+    },
+    "email": {
+      "invalid": "Please enter a valid email address.",
+      "max": "Email address cannot exceed {count, plural, one {# character} other {# characters}}."
+    },
+    "phone": {
+      "invalid": "Please enter a valid phone number."
+    },
+    "message": {
+      "min": "Please provide more details about your project or inquiry.",
+      "max": "Message address cannot exceed {count, plural, one {# character} other {# characters}}."
+    },
+    "dataProcessingConsent": {
+      "required": "Please accept the data processing consent to continue."
+    },
+    "attachments": {
+      "maxCount": "You can upload up to {count, plural, one {# file} other {# files}}.",
+      "maxSize": "Each file must be smaller than {count, number} MB.",
+      "invalidType": "Unsupported file format. Please upload images, PDF, Office documents, text files, or archives."
+    }
   }
 }

@@ -1,5 +1,11 @@
-.image-loader--loading {
-  opacity: 0 !important;
-  transform: translateX(40px) scale(0.96) !important;
-  filter: blur(1px) !important;
+.image-loader {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  filter: blur(0);
+
+  &--loading {
+    opacity: 0 !important;
+    transform: translateX(40px) scale(0.96) !important;
+    filter: blur(1px) !important;
+  }
 }

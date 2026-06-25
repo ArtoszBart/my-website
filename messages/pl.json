@@ -39,5 +39,54 @@
     "kam": {
       "snippet": "Nowoczesna strona internetowa dla biura rachunkowego wyposażona w system zarządzania treścią umożliwiający samodzielną edycję zawartości. Zaprojektowana z myślą o budowaniu zaufania, profesjonalnego wizerunku firmy, przejrzystej prezentacji usług oraz skutecznym pozyskiwaniu nowych klientów."
     }
+  },
+
+  "Forms": {
+    "contactDetails": "Dane kontaktowe",
+    "ideaTitle": "Masz ciekawy pomysł?",
+    "ideaDescription": "Opisz go poniżej lub po prostu zadaj pytanie.",
+    "message": "Opisz swój pomysł, projekt lub pytanie",
+    "submit": "Wyślij formularz",
+    "removeFile": "Usuń plik",
+
+    "fullName": "Imię",
+    "email": "Adres e-mail",
+    "phone": "Numer telefonu (opcjonalnie)",
+    "attachments": "Dodaj załączniki",
+    "dataProcessingConsent": "Wyrażam zgodę na przetwarzanie moich danych osobowych"
+  },
+
+  "FormStatuses": {
+    "loadingToast": "Szkolenie gołębia pocztowego...",
+    "successToast": "Gołąb dotarł do celu! Odpowiem najszybciej jak to możliwe.",
+    "validationErrorToast": "Gołąb odmówił startu z powodu błędów w wiadomości.",
+    "generalErrorToast": "Gołąb ogłosił strajk. Spróbuj ponownie."
+  },
+
+  "ValidationErrors": {
+    "fullName": {
+      "required": "Podaj imię.",
+      "min": "Imię musi zawierać co najmniej {count, plural, one {# znak} few {# znaki} other {# znaków}}.",
+      "max": "Imię może zawierać maksymalnie {count, plural, one {# znak} few {# znaki} other {# znaków}}."
+    },
+    "email": {
+      "invalid": "Podaj prawidłowy adres e-mail.",
+      "max": "Adres e-mail może zawierać maksymalnie {count, plural, one {# znak} few {# znaki} other {# znaków}}."
+    },
+    "phone": {
+      "invalid": "Podaj prawidłowy numer telefonu."
+    },
+    "message": {
+      "min": "Opisz bardziej szczegółowo swój projekt lub pytanie.",
+      "max": "Wiadomość może zawierać maksymalnie {count, plural, one {# znak} few {# znaki} other {# znaków}}."
+    },
+    "dataProcessingConsent": {
+      "required": "Aby kontynuować, musisz wyrazić zgodę na przetwarzanie danych osobowych."
+    },
+    "attachments": {
+      "maxCount": "Możesz przesłać maksymalnie {count, plural, one {# plik} few {# pliki} other {# plików}}.",
+      "maxSize": "Każdy plik musi mieć mniej niż {count, number} MB.",
+      "invalidType": "Nieobsługiwany format pliku. Dozwolone są obrazy, pliki PDF, dokumenty Office, pliki tekstowe oraz archiwa."
+    }
   }
 }

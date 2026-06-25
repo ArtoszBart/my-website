@@ -1,0 +1,53 @@
+@use '../../../../styles/abstracts/' as *;
+
+.form__submit-button {
+  align-self: center;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 0.7rem 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background:
+    linear-gradient($color-primary) padding-box,
+    linear-gradient(30deg, $color-purple-3, $font-color, $color-purple-3)
+      border-box;
+  background-size:
+    100% 100%,
+    200% 100%;
+  background-position:
+    center,
+    0% 50%;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  transition: background-position $animation;
+
+  @include media-lg {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 5rem;
+  }
+
+  &:hover {
+    background-position:
+      center,
+      100% 50%;
+  }
+
+  &--disabled {
+    background:
+      linear-gradient($color-primary) padding-box,
+      linear-gradient($color-dark-2) border-box;
+    color: $color-gray;
+    cursor: not-allowed;
+  }
+
+  span,
+  svg {
+    user-select: none;
+  }
+
+  svg {
+    font-size: 0.9rem;
+  }
+}

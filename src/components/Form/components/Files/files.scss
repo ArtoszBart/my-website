@@ -1,0 +1,86 @@
+@use 'sass:color';
+@use '../../../../styles/abstracts/' as *;
+
+.form-input {
+  &:has(input[type='file']) {
+    position: relative;
+  }
+
+  input[type='file'] {
+    @include hidden;
+  }
+
+  &__upload-button {
+    width: fit-content;
+    border: 2px solid $color-purple-2;
+    border-radius: 8px;
+    padding: 0.5rem 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: $color-primary;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all $animation;
+    letter-spacing: 1.25px;
+
+    svg {
+      font-size: 0.9rem;
+    }
+
+    &:hover {
+      border-color: color.adjust($color-purple-2, $lightness: 10%);
+    }
+
+    &--error {
+      .form-input__error-message {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__files {
+    margin-top: 0.5rem;
+    margin-left: calc(0.7rem);
+    display: grid;
+    grid-template-columns: max-content min-content;
+    column-gap: 1rem;
+    row-gap: 0.2rem;
+
+    &__item {
+      display: contents;
+
+      span {
+        position: relative;
+        margin-left: 1rem;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: -1rem;
+          border-radius: 50%;
+          width: 0.4rem;
+          height: 0.4rem;
+          background: linear-gradient(45deg, $color-purple-3, $color-pink);
+          transform: translateY(-50%);
+        }
+      }
+
+      button {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+          color: $color-purple-3;
+          transform: scale(1.2) translateY(-7%);
+        }
+
+        svg {
+          transition: $animation-fast;
+        }
+      }
+    }
+  }
+}

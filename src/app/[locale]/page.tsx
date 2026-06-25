@@ -1,9 +1,8 @@
 import HeroDecor from '@/components/HeroDecor';
 import ImageLoader from '@/components/ImageLoader';
-import { SOCIALS } from '@/consts/socials';
+import Socials from '@/components/Socials/';
 import { useTranslations } from '@/i18n/translations';
-import { Locale } from '@/i18n/types';
-import Link from 'next/link';
+import type { Locale } from '@/i18n/types';
 import { Fragment, use } from 'react';
 import './mainPage.scss';
 
@@ -11,26 +10,13 @@ type Props = {
   params: Promise<{ locale: Locale }>;
 };
 
-export default function Home({ params }: Props) {
+export default function HomePage({ params }: Props) {
   const { locale } = use(params);
   const t = useTranslations(locale, 'HomePage');
 
   return (
     <main id='home'>
-      <nav className='socials'>
-        {SOCIALS.map((social) => (
-          <Link
-            key={social.url}
-            href={social.url}
-            className='socials__button'
-            aria-label={social.label}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            {social.icon}
-          </Link>
-        ))}
-      </nav>
+      <Socials />
 
       <div className='hero'>
         <div className='hero__left'>

@@ -1,7 +1,9 @@
-import Header from '@/components/Header';
-import { routing } from '@/i18n/routing';
-import { Locale } from '@/i18n/types';
 import '@/styles/main.scss';
+
+import Header from '@/components/Header';
+import Toaster from '@/components/Toaster';
+import { routing } from '@/i18n/routing';
+import type { Locale } from '@/i18n/types';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
@@ -58,6 +60,7 @@ export default async function RootLayout({ children, params }: Props) {
           <Header />
           {children}
         </Providers>
+        <Toaster />
       </body>
     </html>
   );

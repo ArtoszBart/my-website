@@ -1,0 +1,63 @@
+@use '../../../styles/abstracts/' as *;
+
+.contact-banner {
+  position: relative;
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  @include media-sm {
+    justify-content: space-between;
+  }
+
+  &__image-container {
+    display: none;
+
+    @include media-sm {
+      position: relative;
+      height: 150%;
+      display: initial;
+
+      img {
+        position: absolute;
+        left: 5vw;
+        z-index: -1;
+        height: 100%;
+        width: auto;
+        transform: scaleX(-1);
+        transition:
+          opacity 1s $easing-hero,
+          filter 1s $easing-hero;
+      }
+    }
+  }
+
+  .socials {
+    position: absolute;
+    left: 3vw;
+    right: auto;
+    bottom: 0;
+    font-size: 16px;
+  }
+
+  .hero-decor__body {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .contact__title {
+      font-size: 38px;
+      font-weight: 700;
+      text-transform: none;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    .contact__title,
+    .contact__subtitle {
+      text-align: right;
+    }
+  }
+}

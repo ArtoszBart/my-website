@@ -60,4 +60,22 @@ $line-animation-delay-step: 0.3s;
     @include data-variants(size, $line-sizes, width);
     @include data-variants(color, $line-colors, background);
   }
+
+  &--reversed {
+    .hero-decor {
+      &__row {
+        flex-direction: row-reverse;
+      }
+
+      &__tab {
+        margin-left: 0;
+        margin-right: 2rem;
+      }
+
+      &__line {
+        transform-origin: right;
+        animation-delay: 0s;
+      }
+    }
+  }
 }
