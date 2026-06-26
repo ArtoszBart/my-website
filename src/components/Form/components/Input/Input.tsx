@@ -7,12 +7,14 @@ import useInput, { type IuseInput } from './useInput';
 
 interface IProps extends IuseInput {
   placeholder?: string;
+  tabIndex: number;
   multiline?: boolean;
   required?: boolean;
 }
 
 export default function Input({
   name,
+  tabIndex,
   multiline,
   placeholder,
   required,
@@ -34,6 +36,7 @@ export default function Input({
         <textarea
           id={name}
           placeholder={placeholder}
+          tabIndex={tabIndex}
           aria-invalid={!!errorMessage}
           aria-describedby={errorMessage ? errorId : undefined}
           aria-required={required}
@@ -44,6 +47,7 @@ export default function Input({
           id={name}
           type='text'
           placeholder={placeholder}
+          tabIndex={tabIndex}
           aria-invalid={!!errorMessage}
           aria-describedby={errorMessage ? errorId : undefined}
           aria-required={required}

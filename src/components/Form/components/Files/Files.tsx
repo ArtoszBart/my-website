@@ -8,9 +8,10 @@ import useFiles, { type IuseFiles } from './useFiles';
 
 interface IProps extends IuseFiles {
   label: string;
+  tabIndex: number;
 }
 
-export default function Files({ name, label }: IProps) {
+export default function Files({ name, tabIndex, label }: IProps) {
   const { errorMessage, addFiles, removeFile, files } = useFiles({
     name,
   });
@@ -25,6 +26,7 @@ export default function Files({ name, label }: IProps) {
       <input
         id={name}
         type='file'
+        tabIndex={tabIndex}
         multiple
         onChange={addFiles}
         aria-invalid={!!errorMessage}

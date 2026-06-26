@@ -8,10 +8,11 @@ import useInput, { type IuseInput } from '../Input/useInput';
 
 interface IProps extends IuseInput {
   label: string;
+  tabIndex: number;
   required?: boolean;
 }
 
-export default function Checkbox({ name, label, required }: IProps) {
+export default function Checkbox({ name, label, tabIndex, required }: IProps) {
   const { inputProps, errorMessage } = useInput({ name });
   const errorId = `${name}-error`;
 
@@ -24,6 +25,7 @@ export default function Checkbox({ name, label, required }: IProps) {
       <input
         id={name}
         type='checkbox'
+        tabIndex={tabIndex}
         aria-invalid={!!errorMessage}
         aria-describedby={errorMessage ? errorId : undefined}
         aria-required={required}

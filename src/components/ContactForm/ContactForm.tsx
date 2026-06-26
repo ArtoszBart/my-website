@@ -29,22 +29,34 @@ export default function ContactForm() {
       </div>
 
       <div className='form__input-section'>
-        <Input name='fullName' placeholder={t('fullName')} required />
-        <Input name='email' placeholder={t('email')} required />
-        <Input name='phone' placeholder={t('phone')} />
+        <Input
+          name='fullName'
+          placeholder={t('fullName')}
+          tabIndex={1}
+          required
+        />
+        <Input name='email' placeholder={t('email')} tabIndex={2} required />
+        <Input name='phone' placeholder={t('phone')} tabIndex={3} />
       </div>
 
       <div className='form__section-title'>
         <h4>{t('ideaTitle')}</h4>
         <p>{t('ideaDescription')}</p>
       </div>
-      <Input name='message' placeholder={t('message')} multiline required />
+      <Input
+        name='message'
+        placeholder={t('message')}
+        tabIndex={4}
+        multiline
+        required
+      />
 
-      <Files name='attachments' label={t('attachments')} />
+      <Files name='attachments' label={t('attachments')} tabIndex={5} />
 
       <Checkbox
         name='dataProcessingConsent'
         label={t('dataProcessingConsent')}
+        tabIndex={6}
       />
     </Form>
   );
