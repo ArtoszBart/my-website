@@ -77,11 +77,11 @@
   @include media-lg {
     nav {
       margin-block: auto;
+      justify-self: flex-end;
     }
 
     &__navigation {
       flex-direction: row;
-      justify-self: flex-end;
     }
   }
 }
