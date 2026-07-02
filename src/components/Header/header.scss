@@ -64,14 +64,18 @@
       font-size: 1.2rem;
       display: flex;
     }
-  }
 
-  .actions-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-grow: 1;
+    .actions-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      flex-grow: 1;
+
+      a {
+        padding-inline: 1rem;
+      }
+    }
   }
 }
 
