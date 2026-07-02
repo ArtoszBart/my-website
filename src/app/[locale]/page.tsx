@@ -1,10 +1,11 @@
+import './mainPage.scss';
+
 import HeroDecor from '@/components/HeroDecor';
 import ImageLoader from '@/components/ImageLoader';
 import Socials from '@/components/Socials/';
 import { useTranslations } from '@/i18n/translations';
 import type { Locale } from '@/i18n/types';
 import { Fragment, use } from 'react';
-import './mainPage.scss';
 
 type Props = {
   params: Promise<{ locale: Locale }>;
@@ -26,7 +27,7 @@ export default function HomePage({ params }: Props) {
               {t.raw('roles').map((role: string, idx: number) => (
                 <Fragment key={idx}>
                   {idx > 0 && ' | '}
-                  <span className='nowrap'>{role}</span>
+                  <span className='no-wrap'>{role}</span>
                 </Fragment>
               ))}
             </p>
