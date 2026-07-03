@@ -16,6 +16,18 @@
       "Jachtowy Sternik Morski"
     ]
   },
+
+  "AboutPage": {
+    "title": "O mnie",
+    "about-me": [
+      "Jestem osobą, która lubi rozwiązywać problemy i tworzyć rozwiązania przynoszące realną wartość. Cenię przejrzystość, dobrze przemyślane rozwiązania technologiczne i dbałość o detale. Zawsze staram się zrozumieć potrzeby użytkowników i znaleźć rozwiązanie, które będzie nie tylko działać, ale również będzie intuicyjne, niezawodne i łatwe w dalszym rozwoju.",
+      "Najwięcej satysfakcji poza pracą daje mi żeglarstwo. Jako skipper odpowiadam nie tylko za prowadzenie jachtu, ale również za bezpieczeństwo i organizację rejsu. To doświadczenie nauczyło mnie odpowiedzialności, podejmowania decyzji pod presją i współpracy z ludźmi. Lubię także podróżować, poznawać nowe miejsca i szukać inspiracji poza ekranem komputera.",
+      "Wierzę, że najlepsze efekty są wynikiem cierpliwości, konsekwencji i dbałości o szczegóły. Dlatego nie szukam najprostszych rozwiązań, lecz takich, które będą przemyślane, trwałe i łatwe do utrzymania. Nieustannie rozwijam swoje umiejętności, ponieważ uważam, że dobra technologia to nie tylko znajomość narzędzi, ale przede wszystkim umiejętność rozwiązywania rzeczywistych problemów."
+    ],
+    "cv-button": "Pobierz CV",
+    "quote": "Potrzeba dwudziestu lat, by zbudować reputację, i pięciu minut, by ją zniszczyć."
+  },
+
   "ProjectsPage": {
     "title": "Projekty",
     "scope": "Zakres",

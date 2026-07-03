@@ -1,0 +1,74 @@
+@use '../../../styles/abstracts/' as *;
+
+main#about {
+  .about {
+    &__content {
+      margin-bottom: 5rem;
+      display: flow-root;
+
+      &__text {
+        p {
+          margin-bottom: 1rem;
+          letter-spacing: 0.25px;
+          line-height: 1.2rem;
+
+          @include media-md {
+            line-height: 1.8rem;
+          }
+        }
+
+        .button {
+          clear: both;
+          margin-top: 2rem;
+
+          @include media-xl {
+            transform: translateY(-40px);
+          }
+        }
+      }
+
+      &__image {
+        float: right;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        width: 40%;
+        height: auto;
+
+        @include media-md {
+          margin-left: 2rem;
+          margin-bottom: 2rem;
+          width: 30%;
+        }
+
+        @include media-xl {
+          margin-left: 10rem;
+          margin-bottom: 0rem;
+        }
+      }
+    }
+
+    &__quote {
+      margin-inline: auto;
+      max-width: 1200px;
+      width: fit-content;
+
+      q {
+        @include font-mono;
+        display: block;
+        text-align: center;
+        font-size: 22px;
+        line-height: 40px;
+      }
+
+      cite {
+        @include font-mono;
+        display: block;
+        text-align: end;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        margin-top: 1rem;
+        opacity: 0.6;
+      }
+    }
+  }
+}

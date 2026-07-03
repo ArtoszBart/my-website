@@ -19,6 +19,18 @@ declare const messages: {
       "Maritime Yacht Skipper"
     ]
   },
+
+  "AboutPage": {
+    "title": "About Me",
+    "about-me": [
+      "I'm someone who enjoys solving problems and building solutions that create real value. I appreciate clarity, well-designed technology, and attention to detail. I always strive to understand users' needs and deliver solutions that are not only functional, but also intuitive, reliable, and easy to maintain and extend.",
+      "Outside of work, sailing is my greatest passion. As a yacht skipper, I'm responsible not only for navigating the boat, but also for the safety of the crew and the overall organization of the voyage. This experience has taught me responsibility, decision-making under pressure, and effective teamwork. I also enjoy traveling, exploring new places, and finding inspiration beyond the computer screen.",
+      "I believe that the best results come from patience, consistency, and attention to detail. That's why I don't look for the quickest solutions, but for ones that are well thought out, maintainable, and built to last. I continuously develop my skills because I believe great technology is not just about knowing the latest tools—it's about solving real-world problems."
+    ],
+    "cv-button": "Download CV",
+    "quote": "It takes 20 years to build a reputation and five minutes to ruin it."
+  },
+
   "ProjectsPage": {
     "title": "Projects",
     "scope": "Scope",

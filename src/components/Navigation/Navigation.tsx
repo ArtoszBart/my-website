@@ -15,7 +15,7 @@ export default function Navigation({ className, handleMenuItemClick }: IProps) {
     <nav>
       <ul className={className}>
         <li>
-          <Link href='/' onClick={handleMenuItemClick}>
+          <Link href='/about' onClick={handleMenuItemClick}>
             {t('about')}
           </Link>
         </li>

@@ -1,0 +1,65 @@
+@use '../../styles/abstracts/' as *;
+
+$padding-block: 4px;
+$padding-inline: 10px;
+$icon-bg-size: 32px;
+$icon-size: 20px;
+$hover-margin: 2px;
+
+.button {
+  position: relative;
+  width: fit-content;
+  height: $icon-bg-size + 2 * $padding-block;
+  border-radius: 8px;
+  padding-inline: $padding-inline;
+  display: flex;
+  align-items: center;
+  background-color: $font-color;
+  color: $color-primary;
+  font-size: 14px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  transition: $animation;
+  overflow: hidden;
+
+  &__label {
+    margin-right: $icon-bg-size + $padding-inline;
+    white-space: nowrap;
+  }
+
+  &__icon-bg {
+    position: absolute;
+    top: $padding-block;
+    right: $padding-inline;
+    width: $icon-bg-size;
+    height: $icon-bg-size;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, $color-primary, $color-purple-2);
+    transition: $animation;
+  }
+
+  &__icon {
+    width: $icon-size;
+    height: $icon-size;
+    color: $font-color;
+  }
+
+  &:hover &__icon-bg {
+    top: $hover-margin;
+    right: $hover-margin;
+    width: calc(100% - 2 * $hover-margin);
+    height: calc(100% - 2 * $hover-margin);
+  }
+
+  &__ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba($font-color, 0.3);
+    transform: scale(0);
+    animation: ripple-expand 0.6s ease-out;
+    pointer-events: none;
+  }
+}
