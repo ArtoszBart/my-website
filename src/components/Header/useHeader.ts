@@ -17,7 +17,7 @@ const useHeader = () => {
 
     const handleClickOutside = (e: MouseEvent) => {
       const nav = document.querySelector('header nav');
-      const button = document.querySelector('.menu-btn-icon');
+      const button = document.querySelector('.menu-btn__icon');
 
       if (
         nav &&

@@ -22,7 +22,10 @@ export default function Header() {
           className={clsx('header__navigation', { opened: hook.isMenuOpened })}
         >
           <Logo className='header__logo' />
-          <Navigation className='main-nav' />
+          <Navigation
+            className='main-nav'
+            handleMenuItemClick={hook.handleMenuItemClick}
+          />
           <nav className='socials-nav'>
             <ul>
               {SOCIALS.map((social) => (
