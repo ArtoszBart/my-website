@@ -1,0 +1,21 @@
+@use '../../../../styles/abstracts/' as *;
+
+.form-input {
+  &--error {
+    .checkbox__indicator {
+      border-color: $color-red !important;
+    }
+  }
+
+  .checkbox {
+    &__container {
+      margin-top: 1rem;
+    }
+  }
+
+  &.checkbox {
+    .form-input__error-message {
+      margin-left: 2rem;
+    }
+  }
+}

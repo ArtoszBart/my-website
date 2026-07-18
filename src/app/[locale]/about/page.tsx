@@ -2,16 +2,24 @@ import './aboutPage.scss';
 
 import ImageLoader from '@/components/ImageLoader';
 import LinkButton from '@/components/LinkButton';
-import { useTranslations } from 'next-intl';
+import Technologies from '@/components/Technologies';
+import { useTranslations } from '@/i18n/translations';
+import { Locale } from '@/i18n/types';
+import { use } from 'react';
 import { LuDownload } from 'react-icons/lu';
 
-export default function AboutPage() {
-  const t = useTranslations('AboutPage');
+type Props = {
+  params: Promise<{ locale: Locale }>;
+};
+
+export default function AboutPage({ params }: Props) {
+  const { locale } = use(params);
+  const t = useTranslations(locale, 'AboutPage');
 
   return (
     <main id='about'>
       <section className='about'>
-        <h1>{t('title')}</h1>
+        <h1>{t('about')}</h1>
 
         <div className='about__content'>
           <ImageLoader
@@ -40,6 +48,11 @@ export default function AboutPage() {
           <q>{t('quote')}</q>
           <cite>— Warren Buffett</cite>
         </div>
+      </section>
+
+      <section className='techs'>
+        <h2>{t('techs')}</h2>
+        <Technologies />
       </section>
     </main>
   );

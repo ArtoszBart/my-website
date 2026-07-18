@@ -29,5 +29,25 @@ body {
       min-height: $header-min-height;
       height: $header-height;
     }
+
+    section {
+      width: 100%;
+
+      &:not(:last-child) {
+        position: relative;
+        padding-bottom: 8rem;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 50%;
+          height: 2px;
+          background-color: $color-dark-2;
+          transform: translateX(-50%);
+        }
+      }
+    }
   }
 }

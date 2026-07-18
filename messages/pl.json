@@ -18,14 +18,15 @@
   },
 
   "AboutPage": {
-    "title": "O mnie",
+    "about": "O mnie",
     "about-me": [
       "Jestem osobą, która lubi rozwiązywać problemy i tworzyć rozwiązania przynoszące realną wartość. Cenię przejrzystość, dobrze przemyślane rozwiązania technologiczne i dbałość o detale. Zawsze staram się zrozumieć potrzeby użytkowników i znaleźć rozwiązanie, które będzie nie tylko działać, ale również będzie intuicyjne, niezawodne i łatwe w dalszym rozwoju.",
       "Najwięcej satysfakcji poza pracą daje mi żeglarstwo. Jako skipper odpowiadam nie tylko za prowadzenie jachtu, ale również za bezpieczeństwo i organizację rejsu. To doświadczenie nauczyło mnie odpowiedzialności, podejmowania decyzji pod presją i współpracy z ludźmi. Lubię także podróżować, poznawać nowe miejsca i szukać inspiracji poza ekranem komputera.",
       "Wierzę, że najlepsze efekty są wynikiem cierpliwości, konsekwencji i dbałości o szczegóły. Dlatego nie szukam najprostszych rozwiązań, lecz takich, które będą przemyślane, trwałe i łatwe do utrzymania. Nieustannie rozwijam swoje umiejętności, ponieważ uważam, że dobra technologia to nie tylko znajomość narzędzi, ale przede wszystkim umiejętność rozwiązywania rzeczywistych problemów."
     ],
     "cv-button": "Pobierz CV",
-    "quote": "Potrzeba dwudziestu lat, by zbudować reputację, i pięciu minut, by ją zniszczyć."
+    "quote": "Potrzeba dwudziestu lat, by zbudować reputację, i pięciu minut, by ją zniszczyć.",
+    "techs": "Technologie"
   },
 
   "ProjectsPage": {
@@ -51,6 +52,137 @@
     "kam": {
       "snippet": "Nowoczesna strona internetowa dla biura rachunkowego wyposażona w system zarządzania treścią umożliwiający samodzielną edycję zawartości. Zaprojektowana z myślą o budowaniu zaufania, profesjonalnego wizerunku firmy, przejrzystej prezentacji usług oraz skutecznym pozyskiwaniu nowych klientów."
     }
+  },
+
+  "TechnologiesOptions": {
+    "toolbarOptions": {
+      "filter": "Filtruj",
+      "sort": "Sortuj",
+      "sortTitle": "Sortuj według",
+      "search": "Szukaj"
+    },
+    "types": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Bazy danych",
+      "mobile": "Aplikacje mobilne",
+      "cms": "CMS",
+      "embedded": "Embedded & IoT",
+      "desktop": "Aplikacje desktopowe",
+      "nodejs": "Node.js",
+      "dotnet": ".NET",
+      "jvm": "JVM",
+      "arduino": "Arduino",
+      "framework": "Frameworki",
+      "library": "Biblioteki",
+      "database_engine": "Silniki baz danych",
+      "language": "Języki programowania",
+      "tool": "Narzędzia",
+      "service": "Usługi",
+      "protocol": "Protokoły",
+      "message_broker": "Systemy kolejkowe"
+    },
+    "categories": {
+      "platforms": "Platformy",
+      "environments": "Środowiska",
+      "types": "Typy"
+    },
+    "sortingOptions": {
+      "default": "Domyślne",
+      "name": "Nazwa",
+      "experience": "Doświadczenie"
+    }
+  },
+
+  "Technologies": {
+    "descriptions": {
+      "react": "React to otwartoźródłowa biblioteka JavaScript służąca do tworzenia nowoczesnych interfejsów użytkownika. Architektura oparta na komponentach pozwala budować wielokrotnego użytku elementy, a wirtualny DOM zapewnia wydajne renderowanie i wysoką wydajność aplikacji internetowych.",
+      "reactnative": "React Native to otwartoźródłowy framework umożliwiający tworzenie wieloplatformowych aplikacji mobilnych z wykorzystaniem JavaScript i React. Pozwala budować natywne aplikacje na Androida i iOS przy użyciu wspólnej bazy kodu, zachowując wysoką wydajność i natywne doświadczenie użytkownika.",
+      "express": "Express to minimalistyczny i elastyczny framework dla Node.js, który upraszcza tworzenie aplikacji backendowych. Udostępnia bogaty zestaw narzędzi do budowy API REST, obsługi żądań HTTP, middleware oraz skalowalnych usług serwerowych.",
+      "mssql": "Microsoft SQL Server to relacyjny system zarządzania bazami danych opracowany przez firmę Microsoft. Oferuje wysoką wydajność, bezpieczeństwo oraz zaawansowane możliwości przechowywania, przetwarzania i zarządzania danymi.",
+      "expo": "Expo to framework i platforma oparta na React Native, która znacząco upraszcza tworzenie aplikacji mobilnych. Dostarcza gotowe API, narzędzia deweloperskie oraz usługi chmurowe, przyspieszając rozwój aplikacji na Androida i iOS.",
+      "js": "JavaScript to jeden z najpopularniejszych języków programowania wykorzystywanych do tworzenia nowoczesnych aplikacji internetowych. Umożliwia budowanie dynamicznych interfejsów użytkownika, a dzięki Node.js również aplikacji backendowych.",
+      "ts": "TypeScript to silnie typowany nadzbiór języka JavaScript, który zwiększa bezpieczeństwo i czytelność kodu. Statyczne typowanie oraz rozbudowane narzędzia wspierają tworzenie niezawodnych i łatwych w utrzymaniu aplikacji.",
+      "azure": "Microsoft Azure to platforma chmurowa oferująca szeroki zakres usług związanych z hostingiem, bazami danych, sieciami oraz sztuczną inteligencją. Umożliwia łatwe wdrażanie, zarządzanie i skalowanie aplikacji w środowisku chmurowym.",
+      "html": "HTML (HyperText Markup Language) to standardowy język znaczników służący do tworzenia struktury stron internetowych. Stanowi fundament wszystkich współczesnych witryn i aplikacji webowych.",
+      "css": "CSS (Cascading Style Sheets) to język arkuszy stylów odpowiedzialny za wygląd i układ stron internetowych. Pozwala tworzyć estetyczne, responsywne interfejsy oraz oddzielać warstwę prezentacji od struktury dokumentu.",
+      "scss": "SCSS to preprocesor CSS rozszerzający jego możliwości o zmienne, zagnieżdżanie, funkcje oraz mixiny. Dzięki temu kod stylów staje się bardziej modularny, czytelny i łatwiejszy w utrzymaniu.",
+      "nextjs": "Next.js to pełnostackowy framework oparty na React, ułatwiający tworzenie nowoczesnych aplikacji internetowych. Oferuje m.in. renderowanie po stronie serwera, generowanie statycznych stron, routing oraz API dostępne od razu po instalacji.",
+      "strapi": "Strapi to otwartoźródłowy system CMS typu headless umożliwiający zarządzanie treścią za pomocą konfigurowalnego API. Obsługuje REST i GraphQL, dzięki czemu łatwo integruje się z nowoczesnymi aplikacjami webowymi i mobilnymi.",
+      "zustand": "Zustand to lekka biblioteka do zarządzania stanem aplikacji w React, stawiająca na prostotę i wydajność. Pozwala zarządzać zarówno stanem lokalnym, jak i globalnym bez zbędnego boilerplate'u.",
+      "zod": "Zod to biblioteka do definiowania i walidacji schematów danych, stworzona z myślą o TypeScript. Zapewnia pełne wnioskowanie typów oraz ułatwia utrzymanie spójności danych zarówno po stronie klienta, jak i serwera.",
+      "framermotion": "Framer Motion to biblioteka dla React umożliwiająca tworzenie płynnych animacji i interaktywnych efektów. Intuicyjne API pozwala implementować nawet złożone animacje przy zachowaniu wysokiej wydajności.",
+      "lottiefiles": "LottieFiles to platforma oraz format animacji wektorowych umożliwiający łatwe dodawanie lekkich animacji do aplikacji internetowych i mobilnych. Dzięki niewielkiemu rozmiarowi plików animacje pozostają płynne i wydajne.",
+      "vite": "Vite to nowoczesne narzędzie do budowania aplikacji frontendowych, zaprojektowane z myślą o szybkości działania. Zapewnia błyskawiczne uruchamianie środowiska deweloperskiego, szybkie odświeżanie zmian oraz zoptymalizowane buildy produkcyjne.",
+      "nestjs": "NestJS to nowoczesny framework dla Node.js oparty na TypeScript, przeznaczony do tworzenia skalowalnych aplikacji backendowych. Modułowa architektura, wstrzykiwanie zależności oraz bogaty ekosystem sprawiają, że doskonale nadaje się do projektów klasy enterprise.",
+      "aspnet": "ASP.NET to framework firmy Microsoft służący do tworzenia nowoczesnych aplikacji internetowych oraz API na platformie .NET. Oferuje wysoką wydajność, rozbudowane mechanizmy bezpieczeństwa oraz doskonałą integrację z ekosystemem Microsoft.",
+      "wpf": "Windows Presentation Foundation (WPF) to framework platformy .NET przeznaczony do tworzenia aplikacji desktopowych dla systemu Windows. Zapewnia rozbudowane możliwości projektowania interfejsów, wiązania danych oraz tworzenia animacji.",
+      "xamarin": "Xamarin to framework .NET umożliwiający tworzenie wieloplatformowych aplikacji mobilnych w języku C#. Pozwala współdzielić znaczną część kodu pomiędzy systemami Android i iOS, zachowując natywną wydajność.",
+      "arduino": "Arduino to otwartoźródłowa platforma elektroniczna łącząca programowalne mikrokontrolery z prostym środowiskiem programistycznym. Jest szeroko wykorzystywana w projektach IoT, robotyce oraz prototypowaniu urządzeń elektronicznych.",
+      "cs": "C# to nowoczesny, obiektowy język programowania opracowany przez firmę Microsoft. Jest wykorzystywany do tworzenia aplikacji desktopowych, webowych, mobilnych, gier oraz rozwiązań chmurowych opartych na platformie .NET.",
+      "cpp": "C++ to wydajny język programowania wykorzystywany w programowaniu systemowym, grach komputerowych, systemach wbudowanych oraz aplikacjach wymagających maksymalnej wydajności. Łączy programowanie niskopoziomowe z paradygmatami obiektowymi i generycznymi.",
+      "java": "Java to jeden z najpopularniejszych obiektowych języków programowania, ceniony za przenośność i niezawodność. Jest powszechnie wykorzystywany do tworzenia systemów biznesowych, aplikacji backendowych oraz rozwiązań korporacyjnych.",
+      "bash": "Bash to powłoka systemów Unix oraz język skryptowy służący do automatyzacji zadań i zarządzania systemami operacyjnymi. Stanowi podstawowe narzędzie pracy administratorów, programistów oraz specjalistów DevOps.",
+      "postgresql": "PostgreSQL to zaawansowany, otwartoźródłowy relacyjny system zarządzania bazami danych. Oferuje wysoką niezawodność, zgodność ze standardami SQL oraz rozbudowane funkcje, takie jak transakcje, indeksowanie czy obsługa danych JSON.",
+      "mysql": "MySQL to jeden z najpopularniejszych relacyjnych systemów zarządzania bazami danych typu open source. Jest ceniony za prostotę obsługi, niezawodność oraz wysoką wydajność w aplikacjach internetowych.",
+      "sqlite": "SQLite to lekki, bezserwerowy silnik relacyjnej bazy danych przechowujący całą bazę w pojedynczym pliku. Dzięki swojej prostocie doskonale sprawdza się w aplikacjach mobilnych, systemach wbudowanych oraz podczas lokalnego rozwoju.",
+      "oracle": "Oracle Database to komercyjny relacyjny system zarządzania bazami danych przeznaczony do zastosowań korporacyjnych. Zapewnia wysoką dostępność, bezpieczeństwo oraz zaawansowane możliwości zarządzania dużymi zbiorami danych.",
+      "mongodb": "MongoDB to dokumentowa baza danych NoSQL zaprojektowana z myślą o elastyczności i łatwym skalowaniu. Przechowuje dane w dokumentach przypominających format JSON, co ułatwia pracę z dynamicznymi modelami danych.",
+      "vscode": "Visual Studio Code to lekki, lecz bardzo rozbudowany edytor kodu stworzony przez Microsoft. Oferuje obsługę wielu języków programowania, wbudowaną integrację z Git oraz bogaty ekosystem rozszerzeń.",
+      "visualstudio": "Visual Studio to kompleksowe środowisko programistyczne (IDE) przeznaczone głównie do tworzenia aplikacji w technologii .NET oraz C++. Udostępnia zaawansowane narzędzia do debugowania, testowania i profilowania aplikacji.",
+      "postman": "Postman to popularna platforma do projektowania, testowania oraz dokumentowania interfejsów API. Ułatwia wysyłanie żądań HTTP, automatyzację testów oraz współpracę zespołów programistycznych.",
+      "oauth": "OAuth to standardowy protokół autoryzacji umożliwiający aplikacjom bezpieczny dostęp do zasobów użytkownika bez konieczności udostępniania hasła. Jest powszechnie wykorzystywany w logowaniu oraz integracjach z usługami zewnętrznymi.",
+      "tailwind": "Tailwind CSS to framework CSS oparty na klasach użytkowych, który umożliwia szybkie tworzenie nowoczesnych interfejsów użytkownika. Pozwala budować własne komponenty bez konieczności pisania dużej ilości niestandardowego kodu CSS.",
+      "prisma": "Prisma to nowoczesny ORM dla Node.js i TypeScript, który upraszcza komunikację z bazą danych dzięki w pełni typowanemu API. Oferuje podejście oparte na schematach, automatyczne migracje oraz intuicyjny mechanizm wykonywania zapytań.",
+      "git": "Git to rozproszony system kontroli wersji umożliwiający śledzenie zmian w kodzie oraz efektywną współpracę programistów. Stanowi podstawowe narzędzie do zarządzania historią projektu i wspiera nowoczesne procesy wytwarzania oprogramowania.",
+      "github": "GitHub to platforma do hostowania repozytoriów Git oraz współpracy nad projektami programistycznymi. Oferuje funkcje takie jak pull requesty, code review, śledzenie zgłoszeń, automatyzacja oraz integracja z procesami CI/CD.",
+      "docker": "Docker to platforma do konteneryzacji aplikacji, która umożliwia uruchamianie oprogramowania wraz ze wszystkimi jego zależnościami w izolowanych środowiskach. Zapewnia spójność działania aplikacji na różnych etapach rozwoju i wdrażania.",
+      "sentry": "Sentry to platforma do monitorowania aplikacji oraz śledzenia błędów w czasie rzeczywistym. Dostarcza szczegółowe informacje o wyjątkach, wydajności oraz wpływie problemów na użytkowników, ułatwiając ich szybkie rozwiązywanie.",
+      "vercel": "Vercel to platforma chmurowa zoptymalizowana pod wdrażanie nowoczesnych aplikacji frontendowych i full-stack. Zapewnia błyskawiczne wdrożenia, globalną sieć CDN oraz automatyczne skalowanie, szczególnie dobrze współpracując z frameworkiem Next.js.",
+      "spring": "Spring to rozbudowany framework dla języka Java przeznaczony do tworzenia nowoczesnych aplikacji backendowych. Upraszcza zarządzanie zależnościami, konfigurację oraz budowę bezpiecznych i skalowalnych systemów.",
+      "redis": "Redis to niezwykle szybka baza danych działająca w pamięci operacyjnej, wykorzystywana jako cache, broker wiadomości lub magazyn danych. Znacząco poprawia wydajność aplikacji oraz wspiera przetwarzanie danych w czasie rzeczywistym.",
+      "rabbitmq": "RabbitMQ to broker wiadomości umożliwiający asynchroniczną komunikację pomiędzy aplikacjami i usługami. Pozwala budować skalowalne oraz odporne na awarie systemy poprzez niezależną wymianę komunikatów.",
+      "wordpress": "WordPress to najpopularniejszy na świecie system zarządzania treścią typu open source. Dzięki ogromnemu ekosystemowi motywów i wtyczek umożliwia tworzenie blogów, stron internetowych oraz sklepów internetowych.",
+      "graphql": "GraphQL to język zapytań oraz środowisko uruchomieniowe dla API, które pozwala klientowi pobierać dokładnie te dane, których potrzebuje. Ogranicza nadmiarowy transfer danych i stanowi elastyczną alternatywę dla tradycyjnych interfejsów REST.",
+      "drizzle": "Drizzle ORM to lekki ORM dla TypeScript zaprojektowany z myślą o bazach SQL. Łączy pełne bezpieczeństwo typów z wysoką wydajnością i prostym API, pozostając jednocześnie blisko natywnego SQL.",
+      "jest": "Jest to popularny framework do testowania aplikacji JavaScript i TypeScript. Umożliwia łatwe tworzenie testów jednostkowych, integracyjnych oraz snapshotów, pomagając utrzymać wysoką jakość kodu.",
+      "npm": "npm to domyślny menedżer pakietów dla środowiska Node.js oraz jeden z największych rejestrów bibliotek programistycznych na świecie. Ułatwia instalowanie, aktualizowanie i zarządzanie zależnościami projektu.",
+      "stripe": "Stripe to platforma płatności online udostępniająca API do bezpiecznej obsługi transakcji internetowych. Wspiera płatności jednorazowe, subskrypcje, fakturowanie oraz wiele metod płatności dostępnych na całym świecie.",
+      "blender": "Blender to profesjonalne, otwartoźródłowe oprogramowanie do modelowania, animacji i renderowania grafiki 3D. Jest wykorzystywane przez grafików, projektantów oraz programistów do tworzenia wysokiej jakości treści trójwymiarowych.",
+      "bitbucket": "Bitbucket to platforma do hostowania repozytoriów Git przeznaczona głównie dla zespołów programistycznych. Integruje się z narzędziami Atlassian, takimi jak Jira, wspierając zarządzanie kodem i procesem wytwarzania oprogramowania.",
+      "chartjs": "Chart.js to lekka biblioteka JavaScript służąca do tworzenia responsywnych i interaktywnych wykresów. Udostępnia prosty interfejs API oraz obsługuje wiele popularnych typów wizualizacji danych.",
+      "datagrip": "DataGrip to profesjonalne środowisko programistyczne firmy JetBrains przeznaczone do pracy z bazami danych SQL. Oferuje inteligentne podpowiedzi, analizę zapytań oraz obsługę wielu systemów bazodanowych.",
+      "elasticsearch": "Elasticsearch to rozproszony silnik wyszukiwania i analizy danych zaprojektowany z myślą o bardzo szybkim wyszukiwaniu pełnotekstowym. Jest powszechnie wykorzystywany do implementacji wyszukiwarek, analizy logów oraz indeksowania dużych zbiorów danych.",
+      "gitlab": "GitLab to kompleksowa platforma DevOps łącząca hosting repozytoriów Git z narzędziami do CI/CD, code review oraz zarządzania projektami. Pozwala obsługiwać cały cykl życia oprogramowania w jednym miejscu.",
+      "intellij": "IntelliJ IDEA to zaawansowane środowisko programistyczne firmy JetBrains, przeznaczone przede wszystkim do tworzenia aplikacji w języku Java. Oferuje inteligentne podpowiedzi kodu, refaktoryzację oraz rozbudowane narzędzia do debugowania.",
+      "jira": "Jira to narzędzie do zarządzania projektami oraz śledzenia zadań, powszechnie wykorzystywane przez zespoły programistyczne. Ułatwia planowanie sprintów, organizację pracy zgodnie z metodykami Agile oraz monitorowanie postępów projektu.",
+      "jwt": "JWT (JSON Web Token) to standard umożliwiający bezpieczne przesyłanie informacji pomiędzy stronami w postaci podpisanych tokenów. Jest szeroko stosowany do uwierzytelniania użytkowników oraz zabezpieczania interfejsów API.",
+      "lighthouse": "Lighthouse to narzędzie open source stworzone przez Google do analizowania jakości aplikacji internetowych. Ocenia wydajność, dostępność, SEO, zgodność z dobrymi praktykami oraz zgodność z wymaganiami Progressive Web Apps.",
+      "nginx": "NGINX to wydajny serwer HTTP, reverse proxy oraz load balancer wykorzystywany do obsługi aplikacji internetowych. Umożliwia efektywne rozdzielanie ruchu, zwiększanie wydajności oraz poprawę bezpieczeństwa infrastruktury.",
+      "pm2": "PM2 to menedżer procesów dla aplikacji Node.js przeznaczony do środowisk produkcyjnych. Umożliwia automatyczne restartowanie aplikacji, monitorowanie ich działania, zarządzanie logami oraz uruchamianie aplikacji w trybie klastrowym.",
+      "reactquery": "TanStack Query, dawniej React Query, to biblioteka do zarządzania stanem danych pobieranych z serwera w aplikacjach React. Upraszcza pobieranie, buforowanie, synchronizację oraz automatyczne odświeżanie danych.",
+      "twilio": "Twilio to platforma komunikacyjna udostępniająca API do integracji wiadomości SMS, połączeń głosowych, wideo, poczty elektronicznej oraz mechanizmów uwierzytelniania z aplikacjami.",
+      "resend": "Resend to nowoczesna platforma do wysyłania wiadomości e-mail stworzona z myślą o programistach. Oferuje proste API, wysoką skuteczność dostarczania wiadomości oraz łatwą integrację z nowoczesnymi aplikacjami internetowymi.",
+      "threejs": "Three.js to biblioteka JavaScript umożliwiająca tworzenie interaktywnych grafik 3D w przeglądarce z wykorzystaniem technologii WebGL. Upraszcza budowanie wizualizacji, animacji oraz aplikacji wykorzystujących grafikę trójwymiarową.",
+      "trello": "Trello to narzędzie do zarządzania projektami oparte na tablicach, listach i kartach. Dzięki intuicyjnemu interfejsowi w stylu Kanban ułatwia organizację zadań oraz współpracę zespołową.",
+      "typeorm": "TypeORM to ORM dla TypeScript i JavaScript, który upraszcza komunikację z relacyjnymi bazami danych poprzez wykorzystanie encji i repozytoriów. Obsługuje wiele systemów bazodanowych i dobrze integruje się z frameworkami Node.js.",
+      "unity": "Unity to wieloplatformowy silnik do tworzenia gier oraz aplikacji 2D, 3D, AR i VR. Udostępnia rozbudowane środowisko programistyczne, zaawansowany silnik renderujący oraz bogaty ekosystem narzędzi.",
+      "sequelize": "Sequelize to ORM dla Node.js upraszczający pracę z relacyjnymi bazami danych. Oferuje modele, migracje, relacje pomiędzy encjami oraz wygodny mechanizm budowania zapytań SQL.",
+      "vim": "Vim to wysoce konfigurowalny edytor tekstu obsługiwany głównie z poziomu klawiatury. Dzięki swojej szybkości, wydajności oraz rozbudowanym możliwościom konfiguracji jest ceniony przez wielu doświadczonych programistów.",
+      "sql": "SQL (Structured Query Language) to standardowy język służący do zarządzania relacyjnymi bazami danych oraz wykonywania zapytań. Umożliwia tworzenie struktur danych, ich modyfikację, wyszukiwanie oraz definiowanie relacji i uprawnień."
+    },
+    "experience": {
+      "1": "Początkujący",
+      "2": "Podstawowy",
+      "3": "Średniozaawansowany",
+      "4": "Zaawansowany",
+      "5": "Ekspert"
+    }
+  },
+
+  "TechnologiesPopover": {
+    "experience": "Doświadczenie",
+    "website": "Oficjalna strona"
   },
 
   "Forms": {

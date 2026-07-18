@@ -1,0 +1,47 @@
+@use '../../styles/abstracts/' as *;
+
+.bean {
+  max-width: fit-content;
+  border: 2px solid;
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: $color-primary;
+  font-size: 12px;
+  transition: all $animation;
+
+  &--platforms {
+    border-color: $color-purple-3;
+
+    &:hover {
+      background-color: rgba($color-purple-3, 0.3);
+    }
+  }
+
+  &--environments {
+    border-color: $color-green;
+
+    &:hover {
+      background-color: rgba($color-green, 0.3);
+    }
+  }
+
+  &--types {
+    border-color: $color-yellow;
+
+    &:hover {
+      background-color: rgba($color-yellow, 0.3);
+    }
+  }
+
+  &--reset {
+    border-color: $color-red;
+
+    &:hover {
+      background-color: rgba($color-red, 0.3);
+    }
+  }
+}

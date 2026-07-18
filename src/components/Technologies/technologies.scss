@@ -1,0 +1,114 @@
+@use '../../styles/abstracts/' as *;
+
+.techs__grid {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: $color-gray transparent;
+  height: 50dvh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+  align-content: start;
+  gap: 2rem;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: $color-gray;
+  }
+
+  @-moz-document url-prefix() {
+    scrollbar-width: thin;
+    scrollbar-color: $color-gray transparent;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+
+    &__icon {
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid $color-dark-2;
+      border-radius: 8px;
+      padding: 10px;
+      background: linear-gradient($color-dark-2, $transparent);
+      transition: $animation;
+
+      &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: $animation-slow;
+      }
+
+      svg {
+        width: 25px;
+        height: 25px;
+        transition: $animation;
+      }
+    }
+
+    &__icon:hover,
+    &:has(.tech-popover:popover-open) &__icon {
+      color: $color-primary;
+
+      &::before {
+        opacity: 1;
+      }
+
+      svg {
+        transform: scale(1.1);
+      }
+    }
+
+    &:nth-child(3n + 1) &__icon::before {
+      background: linear-gradient($color-blue-1, $color-green);
+    }
+    &:nth-child(3n + 2) &__icon::before {
+      background: linear-gradient($color-yellow, $color-red);
+    }
+    &:nth-child(3n) &__icon::before {
+      background: linear-gradient($color-pink, $color-blue-2);
+    }
+
+    &__label {
+      @include font-mono;
+      font-size: 10px;
+      text-align: center;
+      height: 1rem;
+    }
+  }
+
+  &__no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+
+    span {
+      @include font-mono;
+    }
+  }
+
+  @include media-md {
+    grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
+
+    &__item {
+      &__icon {
+        svg {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      &__label {
+        font-size: 14px;
+      }
+    }
+  }
+}

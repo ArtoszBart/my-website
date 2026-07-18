@@ -2,6 +2,10 @@
 
 main#about {
   .about {
+    h1 {
+      text-align: start;
+    }
+
     &__content {
       margin-bottom: 5rem;
       display: flow-root;

@@ -3,6 +3,7 @@ $easing-hero: cubic-bezier(0.22, 1, 0.36, 1);
 
 $animation-fast: 0.2s $easing-standard;
 $animation: 0.3s $easing-standard;
+$animation-slow: 0.5s $easing-standard;
 
 @keyframes fadeInAnimation {
   from {

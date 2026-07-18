@@ -18,14 +18,15 @@
   },
 
   "AboutPage": {
-    "title": "About Me",
+    "about": "About Me",
     "about-me": [
       "I'm someone who enjoys solving problems and building solutions that create real value. I appreciate clarity, well-designed technology, and attention to detail. I always strive to understand users' needs and deliver solutions that are not only functional, but also intuitive, reliable, and easy to maintain and extend.",
       "Outside of work, sailing is my greatest passion. As a yacht skipper, I'm responsible not only for navigating the boat, but also for the safety of the crew and the overall organization of the voyage. This experience has taught me responsibility, decision-making under pressure, and effective teamwork. I also enjoy traveling, exploring new places, and finding inspiration beyond the computer screen.",
       "I believe that the best results come from patience, consistency, and attention to detail. That's why I don't look for the quickest solutions, but for ones that are well thought out, maintainable, and built to last. I continuously develop my skills because I believe great technology is not just about knowing the latest tools—it's about solving real-world problems."
     ],
     "cv-button": "Download CV",
-    "quote": "It takes 20 years to build a reputation and five minutes to ruin it."
+    "quote": "It takes 20 years to build a reputation and five minutes to ruin it.",
+    "techs": "Tech Stack"
   },
 
   "ProjectsPage": {
@@ -34,7 +35,6 @@
     "techstack": "Tech Stack",
     "liveDemo": "Live Demo",
     "repository": "Source Code",
-
     "web": "Website",
     "mobile": "Mobile Application",
     "cms": "Content Management System",
@@ -52,6 +52,137 @@
     "kam": {
       "snippet": "Modern website for an accounting firm featuring a content management system that enables independent content editing. Designed to build trust, strengthen the company's professional image, showcase services in a clear and accessible way, and support effective client acquisition."
     }
+  },
+
+  "TechnologiesOptions": {
+    "toolbarOptions": {
+      "filter": "Filter",
+      "sort": "Sort",
+      "sortTitle": "Sort by",
+      "search": "Search"
+    },
+    "types": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Databases",
+      "mobile": "Mobile Apps",
+      "cms": "CMS",
+      "embedded": "Embedded & IoT",
+      "desktop": "Desktop Apps",
+      "nodejs": "Node.js",
+      "dotnet": ".NET",
+      "jvm": "JVM",
+      "arduino": "Arduino",
+      "framework": "Frameworks",
+      "library": "Libraries",
+      "database_engine": "Database Engines",
+      "language": "Languages",
+      "tool": "Tools",
+      "service": "Services",
+      "protocol": "Protocols",
+      "message_broker": "Message Brokers"
+    },
+    "categories": {
+      "platforms": "Platforms",
+      "environments": "Environments",
+      "types": "Types"
+    },
+    "sortingOptions": {
+      "default": "Default",
+      "name": "Name",
+      "experience": "Experience"
+    }
+  },
+
+  "Technologies": {
+    "descriptions": {
+      "react": "React is an open-source JavaScript library for building modern user interfaces. Its component-based architecture enables developers to create reusable, maintainable components, while the virtual DOM ensures efficient rendering and excellent performance in dynamic web applications.",
+      "reactnative": "React Native is an open-source framework for building cross-platform mobile applications using JavaScript and React. It enables developers to create native iOS and Android apps from a shared codebase while delivering near-native performance and user experience.",
+      "express": "Express is a minimal and flexible web framework for Node.js designed to simplify backend development. It provides a robust set of features for building REST APIs, handling HTTP requests, managing middleware, and creating scalable server-side applications.",
+      "mssql": "Microsoft SQL Server is a relational database management system developed by Microsoft. It provides powerful tools for storing, querying, and managing structured data while offering high performance, security, and enterprise-grade scalability.",
+      "expo": "Expo is a framework and platform built on top of React Native that simplifies mobile application development. It provides a rich set of APIs, development tools, and cloud services, allowing developers to build, test, and deploy cross-platform apps quickly.",
+      "js": "JavaScript is one of the core programming languages of the web, enabling interactive and dynamic user experiences. It is widely used for frontend development and, with Node.js, also powers backend applications and full-stack solutions.",
+      "ts": "TypeScript is a strongly typed superset of JavaScript that enhances code quality and maintainability. By introducing static typing, modern language features, and advanced tooling, it helps developers build reliable and scalable applications.",
+      "azure": "Microsoft Azure is a cloud computing platform that offers a wide range of services for hosting, storage, databases, networking, and artificial intelligence. It enables businesses to build, deploy, and scale applications in the cloud with ease.",
+      "html": "HTML (HyperText Markup Language) is the standard markup language used to structure content on the web. It defines the elements that make up web pages and serves as the foundation for modern websites and web applications.",
+      "css": "CSS (Cascading Style Sheets) is a stylesheet language used to control the appearance and layout of web pages. It enables developers to create responsive, visually appealing interfaces while separating presentation from content.",
+      "scss": "SCSS is a CSS preprocessor that extends standard CSS with features such as variables, nesting, mixins, and functions. These capabilities improve code organization, reduce repetition, and make large stylesheets easier to maintain.",
+      "nextjs": "Next.js is a full-stack React framework that simplifies the development of modern web applications. It offers features such as server-side rendering, static site generation, routing, API routes, and performance optimizations out of the box.",
+      "strapi": "Strapi is an open-source headless content management system that enables developers to manage content through a customizable API. It supports REST and GraphQL, making it easy to integrate with modern frontend frameworks and mobile applications.",
+      "zustand": "Zustand is a lightweight state management library for React focused on simplicity and performance. It provides an intuitive API for managing both local and global application state without the boilerplate required by larger state management solutions.",
+      "zod": "Zod is a TypeScript-first schema validation library used to define and validate data structures. It provides excellent type inference, making it easy to ensure data correctness across both frontend and backend applications.",
+      "framermotion": "Framer Motion is a powerful animation library for React that enables developers to create smooth, interactive user experiences. It simplifies complex animations with an intuitive API while maintaining excellent performance.",
+      "lottiefiles": "LottieFiles provides lightweight, scalable animations based on the Lottie format. It allows developers and designers to easily integrate high-quality vector animations into web and mobile applications without sacrificing performance.",
+      "vite": "Vite is a modern frontend build tool designed for speed and an excellent developer experience. It provides near-instant development server startup, fast hot module replacement, and optimized production builds.",
+      "nestjs": "NestJS is a progressive Node.js framework built with TypeScript for creating scalable and maintainable server-side applications. Its modular architecture, dependency injection system, and extensive ecosystem make it well suited for enterprise-grade development.",
+      "aspnet": "ASP.NET is a framework developed by Microsoft for building modern web applications and APIs using the .NET platform. It offers high performance, strong security features, and seamless integration with the broader Microsoft ecosystem.",
+      "wpf": "Windows Presentation Foundation (WPF) is a .NET framework for building rich desktop applications on Windows. It provides a powerful UI framework with support for data binding, templates, animations, and modern desktop interfaces.",
+      "xamarin": "Xamarin is a .NET framework for developing cross-platform mobile applications using C#. It enables developers to share most of their codebase across Android and iOS while delivering native performance and user experiences.",
+      "arduino": "Arduino is an open-source electronics platform combining programmable microcontrollers with an easy-to-use development environment. It is widely used for embedded systems, robotics, IoT projects, and rapid hardware prototyping.",
+      "cs": "C# is a modern, object-oriented programming language developed by Microsoft. It is widely used for building desktop applications, web services, cloud solutions, games, and enterprise software on the .NET platform.",
+      "cpp": "C++ is a high-performance programming language commonly used for systems programming, game development, embedded software, and performance-critical applications. It provides low-level memory control alongside powerful object-oriented and generic programming features.",
+      "java": "Java is a widely adopted object-oriented programming language known for its portability and reliability. It is commonly used for enterprise software, Android development, backend services, and large-scale distributed systems.",
+      "bash": "Bash is a Unix shell and scripting language used to automate repetitive tasks and manage operating systems. It is an essential tool for developers working with Linux environments, servers, and DevOps workflows.",
+      "postgresql": "PostgreSQL is a powerful open-source relational database known for its reliability, extensibility, and standards compliance. It supports advanced features such as complex queries, indexing, transactions, and JSON data storage.",
+      "mysql": "MySQL is one of the world's most popular open-source relational database management systems. It is widely used for web applications thanks to its reliability, ease of use, and strong performance.",
+      "sqlite": "SQLite is a lightweight, serverless relational database engine that stores the entire database in a single file. Its simplicity and portability make it ideal for mobile applications, embedded systems, and local development.",
+      "oracle": "Oracle Database is a commercial relational database management system designed for high availability, security, and enterprise-scale workloads. It is widely used by organizations that require robust data management and advanced database features.",
+      "mongodb": "MongoDB is a NoSQL document database designed for flexibility and scalability. It stores data in JSON-like documents, making it well suited for applications with rapidly evolving or unstructured data models.",
+      "vscode": "Visual Studio Code is a lightweight yet powerful source code editor developed by Microsoft. It offers extensive language support, debugging tools, built-in Git integration, and a rich ecosystem of extensions.",
+      "visualstudio": "Visual Studio is a comprehensive integrated development environment (IDE) for building applications with .NET, C++, and other technologies. It provides advanced debugging, testing, profiling, and productivity tools for professional software development.",
+      "postman": "Postman is a popular API development platform used for designing, testing, and documenting APIs. It simplifies sending HTTP requests, managing collections, automating tests, and collaborating with development teams.",
+      "oauth": "OAuth is an industry-standard authorization protocol that allows applications to securely access user resources without exposing passwords. It is commonly used for authentication and third-party integrations across modern web services.",
+      "tailwind": "Tailwind CSS is a utility-first CSS framework that enables developers to build custom user interfaces directly in markup. Its utility classes promote rapid development while reducing the need for writing custom CSS.",
+      "prisma": "Prisma is a modern ORM for Node.js and TypeScript that simplifies database access with a fully type-safe API. It provides schema-driven development, automatic migrations, and an intuitive query builder, making database interactions more reliable and productive.",
+      "git": "Git is a distributed version control system that enables developers to track changes, collaborate efficiently, and maintain the history of a codebase. It is an essential tool for managing software projects of any size and supports modern development workflows.",
+      "github": "GitHub is a cloud-based platform for hosting Git repositories and collaborating on software projects. It provides features such as pull requests, issue tracking, code reviews, automation, and CI/CD integrations, making teamwork more efficient.",
+      "docker": "Docker is a containerization platform that packages applications together with their dependencies into portable containers. This ensures consistent behavior across development, testing, and production environments while simplifying deployment.",
+      "sentry": "Sentry is an application monitoring and error-tracking platform that helps developers identify, diagnose, and resolve issues in real time. It provides detailed stack traces, performance insights, and release monitoring to improve application reliability.",
+      "vercel": "Vercel is a cloud platform optimized for deploying frontend applications and full-stack web projects. It offers seamless integration with modern frameworks such as Next.js, providing fast deployments, global edge delivery, and automatic scaling.",
+      "spring": "Spring is a comprehensive framework for building Java applications, particularly enterprise-grade backend systems. It simplifies dependency management, application configuration, and the development of scalable, secure, and maintainable services.",
+      "redis": "Redis is an in-memory data store commonly used as a cache, message broker, and database. Its exceptional speed makes it ideal for improving application performance, session management, and real-time data processing.",
+      "rabbitmq": "RabbitMQ is a reliable message broker that enables asynchronous communication between applications and services. It helps build scalable, fault-tolerant systems by decoupling components and managing message delivery efficiently.",
+      "wordpress": "WordPress is the world's most popular open-source content management system, used to create websites, blogs, and e-commerce platforms. Its extensive ecosystem of themes and plugins makes it highly customizable for a wide range of projects.",
+      "graphql": "GraphQL is a query language and runtime for APIs that allows clients to request exactly the data they need. It improves efficiency by reducing over-fetching and under-fetching of data while providing a flexible alternative to traditional REST APIs.",
+      "drizzle": "Drizzle ORM is a lightweight, TypeScript-first ORM designed for SQL databases. It emphasizes type safety, performance, and a developer-friendly API while keeping developers close to native SQL.",
+      "jest": "Jest is a JavaScript testing framework focused on simplicity and developer productivity. It provides powerful tools for writing unit, integration, and snapshot tests, helping ensure code quality and reliability.",
+      "npm": "npm is the default package manager for Node.js and one of the largest software package registries in the world. It enables developers to install, manage, and publish reusable libraries and project dependencies with ease.",
+      "stripe": "Stripe is a leading online payment platform that provides APIs for securely processing payments and managing financial transactions. It supports subscriptions, one-time payments, invoicing, and a wide range of global payment methods.",
+      "blender": "Blender is a professional open-source 3D creation suite used for modeling, animation, rendering, visual effects, and game asset creation. It is widely adopted by artists, designers, and developers for creating high-quality 3D content.",
+      "bitbucket": "Bitbucket is a Git repository hosting platform designed for source code management and team collaboration. It integrates seamlessly with Atlassian tools such as Jira, making it a popular choice for enterprise development teams.",
+      "chartjs": "Chart.js is a lightweight JavaScript library for creating responsive and interactive charts. It provides a simple API for visualizing data through a variety of chart types.",
+      "datagrip": "DataGrip is a professional database IDE developed by JetBrains for working with SQL databases. It offers intelligent code completion, query analysis, schema navigation, and support for multiple database management systems.",
+      "elasticsearch": "Elasticsearch is a distributed search and analytics engine designed for fast full-text search and real-time data analysis. It is commonly used for search functionality, log management, and large-scale data indexing.",
+      "gitlab": "GitLab is a complete DevOps platform that combines Git repository hosting with CI/CD, issue tracking, code reviews, and project management. It enables teams to manage the entire software development lifecycle in one place.",
+      "intellij": "IntelliJ IDEA is a powerful integrated development environment developed by JetBrains, primarily for Java and JVM-based languages. It provides advanced code analysis, intelligent refactoring, debugging tools, and extensive framework support.",
+      "jira": "Jira is a project management and issue-tracking platform widely used by software development teams. It helps organize tasks, manage agile workflows, track bugs, and plan software releases efficiently.",
+      "jwt": "JSON Web Token (JWT) is a compact and secure format for transmitting authentication and authorization data between parties. It is widely used in modern web applications to implement stateless authentication and secure API access.",
+      "lighthouse": "Lighthouse is an open-source auditing tool developed by Google for evaluating web applications. It analyzes performance, accessibility, SEO, best practices, and progressive web app compliance.",
+      "nginx": "NGINX is a high-performance web server, reverse proxy, and load balancer. It is widely used to serve web applications efficiently, distribute traffic, and improve scalability and security.",
+      "pm2": "PM2 is a production process manager for Node.js applications that simplifies deployment and monitoring. It provides automatic restarts, clustering, log management, and performance monitoring.",
+      "reactquery": "TanStack Query, formerly known as React Query, is a powerful library for managing server state in React applications. It simplifies data fetching, caching, synchronization, and background updates.",
+      "twilio": "Twilio is a cloud communications platform that provides APIs for integrating SMS, voice calls, video, email, and authentication services into applications.",
+      "resend": "Resend is a modern email platform designed for developers to send transactional and marketing emails through simple APIs. It focuses on reliable delivery and an excellent developer experience.",
+      "threejs": "Three.js is a JavaScript library for creating interactive 3D graphics in web browsers using WebGL. It simplifies complex rendering for visualizations, games, and immersive web experiences.",
+      "trello": "Trello is a visual project management tool based on boards, lists, and cards. It helps individuals and teams organize tasks and collaborate using an intuitive Kanban-style interface.",
+      "typeorm": "TypeORM is an object-relational mapper for TypeScript and JavaScript that simplifies database interactions through entities and repositories. It supports multiple SQL databases and integrates well with Node.js frameworks.",
+      "unity": "Unity is a cross-platform game engine used to create 2D, 3D, AR, and VR applications. It provides a comprehensive development environment and powerful rendering capabilities.",
+      "sequelize": "Sequelize is a promise-based ORM for Node.js that simplifies working with SQL databases. It provides models, migrations, associations, and query building for multiple relational database systems.",
+      "vim": "Vim is a highly configurable, keyboard-driven text editor known for its speed and efficiency. Its powerful editing commands and plugin ecosystem make it a favorite among experienced developers.",
+      "sql": "SQL (Structured Query Language) is the standard language for managing and querying relational databases. It is used to create database structures, retrieve and manipulate data, and define relationships."
+    },
+    "experience": {
+      "1": "Beginner",
+      "2": "Basic",
+      "3": "Intermediate",
+      "4": "Advanced",
+      "5": "Expert"
+    }
+  },
+
+  "TechnologiesPopover": {
+    "experience": "Experience",
+    "website": "Official website"
   },
 
   "Forms": {

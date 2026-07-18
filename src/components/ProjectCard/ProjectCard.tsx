@@ -1,4 +1,8 @@
+import './projectCard.scss';
+
 import { TranslationKey } from '@/data/projects';
+import { SCOPES } from '@/data/scopes';
+import { TECHNOLOGIES } from '@/data/technologies';
 import { Project } from '@/types/project';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
@@ -6,8 +10,6 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useState } from 'react';
 import { FaGithub, FaUpRightFromSquare } from 'react-icons/fa6';
-import { SCOPE_ICONS, TECH_ICONS } from '../IconMapper';
-import './projectCard.scss';
 
 type Props = {
   project: Project;
@@ -99,11 +101,8 @@ export default function ProjectCard({ project, isListLayout, index }: Props) {
               {t('scope')}:
             </span>
             {project.scope.map((scope, idx) => (
-              <span
-                key={idx}
-                data-tooltip={t(SCOPE_ICONS[scope].translationKey)}
-              >
-                {SCOPE_ICONS[scope].icon}
+              <span key={idx} data-tooltip={t(SCOPES[scope].translationKey)}>
+                {SCOPES[scope].icon}
               </span>
             ))}
           </div>
@@ -114,13 +113,13 @@ export default function ProjectCard({ project, isListLayout, index }: Props) {
             {project.techstack.map((tech, idx) => (
               <a
                 key={idx}
-                aria-label={TECH_ICONS[tech].label}
-                data-tooltip={TECH_ICONS[tech].label}
-                href={TECH_ICONS[tech].url}
+                aria-label={TECHNOLOGIES[tech].label}
+                data-tooltip={TECHNOLOGIES[tech].label}
+                href={TECHNOLOGIES[tech].url}
                 target='_blank'
                 rel='noreferrer'
               >
-                {TECH_ICONS[tech].icon}
+                {TECHNOLOGIES[tech].icon}
               </a>
             ))}
           </div>

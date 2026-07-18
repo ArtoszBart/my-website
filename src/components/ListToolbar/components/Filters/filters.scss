@@ -1,0 +1,57 @@
+@use '../../../../styles/abstracts/' as *;
+
+.filters-group {
+  border: none;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba($color-gray, 0.2);
+  }
+
+  &__toggle {
+    width: 100%;
+    padding-inline: 1rem;
+    text-align: center;
+
+    button {
+      width: 100%;
+      padding-block: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      user-select: none;
+
+      svg {
+        transition: $animation-fast;
+      }
+    }
+  }
+
+  &__panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: $animation;
+
+    &__inner {
+      overflow: hidden;
+      margin-inline: 1rem;
+      border-top: 1px solid rgba($color-blue-2, 0.36);
+      padding-bottom: 0.2rem;
+    }
+  }
+
+  &--opened {
+    svg {
+      transform: rotate(180deg);
+    }
+
+    .filters-group__panel {
+      grid-template-rows: 1fr;
+    }
+  }
+
+  .checkbox {
+    margin-block: 0.5rem;
+  }
+}

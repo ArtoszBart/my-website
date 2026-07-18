@@ -1,4 +1,6 @@
-import { Project, SCOPE, TECH } from '@/types/project';
+import { SCOPE } from '@/enums/scope.enum';
+import { TECHNOLOGY } from '@/enums/technology.enum';
+import { Project } from '@/types/project';
 
 export const PROJECTS = [
   {
@@ -11,15 +13,14 @@ export const PROJECTS = [
     translationKey: 'bujnickaDent',
     scope: [SCOPE.WEB, SCOPE.MOBILE, SCOPE.SERVER, SCOPE.DB],
     techstack: [
-      TECH.REACT,
-      TECH.NODEJS,
-      TECH.EXPRESS,
-      TECH.MSSQL,
-      TECH.EXPO,
-      TECH.AZURE,
-      TECH.JAVA_SCRIPT,
-      TECH.HTML,
-      TECH.SCSS,
+      TECHNOLOGY.REACT,
+      TECHNOLOGY.EXPRESS,
+      TECHNOLOGY.MSSQL,
+      TECHNOLOGY.EXPO,
+      TECHNOLOGY.AZURE,
+      TECHNOLOGY.JAVA_SCRIPT,
+      TECHNOLOGY.HTML,
+      TECHNOLOGY.SCSS,
     ],
     date: new Date(Date.UTC(2023, 8, 1)),
     rating: 10,
@@ -33,7 +34,7 @@ export const PROJECTS = [
     repositoryLink: 'https://github.com/ArtoszBart/modern-car',
     translationKey: 'modernCar',
     scope: [SCOPE.WEB],
-    techstack: [TECH.HTML, TECH.CSS, TECH.JAVA_SCRIPT],
+    techstack: [TECHNOLOGY.HTML, TECHNOLOGY.CSS, TECHNOLOGY.JAVA_SCRIPT],
     date: new Date(Date.UTC(2021, 1, 1)),
     rating: 7,
   },
@@ -46,15 +47,15 @@ export const PROJECTS = [
     translationKey: 'kam',
     scope: [SCOPE.WEB, SCOPE.CMS],
     techstack: [
-      TECH.NEXTJS,
-      TECH.REACT,
-      TECH.STRAPI,
-      TECH.TYPE_SCRIPT,
-      TECH.SCSS,
-      TECH.ZUSTAND,
-      TECH.ZOD,
-      TECH.LOTTIE_FILES,
-      TECH.FRAMER_MOTION,
+      TECHNOLOGY.NEXTJS,
+      TECHNOLOGY.REACT,
+      TECHNOLOGY.STRAPI,
+      TECHNOLOGY.TYPE_SCRIPT,
+      TECHNOLOGY.SCSS,
+      TECHNOLOGY.ZUSTAND,
+      TECHNOLOGY.ZOD,
+      TECHNOLOGY.LOTTIE_FILES,
+      TECHNOLOGY.FRAMER_MOTION,
     ],
     date: new Date(Date.UTC(2025, 10, 1)),
     rating: 9,

@@ -1,0 +1,56 @@
+@use '../../styles/abstracts/' as *;
+@use 'sass:color';
+
+.radio-option {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &:has(input:checked) {
+    cursor: default;
+  }
+
+  &:hover input {
+    border-color: color.adjust($color-purple-2, $lightness: 10%);
+  }
+
+  span {
+    color: rgba($font-color, 0.7);
+    font-size: 12px;
+  }
+
+  input {
+    cursor: inherit;
+    appearance: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $color-purple-2;
+    border-radius: 50%;
+    background-color: $color-primary;
+    transition: $animation;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      width: 8px;
+      height: 8px;
+      margin: auto;
+      border-radius: 50%;
+      background-color: $font-color;
+      scale: 0;
+      transition: $animation;
+    }
+
+    &:checked {
+      border-color: $color-purple-3;
+
+      &::after {
+        scale: 1;
+      }
+    }
+  }
+}

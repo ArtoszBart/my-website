@@ -4,7 +4,7 @@ import { createContactFormSchema } from '@/schemas/contactForm.schema';
 import { sendEmailAction } from '@/server/contactFormActions';
 import { useTranslations } from 'next-intl';
 import { FaRegPaperPlane } from 'react-icons/fa6';
-import { Checkbox, Files, Form, Input } from '../Form';
+import { Files, Form, FormCheckbox, Input } from '../Form';
 
 export default function ContactForm() {
   const t = useTranslations('Forms');
@@ -53,7 +53,7 @@ export default function ContactForm() {
 
       <Files name='attachments' label={t('attachments')} tabIndex={5} />
 
-      <Checkbox
+      <FormCheckbox
         name='dataProcessingConsent'
         label={t('dataProcessingConsent')}
         tabIndex={6}
