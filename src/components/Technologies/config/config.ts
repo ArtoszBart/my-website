@@ -1,12 +1,12 @@
 import { TechMeta } from '@/data/technologies';
+import { Environment } from '@/enums/environment.enum';
 import { SORTING_ORDER } from '@/enums/sortingOrder.enum';
-import { TechEnvironment } from '@/enums/techEnvironment.enum';
 import { TechPlatform } from '@/enums/techPlatform.enum';
 import { TechType } from '@/enums/techType.enum';
 
 export const allFilters = {
   platforms: Object.values(TechPlatform),
-  environments: Object.values(TechEnvironment),
+  environments: Object.values(Environment),
   types: Object.values(TechType),
 };
 

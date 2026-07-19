@@ -1,47 +1,40 @@
 @use '../../styles/abstracts/' as *;
 
-@include media-xl {
-  .layout-toggle {
+.layout-toggle-separator {
+  display: none;
+
+  @include media-xl {
+    display: initial;
+  }
+}
+
+.layout-toggle {
+  display: none;
+
+  @include media-xl {
     display: flex;
+    gap: 0.5rem;
+  }
 
-    &__button {
-      position: relative;
-      width: 2rem;
-      height: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: rgba($font-color, 0.6);
-      transition: color $animation;
+  &__button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba($font-color, 0.6);
+    transition: color $animation;
 
-      &--active {
-        color: rgba($font-color, 1);
-      }
+    &--active {
+      color: rgba($font-color, 1);
+    }
 
-      svg {
-        font-size: 1.2rem;
-      }
+    svg {
+      font-size: 1rem;
+    }
 
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0px;
-        left: 50%;
-        width: 0%;
-        height: 1px;
-        background-color: rgba($font-color, 0.8);
-        transition: width $animation;
-        transform: translateX(-50%);
-      }
-
-      &:not(&--active) {
-        &:hover {
-          color: $font-color;
-
-          &::after {
-            width: 100%;
-          }
-        }
+    &:not(&--active) {
+      &:hover {
+        color: $font-color;
       }
     }
   }

@@ -57,14 +57,19 @@ declare const messages: {
     }
   },
 
-  "TechnologiesOptions": {
-    "toolbarOptions": {
-      "filter": "Filter",
-      "sort": "Sort",
-      "sortTitle": "Sort by",
-      "search": "Search"
+  "Toolbar": {
+    "filter": "Filter",
+    "sort": "Sort",
+    "sortTitle": "Sort by",
+    "search": "Search",
+    "filterCategory": {
+      "platforms": "Platforms",
+      "environments": "Environments",
+      "types": "Types",
+      "scope": "Scope",
+      "kind": "Kind"
     },
-    "types": {
+    "filterOption": {
       "frontend": "Frontend",
       "backend": "Backend",
       "database": "Databases",
@@ -83,17 +88,18 @@ declare const messages: {
       "tool": "Tools",
       "service": "Services",
       "protocol": "Protocols",
-      "message_broker": "Message Brokers"
+      "message_broker": "Message Brokers",
+      "web": "Website",
+      "server": "Server",
+      "db": "Database",
+      "commercial": "Commercial",
+      "personal": "Personal"
     },
-    "categories": {
-      "platforms": "Platforms",
-      "environments": "Environments",
-      "types": "Types"
-    },
-    "sortingOptions": {
+    "sortingOption": {
       "default": "Default",
       "name": "Name",
-      "experience": "Experience"
+      "experience": "Experience",
+      "date": "Date"
     }
   },
 

@@ -1,38 +1,21 @@
-'use client';
+import Projects from '@/components/Projects';
+import { useTranslations } from '@/i18n/translations';
+import { Locale } from '@/i18n/types';
+import { use } from 'react';
 
-import LayoutToggle, { useLayoutToggleStore } from '@/components/LayoutToggle';
-import ProjectCard from '@/components/ProjectCard';
-import { PROJECTS } from '@/data/projects';
-import clsx from 'clsx';
-import { useTranslations } from 'next-intl';
-import './projectsPage.scss';
+type Props = {
+  params: Promise<{ locale: Locale }>;
+};
 
-export default function ProjectsPage() {
-  const { isListView } = useLayoutToggleStore();
-  const t = useTranslations('ProjectsPage');
+export default function ProjectsPage({ params }: Props) {
+  const { locale } = use(params);
+  const t = useTranslations(locale, 'ProjectsPage');
 
   return (
     <main>
       <h1>{t('title')}</h1>
 
-      <div className='projects-toolbar'>
-        <LayoutToggle />
-      </div>
-
-      <div
-        className={clsx('project-list', {
-          'project-list--list': isListView,
-        })}
-      >
-        {PROJECTS.map((project, idx) => (
-          <ProjectCard
-            key={project.title}
-            index={idx}
-            project={project}
-            isListLayout={isListView}
-          />
-        ))}
-      </div>
+      <Projects />
     </main>
   );
 }

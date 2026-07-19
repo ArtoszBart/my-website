@@ -1,11 +1,10 @@
 import './bean.scss';
 
-import { BEAN_OPTION } from '@/enums/beanOption.enum';
 import { FaXmark } from 'react-icons/fa6';
 
 interface IProps {
   label: string;
-  option: BEAN_OPTION;
+  option: string;
   onClick: () => void;
 }
 

@@ -1,38 +1,37 @@
 import './listToolbar.scss';
 
-import { BEAN_OPTION } from '@/enums/beanOption.enum';
 import { MODAL } from '@/enums/modal.enum';
 import { useTranslations } from 'next-intl';
+import { PropsWithChildren } from 'react';
 import Bean from '../Bean';
 import Filters from './components/Filters';
 import SearchBar from './components/SearchBar';
 import Sortings from './components/Sortings';
-import useListToolbar, { ListStateHook } from './useListToolbar';
+import { ListStateHook } from './types/listStateHook.type';
+import useListToolbar from './useListToolbar';
 
-interface IProps<T extends Record<string, string[]>, S extends string> {
-  listStateHook: ListStateHook<T, S>;
-  allFilters: Record<string, string[]>;
-  allSortOptions: readonly S[];
-}
+interface IProps<T extends Record<string, string[]>, S extends string>
+  extends ListStateHook<T, S>, PropsWithChildren {}
 
 export default function ListToolbar<
   T extends Record<string, string[]>,
   S extends string,
->({ listStateHook, allFilters, allSortOptions }: IProps<T, S>) {
-  const t = useTranslations('TechnologiesOptions');
-  const toolbarHook = useListToolbar<T, S>(listStateHook);
+>({ listStateHook, children }: IProps<T, S>) {
+  const t = useTranslations('Toolbar');
+  const toolbarHook = useListToolbar<T, S>({ listStateHook });
 
   return (
     <div className='toolbar'>
       <div className='toolbar__controls'>
         <div className='toolbar__controls__actions'>
           <button onClick={() => toolbarHook.setOpenedModal(MODAL.FILTERS)}>
-            {t('toolbarOptions.filter')}
+            {t('filter')}
           </button>
           <hr />
           <button onClick={() => toolbarHook.setOpenedModal(MODAL.SORTINGS)}>
-            {t('toolbarOptions.sort')}
+            {t('sort')}
           </button>
+          {children}
         </div>
         <SearchBar
           value={listStateHook.query}
@@ -42,7 +41,7 @@ export default function ListToolbar<
         <Filters
           isOpened={toolbarHook.openedModal === MODAL.FILTERS}
           onClose={toolbarHook.closeModals}
-          allFilters={allFilters}
+          allFilters={listStateHook.allFilters}
           selectedFilters={listStateHook.selectedFilters}
           onToggleValue={toolbarHook.toggleFilter}
         />
@@ -51,7 +50,7 @@ export default function ListToolbar<
           isOpened={toolbarHook.openedModal === MODAL.SORTINGS}
           onClose={toolbarHook.closeModals}
           isDesc={toolbarHook.isSortingDesc}
-          sortOption={allSortOptions}
+          sortOption={listStateHook.allSortOptions}
           selectedOptions={listStateHook.selectedSorting.option}
           onChange={listStateHook.setSelectedSorting}
         />
@@ -63,8 +62,8 @@ export default function ListToolbar<
             values.map((value) => (
               <Bean
                 key={value}
-                label={t(('types.' + value) as Parameters<typeof t>[0])}
-                option={categoryName as BEAN_OPTION}
+                label={t(('filterOption.' + value) as Parameters<typeof t>[0])}
+                option={categoryName}
                 onClick={() => toolbarHook.toggleFilter(value, categoryName)}
               />
             )),
@@ -75,7 +74,7 @@ export default function ListToolbar<
       ) && (
         <Bean
           label='Reset filters'
-          option={BEAN_OPTION.RESET}
+          option={'reset'}
           onClick={toolbarHook.clearFilters}
         />
       )}

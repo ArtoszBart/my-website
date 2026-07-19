@@ -1,15 +1,4 @@
-@use '../../../styles/abstracts/' as *;
-
-.projects-toolbar {
-  display: none;
-
-  @include media-xl {
-    width: 100%;
-    margin-bottom: 1rem;
-    justify-content: flex-end;
-    display: flex;
-  }
-}
+@use '../../styles/abstracts/' as *;
 
 .project-list {
   display: grid;

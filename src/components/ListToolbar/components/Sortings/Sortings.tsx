@@ -24,7 +24,7 @@ export default function Sortings<T extends string>({
   selectedOptions,
   onChange,
 }: IProps<T>) {
-  const t = useTranslations('TechnologiesOptions');
+  const t = useTranslations('Toolbar');
 
   const handleSortingOrderClick = () => {
     onChange({
@@ -36,7 +36,7 @@ export default function Sortings<T extends string>({
     <ListControlModal isOpened={isOpened} id='sortings' onClose={onClose}>
       <fieldset className='sortings'>
         <legend className='sortings__header' id='sortings-modal'>
-          <span>{t('toolbarOptions.sortTitle')}</span>
+          <span>{t('sortTitle')}</span>
           <span
             className={clsx('sortings__header__icon', {
               'sortings__header__icon--active': isDesc,
@@ -55,7 +55,7 @@ export default function Sortings<T extends string>({
           {sortOption.map((option) => (
             <RadioOption
               key={option}
-              label={t(('sortingOptions.' + option) as Parameters<typeof t>[0])}
+              label={t(('sortingOption.' + option) as Parameters<typeof t>[0])}
               value={option}
               group='sort'
               isChecked={selectedOptions === option}

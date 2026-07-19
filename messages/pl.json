@@ -54,18 +54,23 @@
     }
   },
 
-  "TechnologiesOptions": {
-    "toolbarOptions": {
-      "filter": "Filtruj",
-      "sort": "Sortuj",
-      "sortTitle": "Sortuj według",
-      "search": "Szukaj"
+  "Toolbar": {
+    "filter": "Filtruj",
+    "sort": "Sortuj",
+    "sortTitle": "Sortuj według",
+    "search": "Szukaj",
+    "filterCategory": {
+      "platforms": "Platformy",
+      "environments": "Środowiska",
+      "types": "Typy",
+      "scope": "Zakres",
+      "kind": "Rodzaj"
     },
-    "types": {
+    "filterOption": {
       "frontend": "Frontend",
       "backend": "Backend",
       "database": "Bazy danych",
-      "mobile": "Aplikacje mobilne",
+      "mobile": "Aplikacja mobilna",
       "cms": "CMS",
       "embedded": "Embedded & IoT",
       "desktop": "Aplikacje desktopowe",
@@ -80,17 +85,18 @@
       "tool": "Narzędzia",
       "service": "Usługi",
       "protocol": "Protokoły",
-      "message_broker": "Systemy kolejkowe"
+      "message_broker": "Systemy kolejkowe",
+      "web": "Strona internetowa",
+      "server": "Serwer",
+      "db": "Baza danych",
+      "commercial": "Komercyjny",
+      "personal": "Prywatny"
     },
-    "categories": {
-      "platforms": "Platformy",
-      "environments": "Środowiska",
-      "types": "Typy"
-    },
-    "sortingOptions": {
+    "sortingOption": {
       "default": "Domyślne",
       "name": "Nazwa",
-      "experience": "Doświadczenie"
+      "experience": "Doświadczenie",
+      "date": "Data"
     }
   },
 

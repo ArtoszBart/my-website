@@ -1,4 +1,4 @@
-import { TECHNOLOGIES } from '@/data/technologies';
+import { PROJECTS } from '@/data/projects';
 import { SORTING_ORDER } from '@/enums/sortingOrder.enum';
 import { matchesFilter, matchesQuery } from '@/utils/filtering';
 import { useMemo, useState } from 'react';
@@ -9,15 +9,16 @@ import {
   SORT_CONFIG,
   SortOption,
 } from './config/config';
+
 type Sorting = {
   order: SORTING_ORDER;
   option: SortOption;
 };
 
-const useTechnologies = () => {
+const useProjects = () => {
   const [query, setQuery] = useState('');
   const [selectedSorting, _setSelectedSorting] = useState<Sorting>({
-    order: SORTING_ORDER.ASC,
+    order: SORTING_ORDER.DESC,
     option: 'default',
   });
   const [selectedFilters, setSelectedFilters] = useState(
@@ -26,16 +27,15 @@ const useTechnologies = () => {
     ) as unknown as Filters,
   );
 
-  const displayedTechnologies = useMemo(() => {
-    const { platforms, environments, types } = selectedFilters;
+  const displayedProjects = useMemo(() => {
     const q = query.toLowerCase();
 
-    const filtered = Object.entries(TECHNOLOGIES).filter(([key, tech]) => {
+    const filtered = PROJECTS.filter((project) => {
       return (
-        matchesQuery(q, [tech.label, key]) &&
-        matchesFilter(platforms, tech.platforms) &&
-        matchesFilter(environments, tech.environments) &&
-        matchesFilter(types, tech.types)
+        matchesQuery(q, [project.title]) &&
+        matchesFilter(selectedFilters.scope, project.scope) &&
+        matchesFilter(selectedFilters.environments, project.environments) &&
+        matchesFilter(selectedFilters.kind, [project.kind])
       );
     });
 
@@ -44,7 +44,7 @@ const useTechnologies = () => {
     const multiplier = selectedSorting.order === SORTING_ORDER.ASC ? 1 : -1;
 
     if (comparator) {
-      sorted.sort(([, a], [, b]) => comparator(a, b) * multiplier);
+      sorted.sort((a, b) => comparator(a, b) * multiplier);
     } else if (selectedSorting.order === SORTING_ORDER.DESC) {
       sorted.reverse();
     }
@@ -67,7 +67,7 @@ const useTechnologies = () => {
   };
 
   return {
-    displayedTechnologies,
+    displayedProjects,
     query,
     setQuery,
     selectedFilters,
@@ -79,4 +79,4 @@ const useTechnologies = () => {
   };
 };
 
-export default useTechnologies;
+export default useProjects;

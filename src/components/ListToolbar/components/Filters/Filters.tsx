@@ -22,7 +22,7 @@ export default function Filters<T extends Record<string, string[]>>({
 
   onToggleValue,
 }: IProps<T>) {
-  const t = useTranslations('TechnologiesOptions');
+  const t = useTranslations('Toolbar');
   const { handleClose, openedGroup, toggleGroup } = useFilters({ onClose });
 
   return (
@@ -40,7 +40,7 @@ export default function Filters<T extends Record<string, string[]>>({
               onClick={() => toggleGroup(categoryName)}
               aria-expanded={openedGroup === categoryName}
             >
-              {t(('categories.' + categoryName) as Parameters<typeof t>[0])}
+              {t(('filterCategory.' + categoryName) as Parameters<typeof t>[0])}
               <FaChevronDown />
             </button>
           </legend>
@@ -49,7 +49,9 @@ export default function Filters<T extends Record<string, string[]>>({
               {values.map((value) => (
                 <Checkbox
                   key={value}
-                  label={t(('types.' + value) as Parameters<typeof t>[0])}
+                  label={t(
+                    ('filterOption.' + value) as Parameters<typeof t>[0],
+                  )}
                   checked={selectedFilters[categoryName].includes(value)}
                   onChange={() => onToggleValue(value, categoryName)}
                 />

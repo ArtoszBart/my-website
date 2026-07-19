@@ -12,7 +12,7 @@ interface IProps {
 }
 
 export default function SearchBar({ value, onChange }: IProps) {
-  const t = useTranslations('TechnologiesOptions.toolbarOptions');
+  const t = useTranslations('Toolbar');
 
   return (
     <div className='search-bar'>

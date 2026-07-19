@@ -1,3 +1,5 @@
+import { Environment } from '@/enums/environment.enum';
+import { PROJECT_TYPE } from '@/enums/projectType.enum';
 import { SCOPE } from '@/enums/scope.enum';
 import { TECHNOLOGY } from '@/enums/technology.enum';
 
@@ -8,6 +10,8 @@ export type Project = {
   translationKey: string;
   scope: SCOPE[];
   techstack: TECHNOLOGY[];
+  environments: Environment[];
+  kind: PROJECT_TYPE;
   link?: string;
   repositoryLink?: string;
   date: Date;

@@ -6,7 +6,6 @@ import { toCssIdent } from '@/utils/css';
 import { useTranslations } from 'next-intl';
 import ListToolbar from '../ListToolbar';
 import TechPopover from '../TechPopover';
-import { allFilters, allSortOptions } from './config/config';
 import useTechnologies from './useTechnologies';
 
 export default function Technologies() {
@@ -15,11 +14,7 @@ export default function Technologies() {
 
   return (
     <>
-      <ListToolbar
-        allFilters={allFilters}
-        allSortOptions={allSortOptions}
-        listStateHook={hook}
-      />
+      <ListToolbar listStateHook={hook} />
       <div className='techs__grid'>
         {displayedTechnologies.length > 0 ? (
           displayedTechnologies.map(([key, tech]) => {

@@ -1,3 +1,5 @@
+import { Environment } from '@/enums/environment.enum';
+import { PROJECT_TYPE } from '@/enums/projectType.enum';
 import { SCOPE } from '@/enums/scope.enum';
 import { TECHNOLOGY } from '@/enums/technology.enum';
 import { Project } from '@/types/project';
@@ -22,6 +24,8 @@ export const PROJECTS = [
       TECHNOLOGY.HTML,
       TECHNOLOGY.SCSS,
     ],
+    environments: [Environment.NODEJS],
+    kind: PROJECT_TYPE.COMMERCIAL,
     date: new Date(Date.UTC(2023, 8, 1)),
     rating: 10,
   },
@@ -35,6 +39,8 @@ export const PROJECTS = [
     translationKey: 'modernCar',
     scope: [SCOPE.WEB],
     techstack: [TECHNOLOGY.HTML, TECHNOLOGY.CSS, TECHNOLOGY.JAVA_SCRIPT],
+    environments: [],
+    kind: PROJECT_TYPE.COMMERCIAL,
     date: new Date(Date.UTC(2021, 1, 1)),
     rating: 7,
   },
@@ -57,6 +63,8 @@ export const PROJECTS = [
       TECHNOLOGY.LOTTIE_FILES,
       TECHNOLOGY.FRAMER_MOTION,
     ],
+    environments: [Environment.NODEJS],
+    kind: PROJECT_TYPE.COMMERCIAL,
     date: new Date(Date.UTC(2025, 10, 1)),
     rating: 9,
   },

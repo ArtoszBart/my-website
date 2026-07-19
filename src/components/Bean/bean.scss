@@ -13,7 +13,8 @@
   font-size: 12px;
   transition: all $animation;
 
-  &--platforms {
+  &--platforms,
+  &--scope {
     border-color: $color-purple-3;
 
     &:hover {
@@ -29,7 +30,8 @@
     }
   }
 
-  &--types {
+  &--types,
+  &--kind {
     border-color: $color-yellow;
 
     &:hover {

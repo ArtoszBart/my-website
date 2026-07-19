@@ -1,4 +1,4 @@
-export enum TechEnvironment {
+export enum Environment {
   NODEJS = 'nodejs',
   DOTNET = 'dotnet',
   JVM = 'jvm',
