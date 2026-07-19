@@ -1,7 +1,8 @@
 @use '../../styles/abstracts/' as *;
 
 main#home {
-  padding-top: 0;
+  margin-bottom: unset;
+  padding-top: unset;
   height: 100dvh;
 
   & + .footer {
