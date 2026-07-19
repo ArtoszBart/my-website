@@ -3,7 +3,6 @@
 import './header.scss';
 
 import { SOCIALS } from '@/consts/socials';
-import { Link } from '@/i18n/routing';
 import clsx from 'clsx';
 import HamburgerButton from '../HamburgerButton';
 import LanguageSelector from '../LanguageSelector';
@@ -44,9 +43,7 @@ export default function Header() {
           </nav>
           <div className='actions-nav'>
             <LanguageSelector />
-            <nav>
-              <Link href='/'>Login</Link>
-            </nav>
+            <nav>{/* <Link href='/'>Login</Link> */}</nav>
           </div>
         </div>
         <HamburgerButton

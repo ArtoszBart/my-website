@@ -24,11 +24,11 @@ export default function Navigation({ className, handleMenuItemClick }: IProps) {
             {t('projects')}
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href='/' onClick={handleMenuItemClick}>
             {t('offer')}
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link href='/contact' onClick={handleMenuItemClick}>
             {t('contact')}
