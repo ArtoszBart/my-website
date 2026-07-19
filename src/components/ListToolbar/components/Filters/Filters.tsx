@@ -1,8 +1,8 @@
 import './filters.scss';
 
 import Checkbox from '@/components/Checkbox';
+import { useTranslations } from '@/i18n/translations';
 import clsx from 'clsx';
-import { useTranslations } from 'next-intl';
 import { FaChevronDown } from 'react-icons/fa6';
 import ListControlModal from '../ListControlModal';
 import useFilters, { type IuseFilters } from './useFilters';

@@ -1,6 +1,6 @@
 import './navigation.scss';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/i18n/translations';
 import Link from 'next/link';
 
 interface IProps {

@@ -9,7 +9,7 @@ import { Fragment, use } from 'react';
 
 export default function HomePage({ params }: LocaleParams) {
   const { locale } = use(params);
-  const t = useTranslations(locale, 'HomePage');
+  const t = useTranslations('HomePage', locale);
 
   return (
     <main id='home'>

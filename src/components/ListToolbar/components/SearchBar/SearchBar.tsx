@@ -1,7 +1,7 @@
 import './searchBar.scss';
 
+import { useTranslations } from '@/i18n/translations';
 import clsx from 'clsx';
-import { useTranslations } from 'next-intl';
 import { type Dispatch, type SetStateAction } from 'react';
 import { FaXmark } from 'react-icons/fa6';
 import { ImSearch } from 'react-icons/im';

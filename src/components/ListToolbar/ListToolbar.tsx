@@ -1,7 +1,7 @@
 import './listToolbar.scss';
 
 import { MODAL } from '@/enums/modal.enum';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/i18n/translations';
 import { PropsWithChildren } from 'react';
 import Bean from '../Bean';
 import Filters from './components/Filters';

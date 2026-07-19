@@ -1,7 +1,7 @@
+import { useTranslations } from '@/i18n/translations';
 import { type ValidationErrorsTranslator } from '@/i18n/types';
 import { type ActionResult } from '@/types/actions';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useTranslations } from 'next-intl';
 import { useEffect, useMemo } from 'react';
 import {
   type DefaultValues,

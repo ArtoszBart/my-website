@@ -2,8 +2,8 @@ import './sortings.scss';
 
 import RadioOption from '@/components/RadioOption';
 import { SORTING_ORDER } from '@/enums/sortingOrder.enum';
+import { useTranslations } from '@/i18n/translations';
 import clsx from 'clsx';
-import { useTranslations } from 'next-intl';
 import { FaArrowDownShortWide, FaArrowUpWideShort } from 'react-icons/fa6';
 import ListControlModal from '../ListControlModal';
 

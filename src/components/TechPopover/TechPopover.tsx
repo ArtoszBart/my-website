@@ -1,7 +1,7 @@
-import { TechMeta } from '@/data/technologies';
 import './techPopover.scss';
 
-import { useTranslations } from 'next-intl';
+import { TechMeta } from '@/data/technologies';
+import { useTranslations } from '@/i18n/translations';
 import { FaXmark } from 'react-icons/fa6';
 import useTechPopover from './useTechPopover';
 

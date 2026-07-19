@@ -5,7 +5,7 @@ import { use } from 'react';
 
 export default function ProjectsPage({ params }: LocaleParams) {
   const { locale } = use(params);
-  const t = useTranslations(locale, 'ProjectsPage');
+  const t = useTranslations('ProjectsPage', locale);
 
   return (
     <main>

@@ -2,8 +2,8 @@
 
 import './technologies.scss';
 
+import { useTranslations } from '@/i18n/translations';
 import { toCssIdent } from '@/utils/css';
-import { useTranslations } from 'next-intl';
 import ListToolbar from '../ListToolbar';
 import TechPopover from '../TechPopover';
 import useTechnologies from './useTechnologies';

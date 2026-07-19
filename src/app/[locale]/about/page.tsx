@@ -1,6 +1,6 @@
-import Button from '@/components/Button';
 import './aboutPage.scss';
 
+import Button from '@/components/Button';
 import ImageLoader from '@/components/ImageLoader';
 import Technologies from '@/components/Technologies';
 import { useTranslations } from '@/i18n/translations';
@@ -10,7 +10,7 @@ import { LuDownload } from 'react-icons/lu';
 
 export default function AboutPage({ params }: LocaleParams) {
   const { locale } = use(params);
-  const t = useTranslations(locale, 'AboutPage');
+  const t = useTranslations('AboutPage', locale);
 
   return (
     <main id='about'>

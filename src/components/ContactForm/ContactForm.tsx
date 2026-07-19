@@ -1,8 +1,8 @@
 'use client';
 
+import { useTranslations } from '@/i18n/translations';
 import { createContactFormSchema } from '@/schemas/contactForm.schema';
 import { sendEmailAction } from '@/server/contactFormActions';
-import { useTranslations } from 'next-intl';
 import { FaRegPaperPlane } from 'react-icons/fa6';
 import { Files, Form, FormCheckbox, Input } from '../Form';
 
