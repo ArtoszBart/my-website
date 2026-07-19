@@ -1,4 +1,4 @@
-import { Environment } from '@/enums/environment.enum';
+import { ENVIROMENT } from '@/enums/environment.enum';
 import { PROJECT_TYPE } from '@/enums/projectType.enum';
 import { SCOPE } from '@/enums/scope.enum';
 import { TECHNOLOGY } from '@/enums/technology.enum';
@@ -24,7 +24,7 @@ export const PROJECTS = [
       TECHNOLOGY.HTML,
       TECHNOLOGY.SCSS,
     ],
-    environments: [Environment.NODEJS],
+    environments: [ENVIROMENT.NODEJS],
     kind: PROJECT_TYPE.COMMERCIAL,
     date: new Date(Date.UTC(2023, 8, 1)),
     rating: 10,
@@ -63,7 +63,7 @@ export const PROJECTS = [
       TECHNOLOGY.LOTTIE_FILES,
       TECHNOLOGY.FRAMER_MOTION,
     ],
-    environments: [Environment.NODEJS],
+    environments: [ENVIROMENT.NODEJS],
     kind: PROJECT_TYPE.COMMERCIAL,
     date: new Date(Date.UTC(2025, 10, 1)),
     rating: 9,

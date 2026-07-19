@@ -1,13 +1,13 @@
 import { TechMeta } from '@/data/technologies';
-import { Environment } from '@/enums/environment.enum';
+import { ENVIROMENT } from '@/enums/environment.enum';
 import { SORTING_ORDER } from '@/enums/sortingOrder.enum';
-import { TechPlatform } from '@/enums/techPlatform.enum';
-import { TechType } from '@/enums/techType.enum';
+import { PLATFORM } from '@/enums/techPlatform.enum';
+import { TECH_TYPE } from '@/enums/techType.enum';
 
 export const allFilters = {
-  platforms: Object.values(TechPlatform),
-  environments: Object.values(Environment),
-  types: Object.values(TechType),
+  platforms: Object.values(PLATFORM),
+  environments: Object.values(ENVIROMENT),
+  types: Object.values(TECH_TYPE),
 };
 
 export const allSortOptions = ['default', 'name', 'experience'] as const;

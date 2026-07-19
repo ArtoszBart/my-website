@@ -1,4 +1,4 @@
-export enum TechType {
+export enum TECH_TYPE {
   FRAMEWORK = 'framework',
   LIBRARY = 'library',
   DATABASE_ENGINE = 'database_engine',

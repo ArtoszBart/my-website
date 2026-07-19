@@ -1,4 +1,4 @@
-export enum TechPlatform {
+export enum PLATFORM {
   FRONTEND = 'frontend',
   BACKEND = 'backend',
   DATABASE = 'database',

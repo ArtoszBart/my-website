@@ -1,4 +1,4 @@
-import { Environment } from '@/enums/environment.enum';
+import { ENVIROMENT } from '@/enums/environment.enum';
 import { PROJECT_TYPE } from '@/enums/projectType.enum';
 import { SCOPE } from '@/enums/scope.enum';
 import { SORTING_ORDER } from '@/enums/sortingOrder.enum';
@@ -6,7 +6,7 @@ import { Project } from '@/types/project';
 
 export const allFilters = {
   scope: Object.values(SCOPE),
-  environments: Object.values(Environment),
+  environments: Object.values(ENVIROMENT),
   kind: Object.values(PROJECT_TYPE),
 };
 
