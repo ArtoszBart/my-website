@@ -4,15 +4,11 @@ import './aboutPage.scss';
 import ImageLoader from '@/components/ImageLoader';
 import Technologies from '@/components/Technologies';
 import { useTranslations } from '@/i18n/translations';
-import { Locale } from '@/i18n/types';
+import { type LocaleParams } from '@/i18n/types';
 import { use } from 'react';
 import { LuDownload } from 'react-icons/lu';
 
-type Props = {
-  params: Promise<{ locale: Locale }>;
-};
-
-export default function AboutPage({ params }: Props) {
+export default function AboutPage({ params }: LocaleParams) {
   const { locale } = use(params);
   const t = useTranslations(locale, 'AboutPage');
 

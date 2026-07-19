@@ -4,14 +4,10 @@ import HeroDecor from '@/components/HeroDecor';
 import ImageLoader from '@/components/ImageLoader';
 import Socials from '@/components/Socials/';
 import { useTranslations } from '@/i18n/translations';
-import type { Locale } from '@/i18n/types';
+import type { LocaleParams } from '@/i18n/types';
 import { Fragment, use } from 'react';
 
-type Props = {
-  params: Promise<{ locale: Locale }>;
-};
-
-export default function HomePage({ params }: Props) {
+export default function HomePage({ params }: LocaleParams) {
   const { locale } = use(params);
   const t = useTranslations(locale, 'HomePage');
 
