@@ -1,7 +1,7 @@
+import Button from '@/components/Button';
 import './aboutPage.scss';
 
 import ImageLoader from '@/components/ImageLoader';
-import LinkButton from '@/components/LinkButton';
 import Technologies from '@/components/Technologies';
 import { useTranslations } from '@/i18n/translations';
 import { Locale } from '@/i18n/types';
@@ -36,7 +36,7 @@ export default function AboutPage({ params }: Props) {
             {t.raw('about-me').map((paragraph: string, idx: number) => (
               <p key={idx}>{paragraph}</p>
             ))}
-            <LinkButton
+            <Button
               label={t('cv-button')}
               icon={<LuDownload />}
               href={`${process.env.NEXT_PUBLIC_CDN_URL}/CV_Bartosz_Art.pdf`}

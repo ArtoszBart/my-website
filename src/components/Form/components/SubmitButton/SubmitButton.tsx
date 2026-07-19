@@ -2,6 +2,7 @@
 
 import './submitButton.scss';
 
+import Button from '@/components/Button';
 import clsx from 'clsx';
 import { type IconType } from 'react-icons';
 
@@ -13,14 +14,12 @@ interface IProps {
 
 export default function SubmitButton({ label, Icon, disabled }: IProps) {
   return (
-    <button
+    <Button
       className={clsx('form__submit-button', {
         'form__submit-button--disabled': disabled,
       })}
-      type='submit'
-      disabled={disabled}
-    >
-      <span>{label}</span> {Icon && <Icon />}
-    </button>
+      label={label}
+      icon={<Icon />}
+    />
   );
 }

@@ -7,11 +7,17 @@ type Ripple = {
   size: number;
 };
 
-const useLinkButton = () => {
+export interface IuseButton {
+  onClick?: () => void;
+}
+
+const useButton = ({ onClick }: IuseButton) => {
   const [ripples, setRipples] = useState<Ripple[]>([]);
   const idRef = useRef(0);
 
   const handleClick = (e: MouseEvent) => {
+    onClick?.();
+
     const rect = e.currentTarget.getBoundingClientRect();
     const size = Math.max(rect.width, rect.height) * 2;
     const x = e.clientX - rect.left - size / 2;
@@ -26,4 +32,4 @@ const useLinkButton = () => {
   return { handleClick, ripples, clearRipple };
 };
 
-export default useLinkButton;
+export default useButton;
