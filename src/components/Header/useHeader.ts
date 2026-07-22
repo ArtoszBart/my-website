@@ -16,12 +16,12 @@ const useHeader = () => {
     if (!isMenuOpened) return;
 
     const handleClickOutside = (e: MouseEvent) => {
-      const nav = document.querySelector('header nav');
+      const navContainer = document.querySelector('.header__navigation');
       const button = document.querySelector('.menu-btn__icon');
 
       if (
-        nav &&
-        !nav.contains(e.target as Node) &&
+        navContainer &&
+        !navContainer.contains(e.target as Node) &&
         button &&
         !button.contains(e.target as Node)
       ) {
