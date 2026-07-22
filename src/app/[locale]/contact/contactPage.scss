@@ -6,6 +6,7 @@
   width: 100%;
   display: flex;
   height: 250px;
+  justify-content: flex-end;
 
   @include media-sm {
     justify-content: space-between;
