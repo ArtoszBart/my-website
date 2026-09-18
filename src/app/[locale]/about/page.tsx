@@ -3,6 +3,7 @@ import './aboutPage.scss';
 import Button from '@/components/Button';
 import ImageLoader from '@/components/ImageLoader';
 import Technologies from '@/components/Technologies';
+import Timeline from '@/components/Timeline';
 import { useTranslations } from '@/i18n/translations';
 import { type LocaleParams } from '@/i18n/types';
 import { use } from 'react';
@@ -46,9 +47,14 @@ export default function AboutPage({ params }: LocaleParams) {
         </div>
       </section>
 
-      <section className='techs'>
+      <section>
         <h2>{t('techs')}</h2>
         <Technologies />
+      </section>
+
+      <section>
+        <h2>{t('experience')}</h2>
+        <Timeline />
       </section>
     </main>
   );

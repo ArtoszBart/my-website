@@ -26,7 +26,8 @@
     ],
     "cv-button": "Pobierz CV",
     "quote": "Potrzeba dwudziestu lat, by zbudować reputację, i pięciu minut, by ją zniszczyć.",
-    "techs": "Technologie"
+    "techs": "Technologie",
+    "experience": "Doświadczenie"
   },
 
   "ProjectsPage": {
@@ -54,17 +55,145 @@
     }
   },
 
+  "Timeline": {
+    "pja-master": {
+      "title": "Magister Inżynierii Oprogramowania",
+      "companyName": "Polsko-Japońska Akademia Technik Komputerowych",
+      "description": "Kontynuuję naukę, pogłębiając wiedzę z zakresu inżynierii oprogramowania, zagadnień biznesowych i zarządzania projektami.",
+      "contributions": []
+    },
+    "taksidi": {
+      "description": "To doświadczenie dało mi dużo samodzielności i odpowiedzialności za rozwiązania, które realnie wspierają biznes. Najbardziej cenię możliwość pracy nad problemem od strony jego zrozumienia, przez zaprojektowanie rozwiązania, aż po jego wdrożenie i dalszy rozwój.",
+      "contributions": [
+        "Zaprojektowanie i implementacja systemu analizy rynku",
+        "Budowa procesów automatycznej agregacji i przetwarzania danych",
+        "Implementacja logiki analitycznej generującej metryki i wnioski biznesowe",
+        "Budowa fundamentów skalowalnej platformy analitycznej",
+        "Rozwój i optymalizacja architektury systemu",
+        "Rozwój i utrzymanie aplikacji webowych w Next.js",
+        "Rozwój i utrzymanie dedykowanego CMS"
+      ]
+    },
+    "kam": {
+      "description": "Projekt prowadzony przeze mnie, w którym szczególnie ważne było dla mnie połączenie developmentu z designem. Ścisła współpraca z UI/UX designerem pozwoliła nie tylko wiernie przełożyć założenia projektu na gotowy produkt, ale również eksperymentować z animacjami i efektami, które nadały stronie czysty, nowoczesny i atrakcyjny wygląd.",
+      "contributions": [
+        "Zaprojektowanie i implementacja strony wizytówkowej",
+        "Wdrożenie i konfiguracja CMS-a umożliwiającego samodzielną edycję treści przez klienta",
+        "Implementacja responsywnego interfejsu na podstawie projektu UI/UX",
+        "Implementacja animacji i interakcji na stronie",
+        "Implementacja efektów wizualnych i przejść między elementami",
+        "Dostosowanie animacji i interakcji do urządzeń mobilnych",
+        "Integracja strony z dedykowanym CMS-em",
+        "Wdrożenie i konfiguracja aplikacji"
+      ]
+    },
+    "holis": {
+      "description": "To projekt, w którym miałem okazję przejść przez cały proces tworzenia produktu mobilnego — od pierwszych założeń, przez decyzje techniczne, aż po gotową aplikację, ściśle współpracując z zespołem backendowym i liderem projektu. Szczególnie cenne było dla mnie współtworzenie rozwiązania, a nie tylko realizowanie wcześniej przygotowanych zadań.",
+      "contributions": [
+        "Stworzenie aplikacji mobilnej na iOS i Android w React Native",
+        "Implementacja interfejsów aplikacji",
+        "Współtworzenie architektury aplikacji",
+        "Integracja aplikacji mobilnej z backendem",
+        "Wsparcie rozwoju backendu",
+        "Implementacja ekranów Tips, Recommendations i Home",
+        "Identyfikowanie i rozwiązywanie problemów technicznych",
+        "Udział w decyzjach dotyczących kierunku rozwoju produktu"
+      ]
+    },
+    "dream-ai": {
+      "description": "Był to dla mnie ważny etap przejścia od prostszego tworzenia aplikacji do pracy z większymi, istniejącymi systemami. Nauczyłem się pracować z zastanym kodem, rozumieć jego ograniczenia i wprowadzać zmiany bez tracenia stabilności całego rozwiązania.",
+      "contributions": [
+        "Rozwój wewnętrznego systemu CRM",
+        "Rozwój platformy LMS wspierającej operacje logistyczne",
+        "Integracja zewnętrznych API i usług",
+        "Praca z MongoDB i Mongoose",
+        "Optymalizacja zapytań i wydajności bazy danych",
+        "Refaktoryzacja istniejącego kodu",
+        "Implementacja poprawek i napraw",
+        "Optymalizacja wydajności aplikacji",
+        "Współpraca z zespołami IT i marketingu",
+        "Praca w procesie Agile"
+      ]
+    },
+    "pja-bachelor": {
+      "title": "Inżynier Informatyki",
+      "companyName": "Polsko-Japońska Akademia Technik Komputerowych",
+      "description": "Studia, które dały mi solidne podstawy programowania wraz z wiedzą biznesową, pokazały ścieżki rozwoju w karieże informatycznej i pozwoliły połączyć wiedzę techniczną z praktycznym podejściem do tworzenia oprogramowania.",
+      "contributions": [
+        "Kierunek: Informatyka",
+        "Katedra: Inżynieria oprogramowania",
+        "Specjalizacja: Programowanie aplikacji biznesowych",
+        "Forma studiów: stacjonarna",
+        "Tytuł zawodowy: Inżynier"
+      ]
+    },
+    "bujnicka-dent": {
+      "description": "Pierwszy duży projekt, który obejmował wiele części ooprogramowania: frontend, backed, baza danych i aplikacja mobilna. Miałem dużą swobodę w podejmowaniu decyzji technicznych i mogłem zobaczyć, jak rozwiązanie tworzone od podstaw zaczyna realnie wspierać codzienną pracę firmy.",
+      "contributions": [
+        "Zaprojektowanie systemu rejestracji pacjentów",
+        "Implementacja rezerwacji wizyt",
+        "Implementacja procesów administracyjnych",
+        "Stworzenie aplikacji webowej",
+        "Stworzenie aplikacji mobilnej dla pracowników",
+        "Stworzenie REST API",
+        "Zaprojektowanie relacyjnej bazy danych",
+        "Implementacja rozwiązania w React, React Native, Node.js, Express.js i MSSQL",
+        "Wdrożenie systemu na Azure",
+        "Implementacja mechanizmów związanych z bezpieczeństwem systemu"
+      ]
+    },
+    "pspo": {
+      "title": "Nauczyciel podstaw programowania",
+      "description": "To doświadczenie nauczyło mnie przede wszystkim przekazywania wiedzy w sposób zrozumiały dla osób, które dopiero zaczynają swoją przygodę z programowaniem. Była to też dobra lekcja cierpliwości i dostosowywania sposobu tłumaczenia do konkretnej osoby.",
+      "contributions": [
+        "Prowadzenie zajęć z programowania",
+        "Nauczanie podstaw programowania obiektowego",
+        "Przygotowywanie i prowadzenie zajęć dla uczniów",
+        "Tłumaczenie zagadnień programistycznych osobom początkującym"
+      ]
+    },
+    "modern-car": {
+      "description": "Pierwsze zlecenie wykonane za pomocą tworzenia strony internetowej za pomocy kodu, bez operiania się o CMS i jego szablony.",
+      "contributions": [
+        "Zaprojektowanie strony internetowej firmy",
+        "Implementacja strony w HTML, CSS i JavaScript",
+        "Przygotowanie interfejsu użytkownika",
+        "Dostosowanie strony do potrzeb firmy"
+      ]
+    },
+    "dk-parkiet": {
+      "description": "To doświadczenie pozwoliło mi lepiej poznać Wordpress oraz jego ptymalizacji wraz z mediami oraz współpraca z grafikiem i nadzorowanie jego pracy.",
+      "contributions": [
+        "Zaprojektowanie strony internetowej",
+        "Implementacja strony w WordPress",
+        "Konfiguracja i dostosowanie WordPress CMS",
+        "Dostosowanie strony do wymagań firmy"
+      ]
+    },
+    "skks": {
+      "description": "Pierwsze doświadczenie komercyjne z zakresu informatyki, podczas którego nauczyłem się, że dobry projekt to nie tylko zwykły produkt, ale również zrozumienie potrzeb firmy i umiejętność przełożenia ich na konkretną stronę internetową.",
+      "contributions": [
+        "Zaprojektowanie strony internetowej",
+        "Implementacja strony w WordPress",
+        "Rozwój i utrzymanie strony",
+        "Wprowadzanie zmian zgodnie z potrzebami firmy",
+        "Wsparcie działań marketingowych"
+      ]
+    }
+  },
+
   "Toolbar": {
     "filter": "Filtruj",
     "sort": "Sortuj",
     "sortTitle": "Sortuj według",
     "search": "Szukaj",
     "filterCategory": {
-      "platforms": "Platformy",
-      "environments": "Środowiska",
-      "types": "Typy",
+      "platforms": "Platforma",
+      "environments": "Środowisko",
+      "types": "Typ",
       "scope": "Zakres",
-      "kind": "Rodzaj"
+      "kind": "Rodzaj",
+      "categories": "Kategoria"
     },
     "filterOption": {
       "frontend": "Frontend",
@@ -90,7 +219,11 @@
       "server": "Serwer",
       "db": "Baza danych",
       "commercial": "Komercyjny",
-      "personal": "Prywatny"
+      "personal": "Prywatny",
+      "work": "Praca",
+      "freelance": "Zlecenia",
+      "charity": "Działalność charytatywna",
+      "education": "Edukacja"
     },
     "sortingOption": {
       "default": "Domyślne",
@@ -175,7 +308,8 @@
       "unity": "Unity to wieloplatformowy silnik do tworzenia gier oraz aplikacji 2D, 3D, AR i VR. Udostępnia rozbudowane środowisko programistyczne, zaawansowany silnik renderujący oraz bogaty ekosystem narzędzi.",
       "sequelize": "Sequelize to ORM dla Node.js upraszczający pracę z relacyjnymi bazami danych. Oferuje modele, migracje, relacje pomiędzy encjami oraz wygodny mechanizm budowania zapytań SQL.",
       "vim": "Vim to wysoce konfigurowalny edytor tekstu obsługiwany głównie z poziomu klawiatury. Dzięki swojej szybkości, wydajności oraz rozbudowanym możliwościom konfiguracji jest ceniony przez wielu doświadczonych programistów.",
-      "sql": "SQL (Structured Query Language) to standardowy język służący do zarządzania relacyjnymi bazami danych oraz wykonywania zapytań. Umożliwia tworzenie struktur danych, ich modyfikację, wyszukiwanie oraz definiowanie relacji i uprawnień."
+      "sql": "SQL (Structured Query Language) to standardowy język służący do zarządzania relacyjnymi bazami danych oraz wykonywania zapytań. Umożliwia tworzenie struktur danych, ich modyfikację, wyszukiwanie oraz definiowanie relacji i uprawnień.",
+      "gatsby": "Gatsby to framework oparty na React, służący do tworzenia szybkich i nowoczesnych stron oraz aplikacji internetowych. Wykorzystuje m.in. generowanie statycznych stron, optymalizację wydajności oraz możliwość integracji z różnymi źródłami danych."
     },
     "experience": {
       "1": "Początkujący",

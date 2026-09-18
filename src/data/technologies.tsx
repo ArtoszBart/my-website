@@ -46,6 +46,7 @@ import {
   SiElasticsearch,
   SiExpo,
   SiExpress,
+  SiGatsby,
   SiGithub,
   SiIntellijidea,
   SiJest,
@@ -100,6 +101,15 @@ export const TECHNOLOGIES: Record<TECHNOLOGY, TechMeta> = {
     environments: [ENVIROMENT.NODEJS],
     types: [TECH_TYPE.FRAMEWORK],
     experience: 5,
+  },
+  [TECHNOLOGY.GATSBY]: {
+    icon: <SiGatsby aria-label='Gatsby' />,
+    label: 'Gatsby',
+    url: 'https://www.gatsbyjs.com/',
+    platforms: [PLATFORM.FRONTEND],
+    environments: [ENVIROMENT.NODEJS],
+    types: [TECH_TYPE.FRAMEWORK],
+    experience: 3,
   },
   [TECHNOLOGY.NESTJS]: {
     icon: <SiNestjs aria-label='NestJS' />,
@@ -427,7 +437,7 @@ export const TECHNOLOGIES: Record<TECHNOLOGY, TechMeta> = {
     experience: 5,
   },
   [TECHNOLOGY.CS]: {
-    icon: <CsIcon aria-label='C#' />,
+    icon: <CsIcon aria-label='C#' style={{ width: '1em', height: '1em' }} />,
     label: 'C#',
     url: 'https://dotnet.microsoft.com/languages/csharp',
     platforms: [PLATFORM.BACKEND, PLATFORM.DESKTOP, PLATFORM.MOBILE],

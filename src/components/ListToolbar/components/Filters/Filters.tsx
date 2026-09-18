@@ -8,6 +8,7 @@ import ListControlModal from '../ListControlModal';
 import useFilters, { type IuseFilters } from './useFilters';
 
 interface IProps<T extends Record<string, string[]>> extends IuseFilters {
+  id: string;
   isOpened: boolean;
   allFilters: Record<string, string[]>;
   selectedFilters: T;
@@ -15,18 +16,22 @@ interface IProps<T extends Record<string, string[]>> extends IuseFilters {
 }
 
 export default function Filters<T extends Record<string, string[]>>({
+  id,
   isOpened,
   onClose,
   allFilters,
   selectedFilters,
-
   onToggleValue,
 }: IProps<T>) {
   const t = useTranslations('Toolbar');
   const { handleClose, openedGroup, toggleGroup } = useFilters({ onClose });
 
   return (
-    <ListControlModal isOpened={isOpened} id='filters' onClose={handleClose}>
+    <ListControlModal
+      isOpened={isOpened}
+      id={`${id}-filters`}
+      onClose={handleClose}
+    >
       {Object.entries(allFilters).map(([categoryName, values]) => (
         <fieldset
           key={categoryName}

@@ -14,7 +14,8 @@
   transition: all $animation;
 
   &--platforms,
-  &--scope {
+  &--scope,
+  &--work {
     border-color: $color-purple-3;
 
     &:hover {
@@ -22,7 +23,8 @@
     }
   }
 
-  &--environments {
+  &--environments,
+  &--charity {
     border-color: $color-green;
 
     &:hover {
@@ -31,11 +33,20 @@
   }
 
   &--types,
-  &--kind {
+  &--kind,
+  &--education {
     border-color: $color-yellow;
 
     &:hover {
       background-color: rgba($color-yellow, 0.3);
+    }
+  }
+
+  &--freelance {
+    border-color: $color-blue-2;
+
+    &:hover {
+      background-color: rgba($color-blue-2, 0.3);
     }
   }
 

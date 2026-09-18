@@ -39,6 +39,7 @@ export default function ListToolbar<
         />
 
         <Filters
+          id='technologies'
           isOpened={toolbarHook.openedModal === MODAL.FILTERS}
           onClose={toolbarHook.closeModals}
           allFilters={listStateHook.allFilters}

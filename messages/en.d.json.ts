@@ -29,7 +29,8 @@ declare const messages: {
     ],
     "cv-button": "Download CV",
     "quote": "It takes 20 years to build a reputation and five minutes to ruin it.",
-    "techs": "Tech Stack"
+    "techs": "Tech Stack",
+    "experience": "Experience"
   },
 
   "ProjectsPage": {
@@ -57,17 +58,145 @@ declare const messages: {
     }
   },
 
+  "Timeline": {
+    "pja-master": {
+      "title": "Master's Degree in Software Engineering",
+      "companyName": "Polish-Japanese Academy of Information Technology",
+      "description": "I am continuing my studies, deepening my knowledge of software engineering, business-related topics, and project management.",
+      "contributions": []
+    },
+    "taksidi": {
+      "description": "This experience gave me a great deal of independence and responsibility for solutions that directly support the business. What I value most is the opportunity to work on a problem from understanding its needs, through designing a solution, to implementing and further developing it.",
+      "contributions": [
+        "Designed and implemented a market analysis system",
+        "Built automated data aggregation and processing workflows",
+        "Implemented analytical logic for generating business metrics and insights",
+        "Built the foundations of a scalable analytics platform",
+        "Developed and optimized the system architecture",
+        "Developed and maintained web applications using Next.js",
+        "Developed and maintained a dedicated CMS"
+      ]
+    },
+    "kam": {
+      "description": "A project I led where I particularly valued combining development with design. Close collaboration with the UI/UX designer allowed me not only to accurately translate the project requirements into a finished product, but also to experiment with animations and effects that gave the website a clean, modern, and engaging look.",
+      "contributions": [
+        "Designed and implemented a company website",
+        "Implemented and configured a CMS allowing the client to manage content independently",
+        "Implemented a responsive interface based on the UI/UX design",
+        "Implemented animations and interactions throughout the website",
+        "Implemented visual effects and transitions between elements",
+        "Adapted animations and interactions for mobile devices",
+        "Integrated the website with a dedicated CMS",
+        "Deployed and configured the application"
+      ]
+    },
+    "holis": {
+      "description": "This project gave me the opportunity to go through the entire process of building a mobile product — from initial concepts and technical decisions to the finished application, working closely with the backend team and project lead. What I found particularly valuable was co-creating the solution rather than simply implementing predefined tasks.",
+      "contributions": [
+        "Built a mobile application for iOS and Android using React Native",
+        "Implemented application interfaces",
+        "Co-created the application architecture",
+        "Integrated the mobile application with the backend",
+        "Supported backend development",
+        "Implemented the Tips, Recommendations, and Home screens",
+        "Identified and resolved technical issues",
+        "Participated in decisions regarding the product's development direction"
+      ]
+    },
+    "dream-ai": {
+      "description": "This was an important stage in my transition from building simpler applications to working with larger, existing systems. I learned how to work with an existing codebase, understand its limitations, and introduce changes without compromising the stability of the overall solution.",
+      "contributions": [
+        "Developed an internal CRM system",
+        "Developed an LMS platform supporting logistics operations",
+        "Integrated external APIs and services",
+        "Worked with MongoDB and Mongoose",
+        "Optimized database queries and performance",
+        "Refactored existing code",
+        "Implemented fixes and improvements",
+        "Optimized application performance",
+        "Collaborated with IT and marketing teams",
+        "Worked in an Agile environment"
+      ]
+    },
+    "pja-bachelor": {
+      "title": "Bachelor's Degree in Software Engineering",
+      "companyName": "Polish-Japanese Academy of Information Technology",
+      "description": "My studies gave me a solid foundation in programming combined with business knowledge, introduced me to different career paths in the IT industry, and allowed me to connect technical knowledge with a practical approach to software development.",
+      "contributions": [
+        "Field of study: Computer Science",
+        "Department: Software Engineering",
+        "Specialization: Business Applications Programming",
+        "Study mode: Full-time",
+        "Degree: Bachelor's Degree in Engineering"
+      ]
+    },
+    "bujnicka-dent": {
+      "description": "My first major project, covering multiple areas of software development: frontend, backend, database, and mobile application. I had a great deal of freedom in making technical decisions and was able to see how a solution built from scratch began to provide real support for the company's day-to-day operations.",
+      "contributions": [
+        "Designed a patient registration system",
+        "Implemented appointment booking",
+        "Implemented administrative processes",
+        "Built a web application",
+        "Built a mobile application for employees",
+        "Built a REST API",
+        "Designed a relational database",
+        "Implemented the solution using React, React Native, Node.js, Express.js, and MSSQL",
+        "Deployed the system to Azure",
+        "Implemented system security mechanisms"
+      ]
+    },
+    "pspo": {
+      "title": "Programming Fundamentals Teacher",
+      "description": "This experience primarily taught me how to explain knowledge in an accessible way to people who are just beginning their programming journey. It was also a valuable lesson in patience and adapting my approach to explaining concepts to each individual.",
+      "contributions": [
+        "Conducted programming classes",
+        "Taught the fundamentals of object-oriented programming",
+        "Prepared and conducted lessons for students",
+        "Explained programming concepts to beginners"
+      ]
+    },
+    "modern-car": {
+      "description": "My first project involving the creation of a website entirely through code, without relying on a CMS or its templates.",
+      "contributions": [
+        "Designed the company's website",
+        "Implemented the website using HTML, CSS, and JavaScript",
+        "Created the user interface",
+        "Adapted the website to the company's needs"
+      ]
+    },
+    "dk-parkiet": {
+      "description": "This experience allowed me to gain a better understanding of WordPress and its optimization, including media management, as well as collaboration with a graphic designer and overseeing their work.",
+      "contributions": [
+        "Designed the website",
+        "Implemented the website using WordPress",
+        "Configured and customized the WordPress CMS",
+        "Adapted the website to the company's requirements"
+      ]
+    },
+    "skks": {
+      "description": "My first commercial experience in IT, during which I learned that a good project is not just about building a product, but also about understanding the company's needs and translating them into a practical website.",
+      "contributions": [
+        "Designed the website",
+        "Implemented the website using WordPress",
+        "Developed and maintained the website",
+        "Introduced changes according to the company's needs",
+        "Supported marketing activities"
+      ]
+    }
+  },
+
   "Toolbar": {
     "filter": "Filter",
     "sort": "Sort",
     "sortTitle": "Sort by",
     "search": "Search",
     "filterCategory": {
-      "platforms": "Platforms",
-      "environments": "Environments",
-      "types": "Types",
+      "platforms": "Platform",
+      "environments": "Environment",
+      "types": "Type",
       "scope": "Scope",
-      "kind": "Kind"
+      "kind": "Kind",
+      "categories": "Category"
     },
     "filterOption": {
       "frontend": "Frontend",
@@ -93,7 +222,11 @@ declare const messages: {
       "server": "Server",
       "db": "Database",
       "commercial": "Commercial",
-      "personal": "Personal"
+      "personal": "Personal",
+      "work": "Work",
+      "freelance": "Freelance",
+      "charity": "Charity",
+      "education": "Education"
     },
     "sortingOption": {
       "default": "Default",
@@ -178,7 +311,8 @@ declare const messages: {
       "unity": "Unity is a cross-platform game engine used to create 2D, 3D, AR, and VR applications. It provides a comprehensive development environment and powerful rendering capabilities.",
       "sequelize": "Sequelize is a promise-based ORM for Node.js that simplifies working with SQL databases. It provides models, migrations, associations, and query building for multiple relational database systems.",
       "vim": "Vim is a highly configurable, keyboard-driven text editor known for its speed and efficiency. Its powerful editing commands and plugin ecosystem make it a favorite among experienced developers.",
-      "sql": "SQL (Structured Query Language) is the standard language for managing and querying relational databases. It is used to create database structures, retrieve and manipulate data, and define relationships."
+      "sql": "SQL (Structured Query Language) is the standard language for managing and querying relational databases. It is used to create database structures, retrieve and manipulate data, and define relationships.",
+      "gatsby": "Gatsby is a React-based framework for building fast and modern websites and web applications. It offers features such as static site generation, performance optimization, and integration with various data sources."
     },
     "experience": {
       "1": "Beginner",

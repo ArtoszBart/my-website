@@ -1,6 +1,7 @@
 export enum TECHNOLOGY {
   REACT = 'react',
   NEXTJS = 'nextjs',
+  GATSBY = 'gatsby',
   NESTJS = 'nestjs',
   EXPRESS = 'express',
   EXPO = 'expo',
