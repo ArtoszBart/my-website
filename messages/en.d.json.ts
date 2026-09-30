@@ -57,6 +57,9 @@ declare const messages: {
     },
     "kam": {
       "snippet": "Modern website for an accounting firm featuring a content management system that enables independent content editing. Designed to build trust, strengthen the company's professional image, showcase services in a clear and accessible way, and support effective client acquisition."
+    },
+    "gameHub": {
+      "snippet": "A web application for browsing and discovering games, powered by data from the RAWG API. The project was created as a practical exercise in React, state management, and building interactive interfaces. It features game search, filtering and sorting, video content, light and dark themes, and expandable/collapsible longer descriptions."
     }
   },
 

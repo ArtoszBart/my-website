@@ -6,6 +6,32 @@ import { Project } from '@/types/project';
 
 export const PROJECTS = [
   {
+    title: 'Game Hub',
+    thumbnail: `${process.env.NEXT_PUBLIC_CDN_URL}/game-hub.webp`,
+    blurThumbnail:
+      'data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABQBQCdASogABIAPzGCtFOuqKSisAwB0CYJZAAIFmPuAsbULZtunwT9p7Be/+lj75IO1cgA/tszgnYUXqO7i5AsaCu9tjUW1Z08G4rpsRIXGl5DuV9XUNhuFPRSIRXqClgvgVrNaFHdXPXXE/nlMX7oHYUSYQ6zvjfpR08qrrp8eLXqgHj5BI/zQ+WXTUG15xvaznlu1XV/GoAA',
+    link: 'https://game-hub.bartart.dev/',
+    repositoryLink: 'https://github.com/ArtoszBart/game-hub',
+    translationKey: 'gameHub',
+    scope: [SCOPE.WEB],
+    techstack: [
+      TECHNOLOGY.REACT,
+      TECHNOLOGY.VITE,
+      TECHNOLOGY.TYPE_SCRIPT,
+      TECHNOLOGY.HTML,
+      TECHNOLOGY.TAILWIND,
+      TECHNOLOGY.ZUSTAND,
+      TECHNOLOGY.REACT_QUERY,
+      TECHNOLOGY.NPM,
+      TECHNOLOGY.GIT,
+      TECHNOLOGY.GITHUB,
+    ],
+    environments: [ENVIROMENT.NODEJS],
+    kind: PROJECT_TYPE.PERSONAL,
+    date: new Date(Date.UTC(2024, 10, 1)),
+    rating: 6,
+  },
+  {
     title: 'Bujnicka-Dent',
     thumbnail: `${process.env.NEXT_PUBLIC_CDN_URL}/bujnicka-dent.webp`,
     blurThumbnail:

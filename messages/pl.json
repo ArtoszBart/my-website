@@ -54,6 +54,9 @@
     },
     "kam": {
       "snippet": "Nowoczesna strona internetowa dla biura rachunkowego wyposażona w system zarządzania treścią umożliwiający samodzielną edycję zawartości. Zaprojektowana z myślą o budowaniu zaufania, profesjonalnego wizerunku firmy, przejrzystej prezentacji usług oraz skutecznym pozyskiwaniu nowych klientów."
+    },
+    "gameHub": {
+      "snippet": "Aplikacja webowa do przeglądania i odkrywania gier, oparta na danych z RAWG API. Projekt został stworzony jako praktyczne ćwiczenie z Reacta, zarządzania stanem oraz budowania interaktywnych interfejsów. Implementuje wyszukiwanie, filtrowanie i sortowanie gier, obsługę materiałów wideo, przełączanie między jasnym i ciemnym motywem oraz rozwijanie/zwijanie dłuższych opisów."
     }
   },
 
