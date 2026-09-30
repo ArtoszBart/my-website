@@ -1,0 +1,126 @@
+@use '../../styles/abstracts/' as *;
+
+.certifications {
+  margin-inline: auto;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @include media-md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__card {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid $color-dark-2;
+    border-radius: 10px;
+    background-color: $color-primary;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    transition: $animation;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(
+        110deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.08) 50%,
+        transparent 70%
+      );
+      transform: translateX(-100%);
+      pointer-events: none;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        border-color: rgba($color-purple-2, 1);
+        box-shadow: 0 10px 30px -10px rgba($color-purple-2, 0.5);
+
+        &::before {
+          transform: translateX(100%);
+          transition: transform 0.5s ease-out;
+        }
+
+        .certifications__card__overlay {
+          clip-path: circle(150% at 50% 50%);
+
+          &__label {
+            opacity: 1;
+            transform: translateY(0);
+            letter-spacing: 0.12em;
+          }
+        }
+      }
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      svg {
+        flex-shrink: 0;
+        height: 40px;
+        width: 40px;
+      }
+
+      h3 {
+        color: $font-color;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.25px;
+      }
+    }
+
+    &__overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba($color-primary, 0.5);
+      backdrop-filter: blur(4px);
+      clip-path: circle(0% at 50% 50%);
+      transition: $animation;
+      pointer-events: none;
+
+      &__label {
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.4em;
+        opacity: 0;
+        transform: translateY(12px);
+        transition:
+          opacity 0.4s $easing-standard 0.1s,
+          transform 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.1s,
+          letter-spacing 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+      }
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__card,
+    &__card__content,
+    &__card__overlay,
+    &__card__overlay__label {
+      transition-duration: 0.01ms;
+      transition-delay: 0s;
+    }
+
+    &__card::before {
+      display: none;
+    }
+  }
+}

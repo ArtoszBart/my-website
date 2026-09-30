@@ -30,7 +30,9 @@ declare const messages: {
     "cv-button": "Download CV",
     "quote": "It takes 20 years to build a reputation and five minutes to ruin it.",
     "techs": "Tech Stack",
-    "experience": "Experience"
+    "experience": "Experience",
+    "certifications": "Courses & Certifications",
+    "preview": "Preview"
   },
 
   "ProjectsPage": {
