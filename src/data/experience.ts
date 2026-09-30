@@ -1,15 +1,5 @@
 import { TECHNOLOGY } from '@/enums/technology.enum';
-
-type TimelineEntry = {
-  id: string;
-  title: string;
-  companyName: string;
-  link?: string;
-  startDate: Date;
-  endDate?: Date;
-  category: TIMELINE_CATEGORY;
-  techstack: TECHNOLOGY[];
-};
+import { TimelineEntry } from '@/types/data/experience';
 
 export enum TIMELINE_CATEGORY {
   WORK = 'work',

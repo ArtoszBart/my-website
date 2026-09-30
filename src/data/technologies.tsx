@@ -12,6 +12,7 @@ import { ENVIROMENT } from '@/enums/environment.enum';
 import { TECHNOLOGY } from '@/enums/technology.enum';
 import { PLATFORM } from '@/enums/techPlatform.enum';
 import { TECH_TYPE } from '@/enums/techType.enum';
+import { TechMeta } from '@/types/data/technologies';
 import {
   BiLogoMongodb,
   BiLogoPostgresql,
@@ -72,16 +73,6 @@ import {
 } from 'react-icons/si';
 import { TbBrandXamarin, TbSql } from 'react-icons/tb';
 import { VscAzure, VscTerminalBash, VscVscode } from 'react-icons/vsc';
-
-export type TechMeta = {
-  icon: React.ReactNode;
-  label: string;
-  url: string;
-  platforms: PLATFORM[];
-  environments: ENVIROMENT[];
-  types: TECH_TYPE[];
-  experience: 1 | 2 | 3 | 4 | 5;
-};
 
 export const TECHNOLOGIES: Record<TECHNOLOGY, TechMeta> = {
   [TECHNOLOGY.REACT]: {

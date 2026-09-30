@@ -69,5 +69,3 @@ export const PROJECTS = [
     rating: 9,
   },
 ] as const satisfies readonly Project[];
-
-export type TranslationKey = (typeof PROJECTS)[number]['translationKey'];

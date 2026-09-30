@@ -1,4 +1,5 @@
 import { SCOPE } from '@/enums/scope.enum';
+import { ScopeMeta } from '@/types/data/scopes';
 import {
   HiOutlineCircleStack,
   HiOutlineDevicePhoneMobile,
@@ -6,11 +7,6 @@ import {
   HiOutlineNewspaper,
   HiOutlineServerStack,
 } from 'react-icons/hi2';
-
-type ScopeMeta = {
-  icon: React.ReactNode;
-  translationKey: 'web' | 'mobile' | 'cms' | 'server' | 'db';
-};
 
 export const SCOPES: Record<SCOPE, ScopeMeta> = {
   [SCOPE.WEB]: { icon: <HiOutlineGlobeAlt />, translationKey: SCOPE.WEB },

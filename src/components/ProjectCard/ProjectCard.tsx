@@ -1,9 +1,9 @@
 import './projectCard.scss';
 
-import { TranslationKey } from '@/data/projects';
 import { SCOPES } from '@/data/scopes';
 import { TECHNOLOGIES } from '@/data/technologies';
 import { useTranslations } from '@/i18n/translations';
+import { TranslationKey } from '@/types/data/projects';
 import { Project } from '@/types/project';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
