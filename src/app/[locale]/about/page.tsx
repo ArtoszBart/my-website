@@ -1,6 +1,7 @@
 import './aboutPage.scss';
 
 import Button from '@/components/Button';
+import Certifications from '@/components/Certifications';
 import ImageLoader from '@/components/ImageLoader';
 import Technologies from '@/components/Technologies';
 import Timeline from '@/components/Timeline';
@@ -55,6 +56,11 @@ export default function AboutPage({ params }: LocaleParams) {
       <section>
         <h2>{t('experience')}</h2>
         <Timeline />
+      </section>
+
+      <section>
+        <h2>{t('certifications')}</h2>
+        <Certifications />
       </section>
     </main>
   );

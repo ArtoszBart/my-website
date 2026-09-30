@@ -27,7 +27,9 @@
     "cv-button": "Pobierz CV",
     "quote": "Potrzeba dwudziestu lat, by zbudować reputację, i pięciu minut, by ją zniszczyć.",
     "techs": "Technologie",
-    "experience": "Doświadczenie"
+    "experience": "Doświadczenie",
+    "certifications": "Kursy i Certyfikaty",
+    "preview": "Podgląd"
   },
 
   "ProjectsPage": {
