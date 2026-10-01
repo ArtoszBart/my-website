@@ -57,6 +57,9 @@
     },
     "gameHub": {
       "snippet": "A web application for browsing and discovering games, powered by data from the RAWG API. The project was created as a practical exercise in React, state management, and building interactive interfaces. It features game search, filtering and sorting, video content, light and dark themes, and expandable/collapsible longer descriptions."
+    },
+    "issueTracker": {
+      "snippet": "An issue and discussion management application built with Next.js. It features registration and login using passwords or Google, GitHub, and Facebook accounts. Users can create discussion threads and comments, view statistics, and interact with a database. Also includes loading skeletons, operation status notifications, and automated email delivery."
     }
   },
 

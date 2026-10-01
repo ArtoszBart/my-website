@@ -6,6 +6,35 @@ import { Project } from '@/types/project';
 
 export const PROJECTS = [
   {
+    title: 'Issue Tracker',
+    thumbnail: `${process.env.NEXT_PUBLIC_CDN_URL}/bart-art/projects/issue-tracker/issue-tracker.webp`,
+    blurThumbnail:
+      'data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAgCdASogABIAPzmSvlmvKaYlKAgB4CcJZwAAPfp8AAD+7p4vl3JMn0Ha7bi/DTexPjrve/8DEZRsc4AAAA==',
+    link: 'https://issue-tracker.bartart.dev/',
+    repositoryLink: 'https://github.com/ArtoszBart/issue-tracker',
+    translationKey: 'issueTracker',
+    scope: [SCOPE.WEB, SCOPE.SERVER, SCOPE.DB],
+    techstack: [
+      TECHNOLOGY.NEXTJS,
+      TECHNOLOGY.TYPE_SCRIPT,
+      TECHNOLOGY.HTML,
+      TECHNOLOGY.POSTGRESQL,
+      TECHNOLOGY.PRISMA,
+      TECHNOLOGY.TAILWIND,
+      TECHNOLOGY.OAUTH,
+      TECHNOLOGY.CHARTJS,
+      TECHNOLOGY.REACT_QUERY,
+      TECHNOLOGY.ZOD,
+      TECHNOLOGY.RESEND,
+      TECHNOLOGY.SENTRY,
+      TECHNOLOGY.VERCEL,
+    ],
+    environments: [ENVIROMENT.NODEJS],
+    kind: PROJECT_TYPE.PERSONAL,
+    date: new Date(Date.UTC(2024, 10, 1)),
+    rating: 8,
+  },
+  {
     title: 'Game Hub',
     thumbnail: `${process.env.NEXT_PUBLIC_CDN_URL}/game-hub.webp`,
     blurThumbnail:
@@ -28,7 +57,7 @@ export const PROJECTS = [
     ],
     environments: [ENVIROMENT.NODEJS],
     kind: PROJECT_TYPE.PERSONAL,
-    date: new Date(Date.UTC(2024, 10, 1)),
+    date: new Date(Date.UTC(2024, 9, 1)),
     rating: 6,
   },
   {
