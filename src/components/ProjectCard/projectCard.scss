@@ -64,6 +64,7 @@
 
       &__title {
         margin: unset;
+        text-align: left;
         font-size: 20px;
         font-weight: 400;
         text-transform: uppercase;
@@ -74,7 +75,7 @@
         display: flex;
         align-items: center;
 
-        a {
+        &__icon {
           display: flex;
           justify-content: center;
           align-items: center;

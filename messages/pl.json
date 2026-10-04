@@ -45,6 +45,34 @@
     "db": "Baza danych"
   },
 
+  "MobileProjectModal": {
+    "description": "Chcesz przetestować {projectName}? Pobierz wersję demonstracyjną na Androida. Wersja na iOS nie jest chwilowo dostępna.",
+    "androidDownloadButton": "Pobierz APK",
+    "androidManualTitle": "Jak zainstalować aplikację?",
+    "androidManual": [
+      {
+        "title": "Pobierz plik APK",
+        "description": "Kliknij przycisk „Pobierz APK” i poczekaj, aż plik pobierze się na Twój telefon."
+      },
+      {
+        "title": "Otwórz pobrany plik",
+        "description": "Kliknij pobrany plik {fileName} w powiadomieniu lub znajdź go w folderze „Pobrane” w aplikacji Pliki."
+      },
+      {
+        "title": "Zezwól na instalację",
+        "description": "Jeśli telefon zablokuje instalację, wybierz „Ustawienia” i włącz opcję „Zezwalaj z tego źródła”. Następnie wróć do instalacji."
+      },
+      {
+        "title": "Zainstaluj aplikację",
+        "description": "Kliknij „Zainstaluj” i poczekaj, aż instalacja się zakończy."
+      },
+      {
+        "title": "Uruchom {projectName}",
+        "description": "Kliknij „Otwórz” lub znajdź aplikację na liście aplikacji w telefonie. Gotowe — możesz przetestować demo!"
+      }
+    ]
+  },
+
   "Projects": {
     "bujnickaDent": {
       "snippet": "Kompleksowy system zarządzania gabinetem stomatologicznym ze szczególnym naciskiem na bezpieczeństwo i ochronę danych. Umożliwia rezerwację wizyt online, zarządzanie harmonogramami pracy, obsługę powiadomień oraz procesów administracyjnych. Rozwiązanie zostało wdrożone i wspiera codzienną pracę gabinetu."
@@ -60,6 +88,9 @@
     },
     "issueTracker": {
       "snippet": "Aplikacja do zarządzania zgłoszeniami i dyskusjami, stworzona w Next.js. Oferuje rejestrację i logowanie za pomocą hasła lub kont Google, GitHub i Facebook. Umożliwia tworzenie wątków i komentarzy, prezentację statystyk oraz obsługę bazy danych. Zawiera szkielety ładowania, komunikaty o wynikach i automatyczne e-maile."
+    },
+    "holis": {
+      "snippet": "Aplikacja mobilna wspierająca profilaktykę zdrowotną. Zintegrowana z AWS, przypomina o badaniach okresowych i specjalistycznych na podstawie profilu użytkownika. Zawiera opisy badań, zalecenia i możliwość umówienia wizyty. Oferuje porady zdrowotne, wskazówki, instrukcje i rekomendacje produktów do zapisania w ulubionych."
     }
   },
 

@@ -48,6 +48,34 @@ declare const messages: {
     "db": "Database"
   },
 
+  "MobileProjectModal": {
+    "description": "Want to try {projectName}? Download the Android demo version. The iOS version is currently unavailable.",
+    "androidDownloadButton": "Download APK",
+    "androidManualTitle": "How to install the app?",
+    "androidManual": [
+      {
+        "title": "Download the APK file",
+        "description": "Tap the \"Download APK\" button and wait for the file to download to your phone."
+      },
+      {
+        "title": "Open the downloaded file",
+        "description": "Tap the downloaded {fileName} file in your notifications, or find it in the \"Downloads\" folder in your Files app."
+      },
+      {
+        "title": "Allow installation",
+        "description": "If your phone blocks the installation, open \"Settings\" and enable \"Allow from this source\". Then return to the installation."
+      },
+      {
+        "title": "Install the app",
+        "description": "Tap \"Install\" and wait for the installation to finish."
+      },
+      {
+        "title": "Launch {projectName}",
+        "description": "Tap \"Open\" or find the app in your app list. That's it — you're ready to try the demo!"
+      }
+    ]
+  },
+
   "Projects": {
     "bujnickaDent": {
       "snippet": "Comprehensive dental practice management system with a strong focus on security and data protection. It enables online appointment booking, schedule management, notifications, and administrative workflows. The solution has been deployed and supports the clinic's daily operations."
@@ -63,6 +91,9 @@ declare const messages: {
     },
     "issueTracker": {
       "snippet": "An issue and discussion management application built with Next.js. It features registration and login using passwords or Google, GitHub, and Facebook accounts. Users can create discussion threads and comments, view statistics, and interact with a database. Also includes loading skeletons, operation status notifications, and automated email delivery."
+    },
+    "holis": {
+      "snippet": "A mobile app for preventive healthcare. Integrated with AWS, it sends reminders for routine and specialist examinations based on user profiles. It includes examination details, preparation guidelines, and appointment booking. It also offers health advice, tips, instructions, and product recommendations that users can save to favorites."
     }
   },
 

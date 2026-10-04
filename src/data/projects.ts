@@ -6,6 +6,32 @@ import { Project } from '@/types/project';
 
 export const PROJECTS = [
   {
+    title: 'Holis Care',
+    thumbnail: `${process.env.NEXT_PUBLIC_CDN_URL}/bart-art/projects/holis/holis.webp`,
+    blurThumbnail:
+      'data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQBACdASogABIAPzl+vFQvJ6YjMBgMAeAnCUAXZBegL+43VGycGWScHPX/SUP2aAD+w1jjuOHq8CSLmfKQYzs4HRF2t2Y5oK5kvImy/f45yutkLS1qZR/IzNVtILIbyNTLG002Vzwlgo+60xfE9G7aAAA=',
+    link: `${process.env.NEXT_PUBLIC_CDN_URL}/bart-art/projects/holis/holis-care.apk`,
+    action: 'install-modal',
+    repositoryLink: 'https://github.com/ArtoszBart/holis-care',
+    translationKey: 'holis',
+    scope: [SCOPE.MOBILE],
+    techstack: [
+      TECHNOLOGY.CSS,
+      TECHNOLOGY.EXPO,
+      TECHNOLOGY.JWT,
+      TECHNOLOGY.LOTTIE_FILES,
+      TECHNOLOGY.REACT_NATIVE,
+      TECHNOLOGY.SENTRY,
+      TECHNOLOGY.TYPE_SCRIPT,
+      TECHNOLOGY.ZOD,
+      TECHNOLOGY.ZUSTAND,
+    ],
+    environments: [ENVIROMENT.NODEJS],
+    kind: PROJECT_TYPE.COMMERCIAL,
+    date: new Date(Date.UTC(2024, 8, 1)),
+    rating: 9,
+  },
+  {
     title: 'Issue Tracker',
     thumbnail: `${process.env.NEXT_PUBLIC_CDN_URL}/bart-art/projects/issue-tracker/issue-tracker.webp`,
     blurThumbnail:

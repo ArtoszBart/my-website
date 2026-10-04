@@ -11,6 +11,7 @@ export interface IProps extends IuseButton {
   label: string;
   icon: ReactNode;
   href?: string;
+  sameTab?: boolean;
 }
 
 export default function Button(props: IProps) {
@@ -43,8 +44,8 @@ export default function Button(props: IProps) {
         className={clsx('button', props.className)}
         href={props.href}
         onClick={handleClick}
-        target='_blank'
-        rel='noreferrer'
+        target={props.sameTab ? undefined : '_blank'}
+        rel={props.sameTab ? undefined : 'noopener noreferrer'}
       >
         {content}
       </a>

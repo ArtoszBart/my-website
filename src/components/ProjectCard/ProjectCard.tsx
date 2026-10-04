@@ -10,6 +10,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState } from 'react';
 import { FaGithub, FaUpRightFromSquare } from 'react-icons/fa6';
+import LiveDemoAction from './components/LiveDemoAction';
+import MobileDemoModal from './components/MobileDemoModal';
 
 type Props = {
   project: Project;
@@ -23,6 +25,7 @@ export default function ProjectCard({ project, isListLayout, index }: Props) {
     `Projects.${project.translationKey as TranslationKey}`,
   );
   const [loaded, setLoaded] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <motion.div
@@ -37,12 +40,12 @@ export default function ProjectCard({ project, isListLayout, index }: Props) {
         delay: Math.min(index * 0.15, 0.5),
       }}
     >
-      <a
+      <LiveDemoAction
         className='project-card__thumbnail'
-        aria-label={t('liveDemo')}
+        label={t('liveDemo')}
         href={project.link || project.repositoryLink}
-        target='_blank'
-        rel='noreferrer'
+        action={project.action}
+        onClick={() => setIsOpen(true)}
       >
         <Image
           src={project.blurThumbnail}
@@ -63,25 +66,26 @@ export default function ProjectCard({ project, isListLayout, index }: Props) {
           fetchPriority={index === 0 ? 'high' : 'auto'}
           loading={index === 0 ? 'eager' : 'lazy'}
         />
-      </a>
+      </LiveDemoAction>
 
       <div className='project-card__body'>
         <div className='project-card__body__header'>
           <h2 className='project-card__body__header__title'>{project.title}</h2>
           <div className='project-card__body__header__actions'>
             {project.link && (
-              <a
-                aria-label={t('liveDemo')}
-                data-tooltip={t('liveDemo')}
+              <LiveDemoAction
+                className='project-card__body__header__actions__icon'
+                label={t('liveDemo')}
                 href={project.link}
-                target='_blank'
-                rel='noreferrer'
+                action={project.action}
+                onClick={() => setIsOpen(true)}
               >
                 <FaUpRightFromSquare />
-              </a>
+              </LiveDemoAction>
             )}
             {project.repositoryLink && (
               <a
+                className='project-card__body__header__actions__icon'
                 aria-label={t('repository')}
                 data-tooltip={t('repository')}
                 href={project.repositoryLink}
@@ -125,6 +129,15 @@ export default function ProjectCard({ project, isListLayout, index }: Props) {
           </div>
         </div>
       </div>
+
+      {project.action === 'install-modal' && (
+        <MobileDemoModal
+          projectName={project.title}
+          isOpen={isOpen}
+          onClose={() => setIsOpen(false)}
+          href={project.link}
+        />
+      )}
     </motion.div>
   );
 }
