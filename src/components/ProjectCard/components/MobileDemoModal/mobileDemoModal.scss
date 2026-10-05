@@ -11,6 +11,21 @@
   background: rgba($color-primary, 0.75);
   backdrop-filter: blur(8px);
 
+  transition: $animation;
+  opacity: 0;
+  visibility: hidden;
+
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+
+    .install-modal__container {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+  }
+
   &__container {
     position: relative;
     width: min(100%, 620px);
@@ -21,6 +36,11 @@
     border-radius: 1rem;
     background: $color-dark-2;
     box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+
+    transition: $animation;
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+    filter: blur(4px);
   }
 
   &__close-button {

@@ -2,7 +2,7 @@
 
 import Button from '@/components/Button';
 import { useTranslations } from '@/i18n/translations';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { FaXmark } from 'react-icons/fa6';
 import { LuDownload } from 'react-icons/lu';
 import './mobileDemoModal.scss';
@@ -17,25 +17,21 @@ type Props = {
 export default function MobileDemoModal(props: Props) {
   const t = useTranslations('MobileProjectModal');
 
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
-    if (!props.isOpen) return;
+    const frame = requestAnimationFrame(() => {
+      setIsVisible(props.isOpen);
+    });
 
-    const handleClickOutside = (e: MouseEvent) => {
-      const modal = document.querySelector('.install-modal');
-
-      if (modal && !modal.contains(e.target as Node)) {
-        props.onClose();
-      }
-    };
-    document.addEventListener('click', handleClickOutside);
-
-    return () => document.removeEventListener('click', handleClickOutside);
-  }, [props]);
-
-  if (!props.isOpen) return null;
+    return () => cancelAnimationFrame(frame);
+  }, [props.isOpen]);
 
   return (
-    <div className='install-modal' onClick={props.onClose}>
+    <div
+      className={`install-modal ${isVisible ? 'install-modal--visible' : ''}`}
+      onClick={props.onClose}
+    >
       <section
         className='install-modal__container'
         role='dialog'
