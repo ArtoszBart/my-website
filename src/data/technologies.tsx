@@ -428,7 +428,7 @@ export const TECHNOLOGIES: Record<TECHNOLOGY, TechMeta> = {
     experience: 5,
   },
   [TECHNOLOGY.CS]: {
-    icon: <CsIcon aria-label='C#' style={{ width: '1em', height: '1em' }} />,
+    icon: <CsIcon aria-label='C#' />,
     label: 'C#',
     url: 'https://dotnet.microsoft.com/languages/csharp',
     platforms: [PLATFORM.BACKEND, PLATFORM.DESKTOP, PLATFORM.MOBILE],
