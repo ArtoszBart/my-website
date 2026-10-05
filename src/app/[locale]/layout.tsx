@@ -1,5 +1,6 @@
 import '@/styles/main.scss';
 
+import BackgroundGlows from '@/components/BackgroundGlow/';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Toaster from '@/components/Toaster';
@@ -57,6 +58,7 @@ export default async function RootLayout({ children, params }: Props) {
       className={clsx(plusJakartaSans.variable, firaCode.variable)}
     >
       <body>
+        <BackgroundGlows />
         <Providers>
           <Header />
           {children}
