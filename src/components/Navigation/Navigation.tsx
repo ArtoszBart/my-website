@@ -12,8 +12,8 @@ export default function Navigation({ className, handleMenuItemClick }: IProps) {
   const t = useTranslations('Nav');
 
   return (
-    <nav>
-      <ul className={className}>
+    <nav className={className}>
+      <ul>
         <li>
           <Link href='/about' onClick={handleMenuItemClick}>
             {t('about')}

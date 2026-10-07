@@ -2,12 +2,22 @@
 
 .logo {
   cursor: pointer;
-  font-weight: 500;
-  font-size: 20px;
-  transition: transform $animation;
-  width: max-content;
+  transition: scale $animation;
 
   &:hover {
-    transform: scale(1.05);
+    scale: 1.05;
+  }
+
+  &__image {
+    width: auto;
+    height: 32px;
+
+    @include media-lg {
+      height: 38px;
+    }
+
+    @include media-xxl {
+      height: 52px;
+    }
   }
 }

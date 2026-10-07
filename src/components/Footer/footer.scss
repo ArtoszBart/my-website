@@ -11,7 +11,7 @@
     padding-block: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
 
     &::before {
       content: '';
@@ -24,9 +24,14 @@
     }
   }
 
+  .logo {
+    &:hover {
+      scale: 1;
+    }
+  }
+
   .socials {
     flex-direction: row;
-    align-self: flex-start;
     font-size: 15px;
     margin-top: 0.5rem;
 
@@ -35,7 +40,7 @@
     }
   }
 
-  &__navigation {
+  &__navigation ul {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -43,7 +48,6 @@
   }
 
   &__copyright {
-    margin-top: 0.5rem;
     font-size: 14px;
     color: rgba($font-color, 0.7);
   }
@@ -54,6 +58,7 @@
       grid-template-columns: auto 1fr;
       grid-template-rows: 1fr 1fr auto;
       padding-inline: 10vw;
+      align-items: center;
     }
 
     &__logo {
@@ -64,25 +69,25 @@
       margin-top: 0;
     }
 
-    nav {
+    &__navigation {
       grid-column: 2;
       grid-row: 1 / 4;
       text-align: center;
-    }
 
-    &__navigation {
-      flex-direction: column;
+      ul {
+        flex-direction: column;
+      }
     }
   }
 
   @include media-lg {
-    nav {
+    &__navigation {
       margin-block: auto;
       justify-self: flex-end;
-    }
 
-    &__navigation {
-      flex-direction: row;
+      ul {
+        flex-direction: row;
+      }
     }
   }
 }
