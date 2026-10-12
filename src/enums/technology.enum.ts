@@ -7,6 +7,7 @@ export enum TECHNOLOGY {
   EXPO = 'expo',
   REACT_NATIVE = 'reactnative',
   NPM = 'npm',
+  YARN = 'yarn',
   ARDUINO = 'arduino',
   ASPDOTNET = 'aspnet',
   WPF = 'wpf',

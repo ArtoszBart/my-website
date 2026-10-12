@@ -35,6 +35,7 @@ import {
   FaTrello,
   FaUnity,
   FaWordpress,
+  FaYarn,
 } from 'react-icons/fa6';
 import { GrGraphQl, GrMysql, GrOracle } from 'react-icons/gr';
 import { IoLogoBitbucket, IoLogoVercel } from 'react-icons/io5';
@@ -151,6 +152,15 @@ export const TECHNOLOGIES: Record<TECHNOLOGY, TechMeta> = {
     environments: [ENVIROMENT.NODEJS],
     types: [TECH_TYPE.TOOL],
     experience: 5,
+  },
+  [TECHNOLOGY.YARN]: {
+    icon: <FaYarn aria-label='Yarn' />,
+    label: 'Yarn',
+    url: 'https://yarnpkg.com/',
+    platforms: [PLATFORM.BACKEND, PLATFORM.FRONTEND],
+    environments: [ENVIROMENT.NODEJS],
+    types: [TECH_TYPE.TOOL],
+    experience: 4,
   },
   [TECHNOLOGY.ARDUINO]: {
     icon: <SiArduino aria-label='Arduino' />,
