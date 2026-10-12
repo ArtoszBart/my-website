@@ -10,6 +10,7 @@ import useTechnologies from './useTechnologies';
 
 export default function Technologies() {
   const t = useTranslations('Technologies');
+  const t2 = useTranslations('Toolbar');
   const { displayedTechnologies, ...hook } = useTechnologies();
 
   return (
@@ -49,7 +50,7 @@ export default function Technologies() {
           })
         ) : (
           <p className='techs__grid__no-results'>
-            Brak wyników dla: <span>{hook.query}</span>
+            {t2('noResults')}: <span>{hook.query}</span>
           </p>
         )}
       </div>

@@ -269,7 +269,8 @@
       "name": "Nazwa",
       "experience": "Doświadczenie",
       "date": "Data"
-    }
+    },
+    "noResults": "Brak wyników dla"
   },
 
   "Technologies": {

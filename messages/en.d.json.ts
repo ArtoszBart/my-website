@@ -272,7 +272,8 @@ declare const messages: {
       "name": "Name",
       "experience": "Experience",
       "date": "Date"
-    }
+    },
+    "noResults": "No results for"
   },
 
   "Technologies": {
