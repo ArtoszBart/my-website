@@ -167,7 +167,7 @@
       ]
     },
     "bujnicka-dent": {
-      "description": "Pierwszy duży projekt, który obejmował wiele części ooprogramowania: frontend, backed, baza danych i aplikacja mobilna. Miałem dużą swobodę w podejmowaniu decyzji technicznych i mogłem zobaczyć, jak rozwiązanie tworzone od podstaw zaczyna realnie wspierać codzienną pracę firmy.",
+      "description": "Pierwszy duży projekt, który obejmował wiele części oprogramowania: frontend, backed, baza danych i aplikacja mobilna. Miałem dużą swobodę w podejmowaniu decyzji technicznych i mogłem zobaczyć, jak rozwiązanie tworzone od podstaw zaczyna realnie wspierać codzienną pracę firmy.",
       "contributions": [
         "Zaprojektowanie systemu rejestracji pacjentów",
         "Implementacja rezerwacji wizyt",

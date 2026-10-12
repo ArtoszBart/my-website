@@ -108,7 +108,7 @@ export const CERTIFICATIONS: Certification[] = [
     ],
   },
   {
-    name: 'The Ultimate Doocker Course',
+    name: 'The Ultimate Docker Course',
     source: CERTIFICATION_SOURCE.CODE_WITH_MOSH,
     serialNo: 'cert_m6trmv3m',
     date: new Date(Date.UTC(2024, 6, 6)),
