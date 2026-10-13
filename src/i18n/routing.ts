@@ -19,6 +19,10 @@ export const routing = defineRouting({
       en: '/contact',
       pl: '/kontakt',
     },
+    '/services': {
+      en: '/services',
+      pl: '/oferta',
+    },
   },
   localeCookie: {
     name: 'USER_LOCALE',

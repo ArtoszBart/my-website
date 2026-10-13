@@ -68,14 +68,10 @@
       }
     }
 
-    &:nth-child(3n + 1) &__icon::before {
-      background: linear-gradient($color-blue-1, $color-green);
-    }
-    &:nth-child(3n + 2) &__icon::before {
-      background: linear-gradient($color-yellow, $color-red);
-    }
-    &:nth-child(3n) &__icon::before {
-      background: linear-gradient($color-pink, $color-blue-2);
+    @each $index, $gradient in $gradients {
+      &:nth-child(3n + #{$index}) &__icon::before {
+        background: $gradient;
+      }
     }
 
     &__label {

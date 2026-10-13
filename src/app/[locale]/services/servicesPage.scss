@@ -1,0 +1,17 @@
+@use '../../../styles/abstracts/' as *;
+
+.services {
+  &__subtitle {
+    margin-bottom: 4rem;
+    color: rgba($font-color, 0.8);
+    text-align: center;
+    font-size: clamp(16px, 1.3vw, 20px);
+    line-height: clamp(24px, 2vw, 32px);
+    letter-spacing: 0.25px;
+
+    b {
+      color: $font-color;
+      font-weight: 500;
+    }
+  }
+}

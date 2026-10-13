@@ -18,3 +18,9 @@ $color-purple-2: #3f3765;
 $color-purple-3: #b88cff;
 
 $transparent: #0000;
+
+$gradients: (
+  1: linear-gradient($color-blue-1, $color-green),
+  2: linear-gradient($color-yellow, $color-red),
+  3: linear-gradient($color-pink, $color-blue-2),
+);

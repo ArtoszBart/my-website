@@ -6,7 +6,7 @@
   "Nav": {
     "about": "O mnie",
     "projects": "Projekty",
-    "offer": "Oferta",
+    "services": "Oferta",
     "contact": "Kontakt"
   },
   "HomePage": {
@@ -364,6 +364,37 @@
   "TechnologiesPopover": {
     "experience": "Doświadczenie",
     "website": "Oficjalna strona"
+  },
+
+  "ServicesPage": {
+    "title": "Oferta",
+    "subtitle": "Każdy biznes ma inne potrzeby, dlatego najlepsze rozwiązania to te dopasowane do konkretnych celów. Nowoczesne strony internetowe pomagają budować <b>profesjonalny wizerunek i docierać do nowych klientów</b>, a dedykowane aplikacje i systemy <b>usprawniają codzienną pracę</b>. Od pierwszego pomysłu po <b>gotowe rozwiązanie</b> — technologia może stać się realnym <b>wsparciem w rozwoju firmy</b>.",
+    "services": {
+      "businessSystems": {
+        "title": "Systemy dla firm",
+        "content": "<b>Dedykowane systemy pomagają usprawnić</b> codzienne funkcjonowanie firmy, uporządkować procesy i ograniczyć czas poświęcany na powtarzalne zadania. <b>Mogą obejmować</b> zarządzanie klientami, rezerwacjami, zamówieniami czy pracownikami. <b>Rozwiązania dopasowane do specyfiki działalności</b> pozwalają lepiej kontrolować poszczególne obszary biznesu i rozwijać firmę bez ograniczeń wynikających z gotowych narzędzi."
+      },
+      "websites": {
+        "title": "Strony internetowe",
+        "content": "Profesjonalna strona internetowa <b>pomaga budować wiarygodność firmy</b>, prezentować ofertę i <b>docierać do nowych klientów</b>. Przejrzysty układ, atrakcyjny wygląd i intuicyjna nawigacja <b>ułatwiają odwiedzającym</b> znalezienie potrzebnych informacji oraz skorzystanie z usług. <b>Strony są dostosowane do telefonów, tabletów i komputerów</b>, dzięki czemu zapewniają wygodne korzystanie niezależnie od urządzenia."
+      },
+      "mobileApps": {
+        "title": "Aplikacje mobilne",
+        "content": "Aplikacje mobilne pozwalają <b>udostępnić usługi klientom w wygodnej formie</b> na ich telefonach oraz <b>usprawnić pracę zespołów</b>. Mogą służyć do rezerwacji, obsługi zamówień, komunikacji, zarządzania zadaniami czy korzystania z funkcji dostępnych również poza biurem. Rozwiązania na <b>Androida i iOS</b> są projektowane z myślą o wygodzie użytkowników, potrzebach firmy i możliwościach dalszego rozwoju."
+      },
+      "integrationsAutomation": {
+        "title": "Integracje i automatyzacja",
+        "content": "Ręczne przepisywanie danych, powtarzalne czynności i brak komunikacji między używanymi narzędziami niepotrzebnie pochłaniają czas. Integracje pozwalają <b>połączyć systemy wykorzystywane w firmie</b>, a automatyzacja <b>przejąć część codziennych obowiązków.</b> Automatyczne raporty, synchronizacja danych czy obsługa powtarzalnych procesów pomagają ograniczyć liczbę błędów, zwiększyć efektywność i skupić się na zadaniach, które naprawdę <b>rozwijają biznes</b>."
+      },
+      "embeddedSystems": {
+        "title": "Systemy wbudowane",
+        "content": "Oprogramowanie dla urządzeń elektronicznych pozwala realizować zadania, które wykraczają poza możliwości standardowych aplikacji. <b>Może odpowiadać za</b> odczyt danych z czujników, sterowanie urządzeniami, komunikację między komponentami czy automatyczne reagowanie na określone warunki. Rozwiązania embedded są <b>dostosowywane do wymagań</b> konkretnego sprzętu i zastosowania, stanowiąc podstawę <b>inteligentnych urządzeń</b> oraz projektów łączących świat fizyczny z oprogramowaniem."
+      },
+      "softwareDevelopment": {
+        "title": "Rozwój istniejącego oprogramowania",
+        "content": "Działające oprogramowanie nie musi być tworzone od nowa, aby sprostać nowym wymaganiom. <b>Rozbudowa istniejących aplikacji</b> pozwala dodawać funkcje, usprawniać obsługę, eliminować błędy i <b>dostosowywać rozwiązania do rozwoju firmy</b>. Modernizacja może również <b>poprawić wydajność, bezpieczeństwo i wygodę użytkowania</b>. To sposób na <b>wykorzystanie dotychczasowej inwestycji</b>, ograniczenie zbędnych kosztów i <b>stopniowe rozwijanie produktu</b> wraz ze zmieniającymi się potrzebami."
+      }
+    }
   },
 
   "Forms": {
