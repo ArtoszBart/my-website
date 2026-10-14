@@ -1,3 +1,4 @@
+import { Service } from '@/types/data/services';
 import {
   FaBuilding,
   FaCode,
@@ -7,7 +8,7 @@ import {
   FaPuzzlePiece,
 } from 'react-icons/fa6';
 
-export const SERVICES = [
+export const SERVICES: Service[] = [
   {
     icon: <FaBuilding />,
     translationKey: 'businessSystems',
