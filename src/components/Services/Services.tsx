@@ -9,7 +9,7 @@ import './services.scss';
 import useServices from './useServices';
 
 export default function Services() {
-  const t = useTranslations('ServicesPage');
+  const t = useTranslations('ServicesPage.services.content');
   const { openedServiceId, onChevronToogleClick } = useServices();
 
   return (
@@ -32,7 +32,7 @@ export default function Services() {
               </div>
 
               <h3 className='services-list__card__header__main__title'>
-                {t(`services.${service.translationKey}.title`)}
+                {t(`${service.translationKey}.title`)}
               </h3>
             </div>
 
@@ -45,7 +45,7 @@ export default function Services() {
             <RichText
               className='services-list__card__content__text'
               t={t}
-              text={`services.${service.translationKey}.content`}
+              text={`${service.translationKey}.content`}
             />
           </div>
         </div>
