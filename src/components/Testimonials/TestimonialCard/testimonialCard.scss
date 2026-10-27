@@ -1,0 +1,115 @@
+@use '../../../styles/abstracts/' as *;
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+  background-color: $color-primary;
+  border-radius: 0.6rem;
+  border: 2px solid $color-dark-2;
+  padding: 1rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+
+    &__rating {
+      color: rgba($color-yellow, 0.6);
+      letter-spacing: 0.2rem;
+    }
+
+    &__translated {
+      @include font-mono;
+      color: $color-blue-1;
+      font-size: 14px;
+    }
+  }
+
+  &__content {
+    margin-bottom: 1rem;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+
+    &__text {
+      p {
+        margin-bottom: 0.5rem;
+        font-weight: 300;
+      }
+
+      &__expand-button {
+        margin-left: 0.5rem;
+        font-size: 12px;
+        color: rgba($font-color, 0.6);
+        white-space: nowrap;
+        cursor: pointer;
+        transition: $animation-fast;
+
+        &:hover {
+          color: $font-color;
+        }
+      }
+    }
+
+    button {
+      font-size: 12px;
+      color: rgba($color-purple-3, 0.6);
+      transition: $animation-fast;
+
+      &:hover {
+        color: $color-purple-3;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    margin-top: auto;
+    justify-content: space-between;
+
+    &__position {
+      color: rgba($font-color, 0.8);
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0.4px;
+    }
+
+    &__source {
+      display: flex;
+      align-items: flex-end;
+      gap: 0.5rem;
+      position: relative;
+      transition: $animation-fast;
+      color: rgba($font-color, 0.8);
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        width: 0%;
+        height: 1px;
+        background-color: rgba($font-color, 0.8);
+        transition: $animation-fast;
+        transform: translateX(-50%);
+      }
+
+      &:hover {
+        color: $font-color;
+
+        &::after {
+          width: 100%;
+        }
+      }
+
+      span {
+        font-size: 12px;
+        letter-spacing: 0.4px;
+      }
+
+      svg {
+        font-size: 18px;
+      }
+    }
+  }
+}

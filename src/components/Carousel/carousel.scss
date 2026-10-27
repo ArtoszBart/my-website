@@ -1,0 +1,45 @@
+@use '../../styles/abstracts/' as *;
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__slide {
+    flex: 0 0 100%;
+    padding-inline: 0.5rem;
+
+    @include media-lg {
+      flex-basis: 50%;
+    }
+  }
+}
+
+.carousel-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+
+  &__dot {
+    flex: 0 0 12px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid $color-purple-2;
+    border-radius: 4px;
+    background-color: $color-primary;
+    cursor: pointer;
+    transition: $animation;
+
+    &--active {
+      flex-basis: 24px;
+      cursor: auto;
+      background-color: $color-purple-3;
+    }
+  }
+}

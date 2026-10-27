@@ -426,6 +426,69 @@
           "description": "Przygotowanie rozwiązania do uruchomienia i jego wdrożenie. W razie potrzeby możliwa jest dalsza rozbudowa, dodawanie funkcji i dostosowywanie projektu do zmieniających się potrzeb."
         }
       ]
+    },
+    "testimonials": {
+      "title": "Co mówią o mnie inni...",
+      "subtitle": "Poznaj opinie osób, z którymi miałem przyjemność współpracować. Ich doświadczenia najlepiej pokazują moje podejście do pracy, zaangażowanie i dbałość o jakość realizowanych projektów.",
+      "aiTranslated": "Przetłumaczono przez AI",
+      "loading": "Ładowanie",
+      "showTranslated": "Pokaż tłumaczenie AI",
+      "readMore": "Czytaj więcej",
+      "showLess": "Zwiń",
+      "viewOriginal": "Zobacz oryginał",
+      "source": "Źródło",
+      "content": {
+        "pawel-holis": {
+          "position": "Klient",
+          "content": [
+            "Miałem przyjemność współpracować z Bartkiem przy tworzeniu frontendu i wsparciu backendu naszej mobilnej aplikacji medycznej i nie mogłem trafić na lepszego współpracownika.",
+            "Od samego początku Bartek wykazywał się nie tylko dużą wiedzą techniczną, ale również wysoce profesjonalnym i wspierającym podejściem. Szybko zrozumiał wizję produktu, aktywnie proponował usprawnienia i konsekwentnie dostarczał przejrzyste, wydajne oraz przyjazne użytkownikom interfejsy.",
+            "Szczególnie wyróżniały go niezawodność i poczucie odpowiedzialności za projekt — gdy pojawiały się wyzwania, Bartek nie czekał na wskazówki, lecz aktywnie pomagał je rozwiązywać. Zawsze był gotowy do rozmowy, proponowania alternatywnych rozwiązań i dbania o to, by prace płynnie posuwały się naprzód.",
+            "Jeśli szukasz full-stack developera, który łączy doskonałe umiejętności techniczne z wyjątkową umiejętnością pracy zespołowej i odpowiedzialnością, z całego serca polecam Bartka. Miał istotny wkład w sukces naszego projektu i z przyjemnością podjąłbym z nim współpracę ponownie."
+          ]
+        },
+        "dreamai-filip": {
+          "position": "Współpracownik z zespołu",
+          "content": [
+            "Propozycje Bartosza odnośnie użycia konkretnych technologii lub narzędzi pozytywnie wpływało na wytwarzane w firmie produkty, często prowadząc do ich polepszenia. Zabiegał również o polepszenie jakości kodu i ujednolicenie formatowania plików w naszych projektach.",
+            "Bez problemu wtopił się w atmosferę panującą w ekipie, w tym w nasze sportowe wypady poza pracą ;)"
+          ]
+        },
+        "krzysztof-holis": {
+          "position": "Bezpośredni przełożony",
+          "content": [
+            "Byłem liderem IT w startupie, w którym Bartosz dołączył do zespołu jako programista aplikacji mobilnych. Wspólnie pracowaliśmy nad projektem od wstępnej koncepcji aż po publikację aplikacji w sklepach. W tym czasie Bartosz zrobił duże wrażenie zarówno na mnie, jak i na pozostałych członkach zespołu.",
+            "Bartosz szybko udowodnił, że jego wiedza wykracza poza tworzenie aplikacji mobilnych i frontendów. Brał udział w decyzjach architektonicznych, aktywnie identyfikował potencjalne problemy i opracowywał rozwiązania. Jego spostrzeżenia i doświadczenie miały ogromny wpływ na dostarczenie dojrzałego, kompleksowego rozwiązania zgodnego z nowoczesnymi standardami branżowymi.",
+            "Bartosz łączy umiejętności analityczne, precyzję i skuteczność w realizacji celów z motywacją do wkładania dodatkowego wysiłku. Podczas naszej współpracy wykazał się biegłością w tworzeniu aplikacji mobilnych na iOS i Androida z wykorzystaniem React Native jako głównego frameworka. Z pełnym przekonaniem polecam z nim współpracę i życzę mu powodzenia w dalszym rozwoju zawodowym."
+          ]
+        },
+        "magdalena-bujnickadent": {
+          "position": "Klientka",
+          "content": [
+            "Miałam przyjemność współpracować z panem Bartoszem Art, którego zatrudniłam do zaprojektowania strony internetowej mojego gabinetu stomatologicznego.",
+            "Pan Bartosz jest profesjonalistą, którego z pełnym przekonaniem poleciłabym każdemu, kto szuka solidnego i rzetelnego partnera do współpracy. Jego zaangażowanie, pasja i dbałość o najmniejsze szczegóły są godne podziwu. Pan Bartosz nie tylko świetnie zrealizował powierzone mu zadanie, ale również zadawał liczne pytania dotyczące specyfiki mojej branży, aby lepiej zrozumieć moje potrzeby i oczekiwania.",
+            "Pan Bartosz stawia sobie ambitne cele i realizuje projekty, które nie tylko spełniają, ale wręcz przewyższają oczekiwania. Dzięki jego sugestiom i technologicznym innowacjom, usprawniono nie tylko stronę internetową, ale również aspekty marketingowe i administracyjne mojego gabinetu. Wprowadzenie opcji bezpośredniego zapisania się pacjentów na wizytę poprzez stronę internetową oraz zarządzania pracownikami, kalendarzami i pacjentami za pomocą aplikacji na telefon, znacząco poprawiło efektywność i obniżyło koszty działalności.",
+            "Z czystym sumieniem polecam pana Bartosza jako zdeterminowanego, pełnego pasji i bystrego specjalistę, który z pewnością wniesie wartość do każdego projektu."
+          ]
+        },
+        "michal": {
+          "position": "Mentor",
+          "content": [
+            "Jako doświadczony specjalista IT i krewny Bartosza Arta miałem okazję uważnie obserwować, jak realizował projekt gabinetu stomatologicznego i dostarczył gotowe rozwiązanie. Miałem również przyjemność przeprowadzić przegląd koleżeński wybranych aspektów technicznych projektu oraz uczestniczyć w testach funkcjonalnych pierwszej wersji produkcyjnej rozwiązania.",
+            "Obserwowałem, jak Bartosz samodzielnie realizował cały projekt, od początku do końca, obejmując wszystkie etapy cyklu życia oprogramowania: opracowanie koncepcji, rozpoznanie i analizę wymagań, projektowanie architektury danych i bezpieczeństwa, projektowanie aplikacji, dobór technologii i usług zewnętrznych, rozwój wszystkich modułów i funkcji bezpieczeństwa, wdrożenie produkcyjne oraz zapewnienie wsparcia.",
+            "Podczas pracy Bartosz konsekwentnie dążył do osiągnięcia celu, nie rezygnując z jakości. Wykazał się umiejętnością krytycznego myślenia i rozwiązywania problemów, dobrymi zdolnościami analitycznymi oraz intuicyjnym, a zarazem skutecznym podejściem do analizy i zarządzania ryzykiem.",
+            "Szczególnie imponowała mi swoboda, z jaką poruszał się wśród różnych technologii, nawet tych, z którymi dopiero zaczynał pracę. Doceniłem jego poważne i dokładne podejście do bezpieczeństwa rozwiązania oraz zaangażowanie w dostarczanie wartości klientowi. Podobało mi się również jego perspektywiczne podejście, widoczne między innymi w korzystaniu z alternatywnych źródeł wsparcia technicznego.",
+            "Mimo że Bartosz realizował projekt całkowicie samodzielnie, skutecznie korzystał z dostępnego wsparcia innych specjalistów, aby ocenić i zweryfikować najważniejsze decyzje architektoniczne, programistyczne i procesowe.",
+            "Bartosz rozpoczyna karierę zawodową z imponującym dorobkiem. Życzę mu wielu sukcesów zawodowych, zachowania entuzjazmu i pomysłowości oraz nieustannej gotowości na nowe wyzwania."
+          ]
+        },
+        "kacper-skks": {
+          "position": "Klient",
+          "content": [
+            "Pełne zaangażowanie, praktyczna wiedza oraz nieograniczona chęć nauki nowych rzeczy. Doskonała współpraca w zespole, przykładanie wagi do najmniejszych szczegółów. "
+          ]
+        }
+      }
     }
   },
 

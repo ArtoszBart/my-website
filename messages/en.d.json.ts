@@ -429,6 +429,69 @@ declare const messages: {
           "description": "Preparing the solution for release and deploying it. Further improvements, new features, and adjustments can be introduced as needs evolve."
         }
       ]
+    },
+    "testimonials": {
+      "title": "What people are saying...",
+      "subtitle": "Read what people I've had the pleasure of working with have to say. Their experiences reflect my approach to work, commitment, and attention to the quality of every project.",
+      "aiTranslated": "AI Translated",
+      "loading": "Loading",
+      "showTranslated": "Show AI translated",
+      "readMore": "Read more",
+      "showLess": "Show less",
+      "viewOriginal": "View original",
+      "source": "Source",
+      "content": {
+        "pawel-holis": {
+          "position": "Client",
+          "content": [
+            "I had the pleasure of working with Bartek on the development of the frontend and support with backend for our mobile healthcare app and I couldn't have asked for a better collaborator.",
+            "From day one, Bartek brought not only strong technical expertise, but also a highly professional and supportive attitude. He quickly understood the product vision, proactively proposed improvements, and consistently delivered clean, efficient, and user-friendly interfaces.",
+            "What truly stood out was his reliability and ownership - whenever challenges arose, Bartek didn’t just wait for input, he actively helped solve them. He was always ready to jump on a call, suggest alternatives, and ensure progress kept moving forward smoothly.",
+            "If you're looking for a fullstack developer who combines technical excellence with exceptional teamwork and responsibility, I can wholeheartedly recommend Bartek. He was a key contributor to our project’s success, and I’d be excited to work with him again in the future."
+          ]
+        },
+        "dreamai-filip": {
+          "position": "Teammate",
+          "content": [
+            "Bartosz's suggestions regarding the use of specific technologies or tools had a positive impact on the products developed at the company, often leading to improvements. He also advocated for better code quality and consistent file formatting across our projects.",
+            "He fitted into the team's atmosphere effortlessly, including our sports outings outside of work ;)"
+          ]
+        },
+        "krzysztof-holis": {
+          "position": "Direct Manager",
+          "content": [
+            "I was an IT lead in a start-up, where Bartosz was onboarded as a mobile developer. We cooperated on the project from initial concept through delivery to app stores. During that time he managed to make a strong impression on myself and the rest of the team.",
+            "Bartosz quickly proved that his expertise goes beyond mobile and frontend development by participating in architecture decisions, proactively addressing potential problems and drafting solutions. His insights and experience had a huge impact on delivering a mature, holistic solution following the modern industry standards.",
+            "Bartosz brings analytical skills, precision and efficiency in implementing the goals and motivation to go the extra mile. During our collaboration he showed his proficiency in mobile development for iOS and Android using React Native as the core framework. I can highly recommend working with him and wish him best of luck in his professional development."
+          ]
+        },
+        "magdalena-bujnickadent": {
+          "position": "Client",
+          "content": [
+            "I had the pleasure of working with Mr. Bartosz Art, whom I hired to design the website for my dental practice.",
+            "Mr. Bartosz is a professional whom I would wholeheartedly recommend to anyone looking for a reliable and trustworthy partner. His commitment, passion, and attention to the smallest details are admirable. Not only did Mr. Bartosz do an excellent job delivering the assigned task, but he also asked numerous questions about the specifics of my industry to better understand my needs and expectations.",
+            "Mr. Bartosz sets ambitious goals and delivers projects that not only meet but even exceed expectations. Thanks to his suggestions and technological innovations, improvements were made not only to the website but also to the marketing and administrative aspects of my practice. Introducing the option for patients to book appointments directly through the website, as well as managing employees, calendars, and patients through a mobile app, significantly improved efficiency and reduced operating costs.",
+            "I wholeheartedly recommend Mr. Bartosz as a determined, passionate, and insightful specialist who will undoubtedly bring value to any project."
+          ]
+        },
+        "michal": {
+          "position": "Mentor",
+          "content": [
+            "As a seasoned IT professional and a relative of Bartosz Art, I had the chance to closely watch him undertake the Dental Practice project and deliver the resulting solution. I also had the pleasure of providing pear review for certain technical aspects of the project and I took part in functional testing of the first production version of the solution.",
+            "I saw Bartosz provide end-to-end, full lifecycle delivery of the project including the ideation, requirement discovery and analysis, data and security architecture design, application design, selection of technologies and engagement of external services, development of all modules and security features, deployment into production and provision of support.",
+            "In the process, Bartosz exhibited unyielding orientation on the goal without compromising the quality. He has shown strong critical thinking and problem-solving skills, good analytical skills, and intuitive yet effective risk analysis and management.",
+            "I was especially amazed by his ease of navigating various technologies, even those freshly adopted. I esteemed his serious and thorough approach to the security of the solution and his commitment to provide customer value. I enjoyed his forward-looking approach, shown for instance in engaging alternative sources of technical support.",
+            "Although Bartosz has been running the project all by himself, he effectively used the available peer resources to evaluate and validate the most important architectural, programing and process choices.",
+            "Bartosz is stepping into his professional life with an impressive kickoff. I wish him much success in his career, to never lose his enthusiasm, inventiveness, and readiness for new challenges."
+          ]
+        },
+        "kacper-skks": {
+          "position": "Client",
+          "content": [
+            "Full commitment, practical knowledge, and an unlimited willingness to learn new things. Excellent teamwork and attention to the smallest details."
+          ]
+        }
+      }
     }
   },
 

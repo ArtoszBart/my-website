@@ -1,5 +1,6 @@
 import RichText from '@/components/RichText';
 import Services from '@/components/Services';
+import Testimonials from '@/components/Testimonials';
 import Workflow from '@/components/Workflow';
 import { useTranslations } from '@/i18n/translations';
 import { LocaleParams } from '@/i18n/types';
@@ -32,6 +33,13 @@ export default function ServicesPage({ params }: LocaleParams) {
         />
 
         <Workflow />
+      </section>
+
+      <section className='testimonials'>
+        <h1>{t('testimonials.title')}</h1>
+        <p className='services__subtitle'>{t('testimonials.subtitle')}</p>
+
+        <Testimonials locale={locale} />
       </section>
     </main>
   );
