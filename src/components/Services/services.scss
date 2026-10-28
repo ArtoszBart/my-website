@@ -37,6 +37,11 @@
     }
 
     @include media-lg {
+      display: grid;
+      grid-template-rows: subgrid;
+      grid-row: span 2;
+      gap: 0;
+
       @each $index, $gradient in $gradients {
         &:nth-child(6n + #{$index + 3}) &__header__main__icon {
           background: map.get($gradients, (($index % 3) + 1));
@@ -100,12 +105,13 @@
         border-top: 2px solid rgba($color-primary, 0.5);
         padding-block: 0.5rem 1rem;
         color: rgba($font-color, 0.8);
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
         letter-spacing: 0.4px;
 
         b {
-          font-weight: 500;
+          font-weight: 400;
           color: $font-color;
         }
       }

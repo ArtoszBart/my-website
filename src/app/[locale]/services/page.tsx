@@ -1,4 +1,3 @@
-import RichText from '@/components/RichText';
 import Services from '@/components/Services';
 import Testimonials from '@/components/Testimonials';
 import Workflow from '@/components/Workflow';
@@ -15,22 +14,14 @@ export default function ServicesPage({ params }: LocaleParams) {
     <main>
       <section className='services'>
         <h1>{t('services.title')}</h1>
-        <RichText
-          className='services__subtitle'
-          t={t}
-          text='services.subtitle'
-        />
+        <p className='services__subtitle'>{t('services.subtitle')}</p>
 
         <Services />
       </section>
 
       <section className='workflow'>
         <h1>{t('workflow.title')}</h1>
-        <RichText
-          className='services__subtitle'
-          t={t}
-          text='workflow.subtitle'
-        />
+        <p className='services__subtitle'>{t('workflow.subtitle')}</p>
 
         <Workflow />
       </section>

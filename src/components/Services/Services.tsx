@@ -4,7 +4,6 @@ import { SERVICES } from '@/data/services';
 import { useTranslations } from '@/i18n/translations';
 import clsx from 'clsx';
 import { FaChevronDown } from 'react-icons/fa6';
-import RichText from '../RichText';
 import './services.scss';
 import useServices from './useServices';
 
@@ -42,11 +41,9 @@ export default function Services() {
           </div>
 
           <div className='services-list__card__content'>
-            <RichText
-              className='services-list__card__content__text'
-              t={t}
-              text={`${service.translationKey}.content`}
-            />
+            <p className='services-list__card__content__text'>
+              {t(`${service.translationKey}.content`)}
+            </p>
           </div>
         </div>
       ))}

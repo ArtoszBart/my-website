@@ -369,31 +369,31 @@
   "ServicesPage": {
     "services": {
       "title": "Services",
-      "subtitle": "Every business has different needs, which is why the best solutions are tailored to specific goals. Modern websites help build <b>a professional image and reach new customers</b>, while dedicated applications and systems <b>streamline daily operations</b>. From the initial idea to <b>the finished product</b>, technology can become a practical <b>tool for business growth</b>.",
+      "subtitle": "Every business has different needs, which is why the best solutions are tailored to specific goals. Modern websites help build a professional image and reach new customers, while dedicated applications and systems streamline daily operations. From the initial idea to the finished product, technology can become a practical tool for business growth.",
       "content": {
         "businessSystems": {
           "title": "Business Systems",
-          "content": "<b>Custom business systems help streamline</b> daily operations, organize workflows, and reduce the time spent on repetitive tasks. <b>They can cover</b> customer management, bookings, orders, employee management, and more. <b>Solutions tailored to the needs of each business</b> provide better control over key operations and support growth without the limitations of off-the-shelf tools."
+          "content": "Custom business systems help streamline daily operations, organize workflows, and reduce the time spent on repetitive tasks. They can cover customer management, bookings, orders, employee management, and more. Solutions tailored to the needs of each business provide better control over key operations and support growth without the limitations of off-the-shelf tools."
         },
         "websites": {
           "title": "Websites",
-          "content": "A professional website <b>helps build trust</b>, showcase a business, and <b>attract new customers</b>. A clear layout, appealing design, and intuitive navigation <b>make it easier for visitors</b> to find the information they need and explore available services. <b>Every website is adapted to phones, tablets, and desktop computers</b>, ensuring a smooth and consistent experience across devices."
+          "content": "A professional website helps build trust, showcase a business, and attract new customers. A clear layout, appealing design, and intuitive navigation make it easier for visitors to find the information they need and explore available services. Every website is adapted to phones, tablets, and desktop computers, ensuring a smooth and consistent experience across devices."
         },
         "mobileApps": {
           "title": "Mobile Apps",
-          "content": "Mobile apps make it possible to <b>provide customers with easy access to services</b> on their phones and <b>help teams work more efficiently</b>. They can support bookings, order management, communication, task management, and access to essential features on the go. Apps for <b>Android and iOS</b> are designed around user needs, business goals, and the flexibility to grow as requirements evolve."
+          "content": "Mobile apps make it possible to provide customers with easy access to services on their phones and help teams work more efficiently. They can support bookings, order management, communication, task management, and access to essential features on the go. Apps for Android and iOS are designed around user needs, business goals, and the flexibility to grow as requirements evolve."
         },
         "integrationsAutomation": {
           "title": "Integrations & Automation",
-          "content": "Manual data entry, repetitive tasks, and disconnected tools waste valuable time. Integrations <b>connect the systems a business already uses</b>, while automation <b>takes care of routine activities</b>. Automated reports, data synchronization, and streamlined workflows help reduce errors, improve efficiency, and free up time for the work that matters most to <b>business growth</b>."
+          "content": "Manual data entry, repetitive tasks, and disconnected tools waste valuable time. Integrations connect the systems a business already uses, while automation takes care of routine activities. Automated reports, data synchronization, and streamlined workflows help reduce errors, improve efficiency, and free up time for the work that matters most to business growth."
         },
         "embeddedSystems": {
           "title": "Embedded Systems",
-          "content": "Software for electronic devices makes it possible to build solutions that go beyond the capabilities of standard applications. <b>It can</b> read sensor data, control hardware, connect components, or trigger actions in response to specific conditions. Embedded solutions are <b>tailored to the requirements</b> of the hardware and its intended purpose, powering <b>smart devices</b> and projects that connect the physical world with software."
+          "content": "Software for electronic devices makes it possible to build solutions that go beyond the capabilities of standard applications. It can read sensor data, control hardware, connect components, or trigger actions in response to specific conditions. Embedded solutions are tailored to the requirements of the hardware and its intended purpose, powering smart devices and projects that connect the physical world with software."
         },
         "softwareDevelopment": {
           "title": "Existing Software Development",
-          "content": "Existing software does not need to be rebuilt from scratch to meet new requirements. <b>Improving current applications</b> makes it possible to introduce new features, streamline workflows, fix bugs, and <b>adapt solutions to changing business needs</b>. Modernization can also <b>improve performance, security, and usability</b>. It helps <b>protect previous investments</b>, avoid unnecessary costs, and <b>evolve a product</b> as the business grows."
+          "content": "Existing software does not need to be rebuilt from scratch to meet new requirements. Improving current applications makes it possible to introduce new features, streamline workflows, fix bugs, and adapt solutions to changing business needs. Modernization can also improve performance, security, and usability. It helps protect previous investments, avoid unnecessary costs, and evolve a product as the business grows."
         }
       }
     },
