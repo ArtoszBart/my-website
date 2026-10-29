@@ -1,3 +1,4 @@
+import ContactForm from '@/components/ContactForm';
 import Faq from '@/components/Faq';
 import Services from '@/components/Services';
 import Testimonials from '@/components/Testimonials';
@@ -39,6 +40,13 @@ export default function ServicesPage({ params }: LocaleParams) {
         <p className='services__subtitle'>{t('faq.subtitle')}</p>
 
         <Faq />
+      </section>
+
+      <section className='faq'>
+        <h1>{t('cta.title')}</h1>
+        <p className='services__subtitle'>{t('cta.subtitle')}</p>
+
+        <ContactForm />
       </section>
     </main>
   );

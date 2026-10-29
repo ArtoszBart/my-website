@@ -527,6 +527,10 @@
           "answer": "The first step is to get in touch and briefly describe the idea, problem, or work required. There is no need to have every detail figured out in advance — identifying the goal and expected outcome is enough. The requirements, possible solutions, and estimated scope are then discussed. Based on this, the payment model, estimated cost, timeline, and next steps can be agreed upon."
         }
       ]
+    },
+    "cta": {
+      "title": "Let's Talk About Your Idea",
+      "subtitle": "Tell me what you'd like to create, and we'll find the best solution together."
     }
   },
 
