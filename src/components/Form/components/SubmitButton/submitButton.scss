@@ -5,7 +5,7 @@
 
   @include media-lg {
     align-self: flex-end;
-    position: absolute;
+    position: absolute !important;
     bottom: 5rem;
   }
 }
