@@ -489,6 +489,44 @@
           ]
         }
       }
+    },
+    "faq": {
+      "title": "Have Questions?",
+      "subtitle": "Have questions about working together, project costs, or the development process? Find answers to the most common questions here.",
+      "items": [
+        {
+          "question": "How is pricing determined?",
+          "answer": "Pricing depends on the type of service, the scope of work, and its complexity. Depending on the engagement, either a fixed price or hourly billing can be agreed upon. A fixed price works well when the scope can be clearly defined before work begins, while hourly billing offers greater flexibility when requirements may change. The scope, payment model, and estimated costs are agreed upon before the work starts."
+        },
+        {
+          "question": "What types of projects are undertaken?",
+          "answer": "Services include the development of websites, web and mobile applications, and custom software solutions. This can involve building new projects from scratch, extending existing systems, adding new features, or integrating third-party services. Projects can address business needs as well as individual ideas for digital products."
+        },
+        {
+          "question": "Is a fully defined idea or technical specification required?",
+          "answer": "Complete documentation or technical knowledge is not required. An initial idea, a description of a problem, or a clear goal is enough to get started. Based on this, the requirements can be refined, key features identified, and suitable technical solutions selected. This helps define a realistic project scope and plan the work around specific needs."
+        },
+        {
+          "question": "How long does a project take?",
+          "answer": "The timeline depends on the project scope, the number of features, its complexity, and any integrations with other systems. Smaller tasks may take a few hours or days, while more extensive solutions may be delivered in stages over a longer period. Once the requirements are established, the estimated duration and schedule can be defined. Changes to the agreed scope may require the timeline to be revised."
+        },
+        {
+          "question": "Can an existing website or application be extended?",
+          "answer": "Yes. There is no need to start from scratch — work can be carried out on an existing website, application, or system. This may include adding features, fixing bugs, improving performance, integrating third-party services, or modernizing the codebase. The existing solution is reviewed before work begins to assess the available options, scope of changes, and any technical limitations."
+        },
+        {
+          "question": "Does the project include deployment and ongoing technical support?",
+          "answer": "Depending on the agreed scope, the work can include preparing the solution for launch, configuring the environment, deployment, and further application development. Support after the main project is completed can also be arranged, including updates, bug fixes, and new features. The scope, duration, and terms of any ongoing support are agreed upon individually."
+        },
+        {
+          "question": "What happens if bugs are discovered after project delivery?",
+          "answer": "If bugs are found after delivery that directly result from my work and cause the project to deviate from the originally agreed requirements, they will be fixed free of charge. If an issue is caused by factors outside my control, such as changes made by third parties, updates to external services, or modifications to the environment, fixing it may incur an additional charge. Changes to functionality, scope, or design resulting from a revised concept or new requirements after the original specifications have been approved are also billed separately."
+        },
+        {
+          "question": "How can collaboration get started?",
+          "answer": "The first step is to get in touch and briefly describe the idea, problem, or work required. There is no need to have every detail figured out in advance — identifying the goal and expected outcome is enough. The requirements, possible solutions, and estimated scope are then discussed. Based on this, the payment model, estimated cost, timeline, and next steps can be agreed upon."
+        }
+      ]
     }
   },
 

@@ -1,3 +1,4 @@
+import Faq from '@/components/Faq';
 import Services from '@/components/Services';
 import Testimonials from '@/components/Testimonials';
 import Workflow from '@/components/Workflow';
@@ -31,6 +32,13 @@ export default function ServicesPage({ params }: LocaleParams) {
         <p className='services__subtitle'>{t('testimonials.subtitle')}</p>
 
         <Testimonials locale={locale} />
+      </section>
+
+      <section className='faq'>
+        <h1>{t('faq.title')}</h1>
+        <p className='services__subtitle'>{t('faq.subtitle')}</p>
+
+        <Faq />
       </section>
     </main>
   );

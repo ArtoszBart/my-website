@@ -489,6 +489,44 @@
           ]
         }
       }
+    },
+    "faq": {
+      "title": "Masz pytania?",
+      "subtitle": "Masz pytania dotyczące współpracy, kosztów lub realizacji projektu? Znajdziesz tutaj odpowiedzi na najważniejsze z nich.",
+      "items": [
+        {
+          "question": "Jak wygląda wycena usług?",
+          "answer": "Wycena zależy od rodzaju usługi, zakresu prac i stopnia ich złożoności. W zależności od charakteru zlecenia możliwe jest ustalenie stałej ceny za całość lub rozliczenie godzinowe. Stała cena sprawdza się wtedy, gdy zakres prac można jasno określić przed rozpoczęciem realizacji, natomiast rozliczenie godzinowe daje większą elastyczność przy zadaniach, których zakres może się zmieniać. Przed rozpoczęciem współpracy ustalane są zakres prac, sposób rozliczenia i przewidywane koszty."
+        },
+        {
+          "question": "Jakie projekty są realizowane?",
+          "answer": "Zakres usług obejmuje tworzenie stron internetowych, aplikacji webowych i mobilnych oraz dedykowanych rozwiązań programistycznych. Możliwa jest zarówno realizacja nowych projektów od podstaw, jak i rozbudowa istniejących systemów, wdrażanie dodatkowych funkcjonalności czy integracja z zewnętrznymi usługami. Współpraca może dotyczyć zarówno potrzeb biznesowych firm, jak i indywidualnych pomysłów na produkty cyfrowe."
+        },
+        {
+          "question": "Czy potrzebny jest gotowy pomysł i specyfikacja techniczna?",
+          "answer": "Nie jest wymagana kompletna dokumentacja ani znajomość technicznych aspektów tworzenia oprogramowania. Wystarczy wstępny pomysł, opis problemu lub określenie celu, który ma zostać osiągnięty. Na tej podstawie można wspólnie doprecyzować wymagania, ustalić najważniejsze funkcjonalności i dobrać odpowiednie rozwiązania techniczne. Pozwala to określić realny zakres projektu i zaplanować prace zgodnie z konkretnymi potrzebami."
+        },
+        {
+          "question": "Ile trwa realizacja projektu?",
+          "answer": "Czas realizacji zależy od zakresu projektu, liczby funkcjonalności, stopnia skomplikowania oraz ewentualnych integracji z innymi systemami. Mniejsze zadania mogą wymagać kilku godzin lub dni pracy, natomiast bardziej rozbudowane rozwiązania mogą być realizowane etapami przez dłuższy okres. Po ustaleniu wymagań możliwe jest oszacowanie czasu potrzebnego na realizację i określenie harmonogramu. W przypadku zmian zakresu prac termin może wymagać ponownego uzgodnienia."
+        },
+        {
+          "question": "Czy można rozwinąć istniejącą stronę lub aplikację?",
+          "answer": "Tak. Nie ma konieczności rozpoczynania projektu od zera — możliwa jest praca z istniejącą stroną internetową, aplikacją lub systemem. Zakres zmian może obejmować dodawanie nowych funkcjonalności, poprawianie błędów, optymalizację wydajności, integracje z zewnętrznymi usługami lub modernizację kodu. Przed rozpoczęciem prac analizowane jest aktualne rozwiązanie, aby określić możliwy sposób realizacji, zakres zmian i ewentualne ograniczenia techniczne."
+        },
+        {
+          "question": "Czy projekt obejmuje wdrożenie i dalsze wsparcie techniczne?",
+          "answer": "Zakres współpracy może obejmować przygotowanie rozwiązania do uruchomienia, konfigurację środowiska, wdrożenie oraz dalszy rozwój aplikacji. Możliwe jest również uzgodnienie wsparcia po zakończeniu głównych prac, obejmującego między innymi aktualizacje, poprawki i rozwój funkcjonalności. Zakres takiego wsparcia, czas jego trwania i warunki współpracy ustalane są indywidualnie."
+        },
+        {
+          "question": "Co w przypadku wykrycia błędów po oddaniu projektu?",
+          "answer": "Jeśli po oddaniu projektu zostaną wykryte błędy wynikające bezpośrednio z wykonanych przeze mnie prac i niezgodności z wcześniej ustalonymi wymaganiami, ich naprawa jest bezpłatna. Jeśli problem wynika z czynników niezależnych ode mnie, takich jak zmiany wprowadzane przez osoby trzecie, aktualizacje zewnętrznych usług lub modyfikacje środowiska, naprawa może wymagać dodatkowej opłaty. Dodatkowo płatne są zmiany funkcjonalności, zakresu lub wyglądu projektu wynikające ze zmiany koncepcji lub nowych oczekiwań po zaakceptowaniu wcześniejszych ustaleń."
+        },
+        {
+          "question": "Jak rozpocząć współpracę?",
+          "answer": "Pierwszym krokiem jest kontakt i krótkie przedstawienie pomysłu, problemu lub zakresu prac. Nie trzeba mieć od razu przygotowanych wszystkich szczegółów — wystarczy określenie celu i oczekiwanego rezultatu. Następnie omawiane są wymagania, możliwe rozwiązania oraz przewidywany zakres prac. Na tej podstawie ustalane są sposób rozliczenia, szacowany koszt, harmonogram i kolejne kroki prowadzące do rozpoczęcia realizacji."
+        }
+      ]
     }
   },
 
