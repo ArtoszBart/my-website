@@ -10,7 +10,7 @@ interface IProps {
 
 export default function Bean({ label, option, onClick }: IProps) {
   return (
-    <button className={`bean bean--${option}`} onClick={onClick}>
+    <button className={`bean bean--${option}`} onClick={onClick} type='button'>
       {label}
       <FaXmark />
     </button>

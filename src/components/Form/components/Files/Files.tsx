@@ -2,8 +2,9 @@
 
 import './files.scss';
 
+import Bean from '@/components/Bean';
 import clsx from 'clsx';
-import { FaPaperclip, FaXmark } from 'react-icons/fa6';
+import { FaPaperclip } from 'react-icons/fa6';
 import useFiles, { type IuseFiles } from './useFiles';
 
 interface IProps extends IuseFiles {
@@ -33,30 +34,24 @@ export default function Files({ name, tabIndex, label }: IProps) {
         aria-describedby={errorMessage ? errorId : undefined}
       />
 
-      <label className='form-input__upload-button' htmlFor={name}>
-        {label} <FaPaperclip aria-hidden='true' />
-      </label>
+      <div className='form-input-files'>
+        <label className='form-input-files__upload-button' htmlFor={name}>
+          {label} <FaPaperclip aria-hidden='true' />
+        </label>
 
-      {files.length > 0 && (
-        <ul className='form-input__files' aria-live='polite'>
-          {files.map((file, index) => (
-            <li
-              key={`${file.name}-${index}`}
-              className='form-input__files__item'
-            >
-              <span>{file.name}</span>
-
-              <button
-                type='button'
+        {files.length > 0 && (
+          <div className='form-input-files__files'>
+            {files.map((file, index) => (
+              <Bean
+                key={index}
+                label={file.name}
+                option={'files'}
                 onClick={() => removeFile(index)}
-                aria-label={`Usuń plik ${file.name}`}
-              >
-                <FaXmark />
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
+              />
+            ))}
+          </div>
+        )}
+      </div>
 
       <span
         id={errorId}

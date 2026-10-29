@@ -35,6 +35,11 @@ const useForm = <T extends FieldValues>({
     defaultValues: defaultValues as DefaultValues<T>,
   });
 
+  const {
+    formState: { isSubmitSuccessful },
+    reset,
+  } = formProps;
+
   const onFormValid = async (data: T) => {
     const toastId = toast.loading(t('loadingToast'));
     const result = await onSubmit(data);
@@ -60,12 +65,12 @@ const useForm = <T extends FieldValues>({
   const handleSubmit = formProps.handleSubmit(onFormValid, onFormInvalid);
 
   useEffect(() => {
-    if (formProps.formState.isSubmitSuccessful) {
-      formProps.reset(defaultValues, {
+    if (isSubmitSuccessful) {
+      reset(defaultValues, {
         keepFieldsRef: true,
       });
     }
-  }, [formProps.formState.isSubmitSuccessful, formProps.reset]);
+  }, [isSubmitSuccessful, reset, defaultValues]);
 
   return { formProps, handleSubmit };
 };
