@@ -43,7 +43,7 @@
   }
 
   &--opened {
-    svg {
+    .filters-group__toggle button svg {
       transform: rotate(180deg);
     }
 
