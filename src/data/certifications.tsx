@@ -8,6 +8,20 @@ const CERTIFICATION_SOURCE = {
 
 export const CERTIFICATIONS: Certification[] = [
   {
+    name: 'The Ultimate Redux Course',
+    source: CERTIFICATION_SOURCE.CODE_WITH_MOSH,
+    serialNo: 'cert_qm2s1fj7',
+    date: new Date(Date.UTC(2024, 10, 16)),
+    url: '/bart-art/certifications/Bartosz_Art_Cert_Redux.pdf',
+    techstack: [
+      TECHNOLOGY.REDUX,
+      TECHNOLOGY.REACT,
+      TECHNOLOGY.VITE,
+      TECHNOLOGY.JAVA_SCRIPT,
+      TECHNOLOGY.NPM,
+    ],
+  },
+  {
     name: 'Testing React Apps with React Testing Library',
     source: CERTIFICATION_SOURCE.CODE_WITH_MOSH,
     serialNo: 'cert_mh78fphf',

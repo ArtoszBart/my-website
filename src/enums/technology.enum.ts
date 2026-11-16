@@ -62,6 +62,7 @@ export enum TECHNOLOGY {
   SEQUELIZE = 'sequelize',
   GRAPHQL = 'graphql',
   REACT_QUERY = 'reactquery',
+  REDUX = 'redux',
   ZUSTAND = 'zustand',
   JEST = 'jest',
   ZOD = 'zod',

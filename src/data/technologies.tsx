@@ -61,6 +61,7 @@ import {
   SiPrisma,
   SiRabbitmq,
   SiRedis,
+  SiRedux,
   SiResend,
   SiSentry,
   SiSequelize,
@@ -687,6 +688,15 @@ export const TECHNOLOGIES: Record<TECHNOLOGY, TechMeta> = {
     environments: [ENVIROMENT.NODEJS],
     types: [TECH_TYPE.LIBRARY],
     experience: 3,
+  },
+  [TECHNOLOGY.REDUX]: {
+    icon: <SiRedux aria-label='Redux' />,
+    label: 'Redux',
+    url: 'https://redux.js.org/',
+    platforms: [PLATFORM.FRONTEND, PLATFORM.MOBILE],
+    environments: [ENVIROMENT.NODEJS],
+    types: [TECH_TYPE.LIBRARY],
+    experience: 2,
   },
   [TECHNOLOGY.ZUSTAND]: {
     icon: <ZustandIcon aria-label='Zustand' />,
